@@ -45,7 +45,7 @@ const ButtonContainer = styled.div`
     justify-content: center;
 `
 
-export const FooterView = () => {
+export const ProductView = () => {
 
     return (
         <Wrapper>

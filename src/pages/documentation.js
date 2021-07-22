@@ -7,7 +7,7 @@ import { ProductView } from "../components/typography/product"
 import { FooterView } from '../views/footerView'
 
 import '../styles/styles.css'
-const AboutPage = () => {
+const DocumentationPage = () => {
     return (
         <main>
             <title>HeLx Platform</title>
@@ -15,11 +15,10 @@ const AboutPage = () => {
                 <AboutSloganView />
             </DefaultLayout>
             <AboutIntroView />
-            <ProductView />
             <AboutIntroView />
             <FooterView />
         </main>
     )
 }
 
-export default AboutPage
+export default DocumentationPage

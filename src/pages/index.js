@@ -3,7 +3,8 @@ import { DefaultLayout } from "../layouts/default"
 import { SloganView } from '../components/typography/slogan'
 import { IntroView } from "../components/typography/intro"
 import { DetailView } from "../components/typography/details"
-import { FooterView } from "../components/typography/footer"
+import { ProductView } from "../components/typography/product"
+import { FooterView } from '../views/footerView'
 import '../styles/styles.css'
 
 const IndexPage = () => {
@@ -15,6 +16,7 @@ const IndexPage = () => {
             </DefaultLayout>
             <IntroView />
             <DetailView />
+            <ProductView />
             <FooterView />
         </main>
     )

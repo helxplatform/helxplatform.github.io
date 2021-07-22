@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import PurpleBkg from '../../images/purple-bkg.png'
+import PurpleBkg from '../../images/purple-band.png'
 import { detailText } from '../../data/detailText'
 
 const Wrapper = styled.div`
@@ -9,13 +9,16 @@ const Wrapper = styled.div`
     flex-direction: column;
     padding: 100px;
     background-image: url(${PurpleBkg});
-    background-size: cover;
+    background-position: 10300px 4200px;
 `
 
 const DetailInfoContainer = styled.div`
     padding: 10px;
-    margin: 50px;
-    margin-left: ${ props => props.position === 'left' ? '0px' : '500px'}
+    max-width: 800px;
+    margin-top: 50px;
+    @media screen and (min-width: 992px) {
+        margin-left: ${ props => props.position === 'right' ? '50%' : '5%'}
+    }
 `
 
 const DetailTitle = styled.span`

@@ -1,23 +1,30 @@
 import * as React from "react"
-import { DefaultLayout } from "../layouts/default"
+import { HelxHeader, HelxFooter } from "../components"
+import styled from "styled-components"
+import HeroImage from '../images/hero-image.png'
 import { SloganView } from '../components/typography/slogan'
-import { IntroView } from "../components/typography/intro"
-import { DetailView } from "../components/typography/details"
+import { IntroView } from "../components/homepage/intro"
+import { DetailView } from "../components/homepage/details"
 import { ProductView } from "../components/typography/product"
-import { FooterView } from '../views/footerView'
 import '../styles/styles.css'
+
+const Wrapper = styled.div`
+    background-image: url(${HeroImage});
+    background-size: cover;
+`
 
 const IndexPage = () => {
     return (
         <main>
             <title>HeLx Platform</title>
-            <DefaultLayout>
+            <Wrapper>
+                <HelxHeader />
                 <SloganView />
-            </DefaultLayout>
+            </Wrapper>
             <IntroView />
             <DetailView />
             <ProductView />
-            <FooterView />
+            <HelxFooter />
         </main>
     )
 }

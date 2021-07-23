@@ -1,5 +1,5 @@
 export const introText = {
-    'general': 'HeLx is a springboard for your science',
+    'general': 'Reach new data frontiers with HeLx',
     'texts': [
         'HeLx is a complete data science laboratory for research in the cloud.',
         'Solves technical infrastructure challenges to focus researchers on science.',

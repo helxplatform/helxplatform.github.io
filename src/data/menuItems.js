@@ -8,15 +8,5 @@ export const menuItems = [
         text: 'About',
         key: 'about',
         path: '/about'
-    },
-    {
-        text: 'Get Started',
-        key: 'get-started',
-        path: '/get-started'
-    },
-    {
-        text: 'Documentation',
-        key: 'get-started',
-        path: '/documentation'
     }
 ]

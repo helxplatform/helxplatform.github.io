@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import HeLxLogo from '../images/helx-logo.png'
 import HeroImage from '../images/hero-image.png'
 import { Menu } from '../components/menus'
+import { Footer } from '../components/footer'
 import { menuItems } from '../data/menuItems'
 
 const Header = styled.div`
@@ -31,12 +32,15 @@ const Wrapper = styled.div`
 
 export const DefaultLayout = ({ children }) => {
     return (
-        <Wrapper>
-            <Header>
-                <Link to="/"><Logo src={HeLxLogo}></Logo></Link>
-                <Menu items={menuItems} />
-            </Header>
+        <Fragment>
+            <Wrapper>
+                <Header>
+                    <Link to="/"><Logo src={HeLxLogo}></Logo></Link>
+                    <Menu items={menuItems} />
+                </Header>
+            </Wrapper>
             {children}
-        </Wrapper>
+            <Footer />
+        </Fragment>
     )
 }

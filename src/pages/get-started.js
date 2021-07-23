@@ -1,22 +1,33 @@
 import * as React from "react"
-import { DefaultLayout } from "../layouts/default"
-import { AboutSloganView } from '../components/typography/about-slogan'
-import { AboutIntroView } from "../components/typography/about-intro"
-import { DetailView } from "../components/typography/details"
-import { ProductView } from "../components/typography/product"
-import { FooterView } from '../views/footerView'
+import styled from 'styled-components'
+import { HelxHeader, HelxFooter } from "../components"
+import GetStartedBkg from '../images/get-started-bkg.png'
 
-import '../styles/styles.css'
+const Wrapper = styled.div`
+    background-image: url(${GetStartedBkg});
+    background-size: cover;
+    height: 600px;
+`
+
+const Heading = styled.h1`
+    padding: 150px 0;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+`
+
 const GetStartedPage = () => {
     return (
         <main>
             <title>HeLx Platform</title>
-            <DefaultLayout>
-                <AboutSloganView />
-            </DefaultLayout>
-            <AboutIntroView />
-            <AboutIntroView />
-            <FooterView />
+            <Wrapper>
+                <HelxHeader />
+                <Heading>Get Started</Heading>
+            </Wrapper>
+            <div>
+                <h2>Reach escape velocity with HeLx today</h2>
+            </div>
+            <HelxFooter />
         </main>
     )
 }

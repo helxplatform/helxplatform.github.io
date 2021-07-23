@@ -17,6 +17,7 @@ export const Button = styled.button(() => `
     cursor: pointer;
     position: relative;
     transition: filter 250ms;
+    text-decoration: none;
     &:hover, &:focus {
         filter: brightness(1.2);
     }

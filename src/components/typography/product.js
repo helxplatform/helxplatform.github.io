@@ -22,21 +22,29 @@ const ProductGrid = styled.div`
     padding: 100px;
 `
 
-const Product = styled.div`
+const Product = styled.a`
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     padding: 30px;
+    color: black;
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+        background-color: #CDCDCD;
+    }
 `
 
 const ProductLogo = styled.img`
     object-fit: scale-down;
-    height: 50px;
+    height: 120px;
+    width: 200px;
 `
 const ProductText = styled.div`
     font-size: 14px;
-    width: 50%;
+    width: 400px;
     margin: 10px;
 `
 
@@ -51,12 +59,12 @@ export const ProductView = () => {
         <Wrapper>
             <ProductGrid>
                 <Product style={{ borderRight: '1px solid black', borderBottom: '1px solid black' }}><ProductLogo src={BDCLogo} /><ProductText>The consortium’s semantic search is powered by HeLx. It has indexed TOPMed phenotypic concepts and dbGaP study variables for all studies in BioData Catalyst. The full text search also uses ontologies and controlled vocabularies to discover connections between elements of data sets, performing a form of automated curation.</ProductText></Product>
-                <Product style={{ borderLeft: '1px solid black', borderBottom: '1px solid black' }}><ProductLogo src={Scidas} /><ProductText>For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand. </ProductText></Product>
+                <Product href="http://scidas.org/" target="_blank" style={{ borderLeft: '1px solid black', borderBottom: '1px solid black' }}><ProductLogo src={Scidas} /><ProductText>For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand. </ProductText></Product>
                 <Product style={{ borderRight: '1px solid black', borderTop: '1px solid black' }}><ProductLogo src={ReCCAP} /><ProductText>Blackbalsam is an open source data science environment with an initial focus on COVID-19 and North Carolina. Blackbalsam's interface uses a Jupyter notebook environment featuring artificial intelligence, visualization, and scalable computing capabilities. </ProductText></Product>
                 <Product style={{ borderLeft: '1px solid black', borderTop: '1px solid black' }}><ProductLogo src={Scidas} /><ProductText>BRAIN-I is a computational infrastructure for handling huge images combined with a discovery environment where scientists can run applications and do their analysis. It deals with big data and computation in a user-friendly way so scientists can concentrate on their science. </ProductText></Product>
             </ProductGrid>
             <ButtonContainer>
-                <Button><b>Get Started!</b></Button>
+                <Button><a style={{ textDecoration: 'none', color: 'inherit' }} href="mailto:helx@lists.renci.org">Get Started!</a></Button>
             </ButtonContainer>
         </Wrapper>
     )

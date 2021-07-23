@@ -8,5 +8,10 @@ export const menuItems = [
         text: 'About',
         key: 'about',
         path: '/about'
+    },
+    {
+        text: 'Documentation',
+        key: 'docs',
+        path: 'https://helx.gitbook.io/helx-documentation/'
     }
 ]

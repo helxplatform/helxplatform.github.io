@@ -1,7 +1,7 @@
 import * as React from "react"
 import { HelxHeader, HelxFooter } from '../components'
 import styled from "styled-components"
-import AboutBkg from '../images/about-bkg.png';
+import AboutBkg from '../images/about-bkg-2.png';
 import { DetailView } from '../components/about/details'
 import { IntroView } from '../components/about/intro'
 import { TeamView } from '../components/about/team'

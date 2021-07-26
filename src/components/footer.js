@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import FooterBkg from '../images/footer-bkg.png'
 
 const FooterWrapper = styled.div`
+    margin-top: -80px;
     height: 800px;
     background-image: url(${FooterBkg});
     background-size: cover;
@@ -23,9 +24,9 @@ export const HelxFooter = () => {
     return (
         <FooterWrapper>
             <FooterTextContainer>
-                <FooterText>Contact</FooterText>
+                {/* <FooterText>Contact</FooterText>
                 <FooterText>Social Media</FooterText>
-                <FooterText>Press</FooterText>
+                <FooterText>Press</FooterText> */}
             </FooterTextContainer>
         </FooterWrapper>
     )

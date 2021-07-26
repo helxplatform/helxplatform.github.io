@@ -1,23 +1,28 @@
 import React from 'react'
 import styled from 'styled-components'
-import PurpleBkg from '../../images/purple-band.jpg'
+import PurpleBkg from '../../images/purple-band.png'
 import { detailText } from '../../data/detailText'
 
 const Wrapper = styled.div`
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 10%;
+    height: 1100px;
+    padding-top: 21%;
     background-image: url(${PurpleBkg});
-    background-position: 10300px 4200px;
+    background-size: cover;
+    @media screen and (min-width: 992px) {
+        height: 800px;
+    }
 `
 
 const DetailInfoContainer = styled.div`
-    padding: 10px;
-    max-width: 800px;
-    margin-top: 50px;
+    padding: 20px;
+    max-width: 100%;
+    margin-top: 40px;
     @media screen and (min-width: 992px) {
-        margin-left: ${props => props.position === 'right' ? '50%' : '5%'}
+        margin-left: ${props => props.position === 'right' ? '50%' : '5%'};
+        max-width: 55%;
     }
 `
 
@@ -29,7 +34,7 @@ const DetailTitle = styled.span`
 const DetailItem = styled.li`
     padding: 5px;
     color: white;
-
+    font-size: 1.1rem;
 `
 
 export const DetailView = () => {

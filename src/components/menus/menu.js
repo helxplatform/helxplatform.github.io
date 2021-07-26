@@ -17,7 +17,7 @@ export const MenuItem = styled(Link)`
     cursor: pointer;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
     &:hover, &:focus {
         border-bottom: 3px solid #3ABF9D;
         color: #3ABF9D;
@@ -29,7 +29,7 @@ export const Menu = ({ items }) => {
         <MenuContainer>
             {
                 items.map((item, index) =>
-                    <MenuItem key={item.key} to={item.path}>
+                    <MenuItem target="_blank" rel="noopener noreferrer" key={item.key} to={item.path}>
                         {item.text}
                     </MenuItem>
                 )

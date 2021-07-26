@@ -1,10 +1,8 @@
 import * as React from "react"
 import styled from 'styled-components'
 import { HelxHeader, HelxFooter } from "../components"
-import GetStartedBkg from '../images/get-started-bkg.png'
 
 const Wrapper = styled.div`
-    background-image: url(${GetStartedBkg});
     background-size: cover;
     height: 600px;
 `

@@ -3,11 +3,13 @@ import styled from 'styled-components'
 import { introText } from '../../data/introText'
 
 const Wrapper = styled.div`
-    height: 500px;
+    height: 400px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    padding: 30px 15px 0 15px;
+    margin-bottom: -20px;
 `
 
 const Heading = styled.h3`
@@ -17,6 +19,7 @@ const Heading = styled.h3`
 
 const IntroText = styled.li`
     padding: 5px;
+    font-size: 1.5rem;
 `
 
 

@@ -7,11 +7,10 @@ import { menuItems } from '../data/menuItems'
 
 const Header = styled.div`
     padding: 20px;
-    margin: 0 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 80%;
     height: 80px;
     background-color: transparent;
 `

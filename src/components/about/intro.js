@@ -1,12 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
+import WhiteBkg2 from '../../images/white-bkg-2.png'
 
 const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     margin: 40px 0px 0px 0px;
+    background-image: url(${WhiteBkg2});
+    background-size: cover;
+    padding-left: 15%;
+    @media screen and (max-width: 992px) {
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
 `
 
 const DetailText = styled.p`

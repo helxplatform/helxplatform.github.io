@@ -1,15 +1,21 @@
 import React from 'react'
 import styled from 'styled-components'
 import { introText } from '../../data/introText'
+import WhiteBkg from '../../images/white-bkg.png'
 
 const Wrapper = styled.div`
-    height: 400px;
+    height: 450px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     padding: 30px 15px 0 15px;
     margin-bottom: -20px;
+    @media screen and (min-width: 1200px) {
+        background-image: url(${WhiteBkg});
+        background-size: cover;
+        padding: 30px 0 0 10%;
+    }
 `
 
 const Heading = styled.h3`

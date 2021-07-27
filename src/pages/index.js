@@ -1,5 +1,6 @@
 import * as React from "react"
 import { HelxHeader, HelxFooter } from "../components"
+import { BackToTopButton } from "../components/buttons/back-to-top"
 import styled from "styled-components"
 import HeroImage from '../images/hero-image.jpg'
 import { SloganView } from '../components/homepage/slogan'
@@ -20,6 +21,7 @@ const IndexPage = () => {
             <Wrapper>
                 <HelxHeader />
                 <SloganView />
+                <BackToTopButton />
             </Wrapper>
             <IntroView />
             <DetailView />

@@ -19,13 +19,15 @@ const ProfileContainer = styled.div`
     justify-content: center;
     margin: 40px 10px;
 `
-const Profile = styled.div`
+const Profile = styled.a`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 200px;
     width: 250px;
+    text-decoration: none;
+    color: inherit;
 `
 
 const ProfileImage = styled.img`
@@ -45,7 +47,7 @@ export const TeamView = () => {
             <Heading>Meet our Core Team</Heading>
             <ProfileContainer>
                 {team.map(member => 
-                <Profile>
+                <Profile href={member.link} target="_blank">
                     <ProfileText>{member.name}</ProfileText>
                     <ProfileImage src={member.headshot_url}></ProfileImage>
                 </Profile>

@@ -6,6 +6,7 @@ import { DetailView } from '../components/about/details'
 import { IntroView } from '../components/about/intro'
 import { TeamView } from '../components/about/team'
 import { FunderView } from "../components/about/funder";
+import { BackToTopButton } from "../components/buttons/back-to-top";
 import '../styles/styles.css'
 
 const Wrapper = styled.div`
@@ -35,6 +36,7 @@ const AboutPage = () => {
                     <Heading>About HeLx</Heading>
                 </TextWrapper>
             </Wrapper>
+            <BackToTopButton />
             <IntroView />
             <DetailView />
             <TeamView />

@@ -20,5 +20,7 @@ export const Button = styled.button(() => `
     text-decoration: none;
     &:hover, &:focus {
         filter: brightness(1.2);
+        color: white;
+        background-color: #36688B;
     }
 `)

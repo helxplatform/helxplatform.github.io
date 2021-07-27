@@ -51,7 +51,7 @@ const ProductLogo = styled.img`
     width: 200px;
 `
 const ProductText = styled.div`
-    font-size: 16px;
+    font-size: 18px;
     width: 400px;
     margin: 10px;
     @media screen and (max-width: 992px) {

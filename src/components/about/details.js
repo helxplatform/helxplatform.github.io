@@ -23,7 +23,6 @@ const Wrapper = styled.div`
 
 const Heading = styled.span`
     font-size: 2.5rem;
-    padding-left: 20px;
     text-align: center;
 `
 

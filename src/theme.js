@@ -12,7 +12,7 @@ const branding = {
 
 const palette = {
   primary: {
-    main: branding.deepPurple,
+    main: branding.darkGranite,
   },
   secondary: {
     main: branding.scienceGreen

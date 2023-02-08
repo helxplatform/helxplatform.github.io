@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhelx_marketing_site=self.webpackChunkhelx_marketing_site||[]).push([[834],{1402:function(e,t,a){a.r(t);var n=a(7294),l=a(2658);t.default=()=>n.createElement("main",null,n.createElement(l.Z,{variant:"h1"},"Resources Page"))}}]);
+//# sourceMappingURL=component---src-pages-resources-js-71209b112b200bca4672.js.map

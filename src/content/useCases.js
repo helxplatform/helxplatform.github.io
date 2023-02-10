@@ -1,4 +1,4 @@
-[
+export const useCases = [
   {
     "heading": "EduHeLx",
     "paragraph": "EduHeLx empowers students to explore the field of data science in an environment which prioritizes student investigation, focus, and cooperative discovery. EduHeLx instances are launched for each individual educator and course, making them fully customizable and unique for the students and course material. EduHeLx is currently deployed for select UNC-Chapel Hill courses. "    

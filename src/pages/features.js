@@ -1,11 +1,16 @@
-import * as React from "react"
+import React, { Fragment } from 'react'
 import { Typography } from '@mui/material'
+import { helxFunctions, useCases } from '../content'
+import { FunctionsSection, UseCasesSection } from '../components/sections/'
 
 const FeaturesPage = () => {
   return (
-    <main>
+    <Fragment>
       <Typography variant='h1'>Features Page</Typography>
-    </main>
+      <FunctionsSection content={helxFunctions}/>
+      <UseCasesSection content={useCases}/>
+
+    </Fragment>
   )
 }
 

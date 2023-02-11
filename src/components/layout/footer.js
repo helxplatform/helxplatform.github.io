@@ -21,10 +21,7 @@ export const Footer = () => {
         }}
       >
         <Typography paragraph align="center">
-          &copy; { new Date().getFullYear() } RENCI; Research Triangle Biohub &mdash; a proposed CZ Network Biohub.
-        </Typography>
-        <Typography variant="caption" align="center" color="#aaa" sx={{ fontStyle: 'italic' }}>
-          Some images created with BioRender.com
+          &copy; { new Date().getFullYear() }  Renaissance Computing Institute
         </Typography>
       </Box>
     </Fragment>

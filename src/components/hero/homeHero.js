@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { StaticImage } from 'gatsby-plugin-image'
 
@@ -12,13 +12,22 @@ export const HomeHero = () => {
       <Box
         sx={{
           backgroundColor: theme.palette.branding.deepPurple,
-          height: '300px',
+          height: '400px',
           display: 'flex'
         }}
       >
-        <Box>
-          <Typography variant="h1" sx={{padding: '4rem 3rem 1rem', color: theme.palette.branding.offWhite}}>Do more with your data.</Typography>
-          <Typography sx={{padding: '1rem 3rem', color: theme.palette.branding.offWhite}}>Welcome to your new collaborative analysis workspace</Typography>
+        <Box sx={{width: '400px', padding: '4rem 3rem 1rem'}}>
+          <Typography variant="h1" sx={{color: theme.palette.branding.offWhite}}>Do more with your data.</Typography>
+          <Typography variant="body2">
+            Welcome to your new collaborative analysis workspace
+          </Typography>
+          <Button variant='filled' size='medium' sx={{
+            color: theme.palette.branding.deepPurple, 
+            textTransform: 'none',
+            backgroundColor: theme.palette.branding.yellow,
+          }}>
+            Why use Helx?
+          </Button>
         </Box>
         <Box sx={{
           alignItems: 'center',
@@ -26,14 +35,16 @@ export const HomeHero = () => {
           flexDirection: 'row',
           justifyContent: 'center',
           margin: '0 auto',
+          paddingTop: '7rem',
+          overflow: 'hidden',
         }}>
           <StaticImage
           style={{ margin: '0 auto' }}
-          src='../../images/tempHomeHeroLex.png'
+          src='../../images/lex.svg'
           alt="HeLx Logo"
           placeholder="tracedSVG"
           layout="constrained"
-          width={ 300 }
+          width={ 400 }
           className="brand"
         />
         </Box>

@@ -1,4 +1,4 @@
-import Lex from '../images/tempHomeHeroLex.png'
+import Lex from '../images/home/lex-home-page-header.png'
 
 export const homeHero = {
   "image": Lex,

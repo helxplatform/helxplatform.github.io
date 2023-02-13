@@ -1,6 +1,9 @@
 import home1 from '../images/Home/illustration-1-home.png'
 import home2 from '../images/Home/illustration-2-home.png'
 import home3 from '../images/Home/illustration-3-home.png'
+import about1 from '../images/Home/illustration-1-home.png'
+import about2 from '../images/Home/illustration-2-home.png'
+
 
 export const homeSection = [
   {
@@ -22,10 +25,12 @@ export const homeSection = [
 
 export const history = [
   {
+    "illustration": about1,
     "title": "HeLx is operated out of the Renaissance Computing Institute (RENCI) at the University of North Carolina at Chapel Hill",
     "subtitle": "HeLx was developed across the timeline of RENCI empowering diverse science communities to use advanced computing infrastructures."
   },
   {
+    "illustration": about2,
     "title": "Streamlined Data + Research",
     "subtitle": "We learned that research communities have a wide array of data science tools in their daily toolbox, but provisioning these tools in modern cloud native environments with appropriate security, networking, and persistence support is daunting. HeLx serves as an on-ramp for these communities to assemble the right tools and to help them scale from on-premise to cloud infrastructures."
   }

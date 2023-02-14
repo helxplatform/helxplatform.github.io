@@ -18,8 +18,7 @@ export const helxFeatures = [
     "subheading": "Includes full text-driven knowledge graph augmented semantic search"
   },
   {
-    "image": openSource
-  ,
+    "image": openSource,
     "title": "Open Source",
     "subheading": "Supports multiple authentication providers and authorization models"
   },

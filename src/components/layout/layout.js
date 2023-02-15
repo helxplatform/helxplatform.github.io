@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Container } from '@mui/material'
 import { Header } from './header'
 import { Footer } from './footer'
+import { Subfooter } from './subfooter'
 
 export const Layout = ({ children }) => {
   return (
@@ -13,7 +14,8 @@ export const Layout = ({ children }) => {
           { children }
         </Container>
       </main>
-      <Footer/>
+      <Subfooter />
+      <Footer />
     </Fragment>
   )
 }

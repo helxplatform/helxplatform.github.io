@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import './layout.css'
 
-export const Footer = () => {
+export const Subfooter = () => {
   const theme = useTheme()
 
   return (
@@ -21,7 +21,7 @@ export const Footer = () => {
         }}
       >
         <Typography paragraph align="center">
-          &copy; { new Date().getFullYear() }  Renaissance Computing Institute
+          Sticky Sub Footer
         </Typography>
       </Box>
     </Fragment>

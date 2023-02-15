@@ -1,11 +1,15 @@
-import * as React from "react"
+import React, { Fragment } from 'react'
 import { Typography } from '@mui/material'
+import { resourceCards, questions} from '../content'
+import { ResourceCardSection, FaqsSection } from '../components/sections'
 
 const ResourcesPage = () => {
   return (
-    <main>
+    <Fragment>
       <Typography variant='h1'>Resources Page</Typography>
-    </main>
+      <ResourceCardSection content={resourceCards}/>
+      <FaqsSection content={questions}/>
+    </Fragment>
   )
 }
 

@@ -1,5 +1,5 @@
-import about1 from '../images/home/illustration-1-home.png'
-import about2 from '../images/home/illustration-2-home.png'
+import about1 from '../../images/home/illustration-1-home.png'
+import about2 from '../../images/home/illustration-2-home.png'
 
 export const history = [
   {

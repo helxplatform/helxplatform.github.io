@@ -1,6 +1,6 @@
-import home1 from '../images/home/illustration-1-home.png'
-import home2 from '../images/home/illustration-2-home.png'
-import home3 from '../images/home/illustration-3-home.png'
+import home1 from '../../images/home/illustration-1-home.png'
+import home2 from '../../images/home/illustration-2-home.png'
+import home3 from '../../images/home/illustration-3-home.png'
 
 export const homeSection = [
   {

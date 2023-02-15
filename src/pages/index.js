@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react'
 import { Typography, Box } from '@mui/material'
 import { HomeHero } from '../components/hero/homeHero'
-import { homeSection, helxFeatures }  from '../content'
-import { IllustrationTextSection, FeaturesSection } from '../components/sections'
+import { homeSection, rotatingVerbs, helxFeatures }  from '../content'
+import { IllustrationTextSection, RotatingVerbs, FeaturesSection } from '../components/sections'
 
 const IndexPage = () => {
   return (
@@ -16,7 +16,7 @@ const IndexPage = () => {
 
     <IllustrationTextSection content={homeSection}/>
 
-    <Typography>Rotaing Verb Section</Typography>
+    <RotatingVerbs content={rotatingVerbs}/>
 
     <FeaturesSection content={helxFeatures}/>
 

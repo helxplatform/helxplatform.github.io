@@ -1,11 +1,9 @@
 import SciDAS from '../../images/features/scidas-logo-feature.png'
+import BDC from '../../images/features/bdc-logo.svg'
 
 export const useCases = [
   {
-    "heading": "EduHeLx",
-    "paragraph": "EduHeLx empowers students to explore the field of data science in an environment which prioritizes student investigation, focus, and cooperative discovery. EduHeLx instances are launched for each individual educator and course, making them fully customizable and unique for the students and course material. EduHeLx is currently deployed for select UNC-Chapel Hill courses. "    
-  },
-  {
+    "image": BDC,
     "heading": "NHLBI BioData Catalyst",
     "paragraph": "Dug, BioData Catalyst’s semantic search, is powered by HeLx. Dug has indexed TOPMed phenotypic concepts and dbGaP study variables for all studies in BioData Catalyst. The full-text search also uses ontologies and controlled vocabularies to discover connections between elements of datasets, performing a form of automated curation."
   },
@@ -13,7 +11,11 @@ export const useCases = [
     "image": SciDAS,
     "heading": "SciDAS",
     "paragraph": "For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU-intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand."
-
+    
+  },
+  {
+    "heading": "EduHeLx",
+    "paragraph": "EduHeLx empowers students to explore the field of data science in an environment which prioritizes student investigation, focus, and cooperative discovery. EduHeLx instances are launched for each individual educator and course, making them fully customizable and unique for the students and course material. EduHeLx is currently deployed for select UNC-Chapel Hill courses. "    
   },
   {
     "heading": "Blackbalsam",

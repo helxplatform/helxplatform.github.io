@@ -21,7 +21,7 @@ const palette = {
 }
 
 const typography = {
-  fontFamily: `Open Sans, sans-serif`,
+  fontFamily: ['"Open Sans"', 'sans-serif'],
   h1: {
     fontSize: 'clamp(1.8rem, 1.4250rem + 1.6667vw, 2.3rem)',
     fontFamily: 'Montserrat',
@@ -37,17 +37,14 @@ const typography = {
   },
   h3: {
     fontSize: 'clamp(1.2rem, 0.7500rem + 2.0000vw, 1.8rem)',
-    fontFamily: 'Open Sans',
     marginBottom: '0.5rem',
   },
   h4: {
     fontSize: 'clamp(1.1rem, 0.8000rem + 1.3333vw, 1.5rem)',
-    fontFamily: 'Open Sans',
     margin: '0.5rem 0',
     },
   h6: {
     fontSize: '1.2rem',
-    fontFamily: 'Open Sans',
   },
   body1: {
     fontSize: '1rem',

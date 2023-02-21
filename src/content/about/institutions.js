@@ -1,8 +1,8 @@
-import NSF from '../../images/about/nsf-logo-about.png'
-import StateOfNC from '../../images/about/state-nc-seal-logo-grey.png'
-import NCPolicyCollaboratory from '../../images/about/policy-collab-grey-logo-about.png'
-import NHLBI from '../../images/about/nhlbi-logo-grey-about.png'
-import NIH from '../../images/about/nih-logo-grey-about.png'
+import NSF from '../../images/about/nsf-logo.svg'
+import StateOfNC from '../../images/about/state-nc-seal-logo.svg'
+import NCPolicyCollaboratory from '../../images/about/policy-collab-logo.png'
+import NHLBI from '../../images/about/nhlbi-logo.svg'
+import NIH from '../../images/about/nih-logo.png'
 
 export const institutions = [
   {

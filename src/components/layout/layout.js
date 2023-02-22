@@ -10,7 +10,7 @@ export const Layout = ({ children }) => {
     <Fragment>
         <Header />
       <main>
-        <Container maxwidth="md">
+        <Container maxWidth="lg">
           { children }
         </Container>
       </main>

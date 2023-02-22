@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { Box, Typography } from '@mui/material'
+import { Box, Typography, Stack, Button, Container } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import './layout.css'
 
@@ -7,23 +7,34 @@ export const Subfooter = () => {
   const theme = useTheme()
 
   return (
-    <Fragment>
-      <Box
-        component="footer"
+    <Container maxWidth="md">
+      <Stack
+        direction={{ xs: 'column', md: 'row' }}
+        spacing={{ xs: 1, md: 2 }}
         sx={{
-          background: theme.palette.branding.offWhite,
           display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
+          justifyContent: 'space-between',
           alignItems: 'center',
-          letterSpacing: '0.5px',
-          padding: theme.spacing(2),
+          marginY: '2rem',
         }}
       >
-        <Typography paragraph align="center">
-          Sticky Sub Footer
-        </Typography>
-      </Box>
-    </Fragment>
+        <Box sx={{
+          flex: '4'
+        }}>
+          <Typography variant='h3'>
+            Have more questions about HeLx? Check out our documentation or reach out to the team to learn more.
+          </Typography>
+        </Box>
+        <Box sx={{
+          flex: '1',
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+          <Button variant="outlined">
+            Contact Us
+          </Button>
+        </Box>
+      </Stack>
+    </Container>
   )
 }

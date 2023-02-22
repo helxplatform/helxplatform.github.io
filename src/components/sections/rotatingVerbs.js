@@ -46,7 +46,8 @@ export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
           variant="subtitle1"
           sx={{
             color: "#808080",
-          }}
+            textAlign: 'center',
+        }}
         >
           {subheading}
         </Typography>

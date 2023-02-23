@@ -32,14 +32,8 @@ export const FaqsSection = ({ content }) => {
       >
         <Grid item md={4} sm={12} xs={12}>
           <Typography
-            variant="h1"
+            variant="h2"
             textAlign={{md: "left", sm: "center", xs: "center"}}
-            sx={{
-              fontSize: "clamp(2rem, 2rem + 1.6667vw, 3rem)",
-              fontFamily: "Open Sans, sans-serif",
-              color: "#382C56",
-              lineHeight: "1.3",
-            }}
           >Questions?</Typography>
         </Grid>
         <Grid item md={8} sm={12} xs={12}>

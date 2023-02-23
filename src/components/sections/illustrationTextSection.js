@@ -36,16 +36,9 @@ export const IllustrationTextSection = ({ content }) => {
           const TextItem = (
             <Grid item md={6} sm={12} key={`${index}-text`}>
               <AboutCard>
-                <Typography
-                  sx={{
-                    fontSize: "1.5rem",
-                    fontWeight: "bold",
-                    color: "#555555",
-                  }}
-                >
-                  {section.title}
-                </Typography>
-                <Typography>{section.subtitle}</Typography>
+                <Typography variant='h3'>{section.title}</Typography>
+                
+                <Typography variant='body1'>{section.subtitle}</Typography>
               </AboutCard>
             </Grid>
           );

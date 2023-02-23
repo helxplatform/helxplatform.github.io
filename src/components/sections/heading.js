@@ -8,7 +8,7 @@ export const HeadingSection = ({content}) => {
     <Fragment>
       <Container maxWidth="sm" sx={{ textAlign: 'center', marginY: '2rem'}}>
         <Typography variant='h2' sx={{marginX:"2rem"}}>{content.title}</Typography>
-        <Typography variant='caption'>{content.subtitle}</Typography>
+        <Typography variant='subtitle1'>{content.subtitle}</Typography>
       </Container>
     </Fragment>
   )

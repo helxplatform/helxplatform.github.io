@@ -52,12 +52,7 @@ export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
         HeLx today?
       </Typography>
 
-      <Typography
-        variant="subtitle1"
-        sx={{
-          color: "#808080",
-        }}
-      >
+      <Typography variant="subtitle1">
         {subheading}
       </Typography>
     </Stack>

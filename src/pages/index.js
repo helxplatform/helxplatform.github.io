@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { Typography, Box } from '@mui/material'
 import { HomeHero } from '../components/hero/homeHero'
 import { homeSection, rotatingVerbs, helxFeatures }  from '../content'
-import { IllustrationTextSection, RotatingVerbs, FeaturesSection } from '../components/sections'
+import { HeadingSection, IllustrationTextSection, RotatingVerbs, FeaturesSection } from '../components/sections'
 
 const headingContent1 = {
   title: 'Launch, Analyze, and Discover Your Data With HeLx',
@@ -13,6 +13,8 @@ const IndexPage = () => {
   return (
     <Fragment>
       <HomeHero/>
+
+      <HeadingSection content={headingContent1}/>
 
     <IllustrationTextSection content={homeSection}/>
 

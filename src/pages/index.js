@@ -16,11 +16,11 @@ const IndexPage = () => {
 
       <HeadingSection content={headingContent1}/>
 
-    <IllustrationTextSection content={homeSection}/>
+      <IllustrationTextSection content={homeSection}/>
 
-    <RotatingVerbs content={rotatingVerbs}/>
+      <RotatingVerbs content={rotatingVerbs}/>
 
-    <FeaturesSection content={helxFeatures}/>
+      <FeaturesSection content={helxFeatures}/>
 
     </Fragment>
   )

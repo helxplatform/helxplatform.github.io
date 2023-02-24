@@ -62,20 +62,9 @@ const typography = {
   }
 }
 
-const components = {
-  MuiCssBaseline: {
-    styleOverrides: {
-      body: {
-        overflowX: 'hidden',
-      }
-    }
-  }
-}
 
-//
 
 export const theme = createTheme({
   palette,
-  typography,
-  components,
+  typography
 })

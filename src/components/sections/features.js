@@ -1,6 +1,8 @@
 import React, { Fragment } from "react";
 import { Typography, Grid, Box } from "@mui/material";
 import { styled } from "@mui/system";
+import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
+import { useTheme } from "@mui/material";
 
 const FeatureCard = styled(Box)(({ theme }) => ({
   backgroundColor: "#fff",
@@ -16,20 +18,14 @@ const FeatureCard = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
-// TODO: This is kind of not ideal but it works for now, I also applied overflow
-// hidden on the body to prevent the horizontal scrollbar. We may want to rethink
-// the maxWidth wrapper for these full bleed styles.
-const fullBleedStyles = {
-  width: "100vw",
-  marginLeft: "calc(50% - 50vw)",
-};
 
 export const FeaturesSection = ({ content }) => {
+  const theme = useTheme();
+  
   return (
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} maxWidth='xl'>   
     <Box
       sx={{
-        backgroundColor: "#F6F6F5",
-        ...fullBleedStyles,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -53,5 +49,6 @@ export const FeaturesSection = ({ content }) => {
         ))}
       </Grid>
     </Box>
+    </MaxWidthWrapper>
   );
 };

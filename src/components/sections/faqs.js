@@ -3,32 +3,16 @@ import { Typography, Box, Grid, Accordion, AccordionSummary, AccordionDetails } 
 import { ExpandMore } from "@mui/icons-material";
 import { styled } from "@mui/system";
 import { useTheme } from "@emotion/react";
-
-// TODO: This is kind of not ideal but it works for now, I also applied overflow
-// hidden on the body to prevent the horizontal scrollbar. We may want to rethink
-// the maxWidth wrapper for these full bleed styles.
-const fullBleedStyles = {
-  width: "100vw",
-  marginLeft: "calc(50% - 50vw)",
-};
+import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const FaqsSection = ({ content }) => {
   const theme = useTheme();
 
   return (
-    <Box
-      sx={{
-        ...fullBleedStyles,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-      }}
-    >
+    <MaxWidthWrapper maxWidth='xl' backgroundColor={theme.palette.branding.offWhite}>
       <Grid
         container
         spacing={{ md: 4, sm: 2, xs: 2 }}
-        mb="4rem"
-        sx={{ maxWidth: "1400px", padding: "32px" }}
       >
         <Grid item md={4} sm={12} xs={12}>
           <Typography
@@ -53,7 +37,7 @@ export const FaqsSection = ({ content }) => {
           ))}
         </Grid>
       </Grid>
-    </Box>
+    </MaxWidthWrapper>
   );
 };
 

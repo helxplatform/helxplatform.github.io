@@ -15,7 +15,7 @@ export const Subfooter = () => {
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'center',
-          marginY: '3rem',
+          marginY: '4rem',
         }}
       >
         <Box sx={{

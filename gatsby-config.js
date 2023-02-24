@@ -24,6 +24,16 @@ module.exports = {
       },
       __key: "images"
     }, 
-    "gatsby-plugin-material-ui"
+    "gatsby-plugin-material-ui",
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `open sans\:300,400,500,600`,
+          `montserrat\:500,600,700,800,900`
+        ],
+        display: 'swap'
+      }
+    }
   ]
 };

@@ -24,9 +24,9 @@ const palette = {
 const typography = {
   fontFamily: ['"Open Sans"', 'sans-serif'],
   h1: {
-    fontSize: 'clamp(2.2rem, 2rem + 1.6667vw, 3.2rem)',
+    fontSize: 'clamp(3.2rem, 2rem + 1.6667vw, 4.2rem)',
     fontFamily: 'Montserrat',
-    fontWeight: 800,
+    fontWeight: 900,
     marginBottom: '2rem',
     lineHeight: '1.5',
     color: "#392D57"

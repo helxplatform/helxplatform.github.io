@@ -2,16 +2,15 @@ import * as React from "react"
 import { Box, Typography, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import { StaticImage } from 'gatsby-plugin-image'
-
+import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 
 export const HomeHero = () => {
   const theme = useTheme()
 
   return (
-    <Box>
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.deepPurple}>
       <Box
         sx={{
-          backgroundColor: theme.palette.branding.deepPurple,
           height: '400px',
           display: 'flex'
         }}
@@ -49,6 +48,6 @@ export const HomeHero = () => {
         />
         </Box>
       </Box>
-    </Box>    
+    </MaxWidthWrapper>    
   )
 }

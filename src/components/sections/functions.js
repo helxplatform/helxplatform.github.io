@@ -1,9 +1,10 @@
 import React from "react";
 import { Typography, Box, Grid } from "@mui/material";
+import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const FunctionsSection = ({ content }) => {
   return (
-    <Box my="4rem">
+    <MaxWidthWrapper>
       <Typography
         variant="h1"
         sx={{
@@ -33,6 +34,6 @@ export const FunctionsSection = ({ content }) => {
           </Grid>
         ))}
       </Grid>
-    </Box>
+    </MaxWidthWrapper>
   );
 };

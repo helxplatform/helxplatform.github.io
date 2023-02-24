@@ -1,66 +1,58 @@
 import React, { Fragment, useEffect } from "react";
-import { Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography, useTheme } from "@mui/material";
 import { useState } from "react";
 import {
   useInterval,
   usePrefersReducedMotion,
   useRandomInterval,
 } from "../../hooks";
-
-// TODO: This is kind of not ideal but it works for now, I also applied overflow
-// hidden on the body to prevent the horizontal scrollbar. We may want to rethink
-// the maxWidth wrapper for these full bleed styles.
-const fullBleedStyles = {
-  width: "100vw",
-  marginLeft: "calc(50% - 50vw)",
-};
+import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
+  const theme = useTheme();
+  
   return (
-    <Stack
-      alignItems="center"
-      py="4rem"
-      px="32px"
-      sx={{ backgroundColor: "#F6F6F5", ...fullBleedStyles }}
-    >
-      <Typography
-        variant="h1"
-        sx={{
-          fontSize: "clamp(2rem, 2rem + 1.6667vw, 3rem)",
-          fontFamily: "Open Sans, sans-serif",
-          color: "#382C56",
-          lineHeight: "1.3",
-          textAlign: "center",
-          maxWidth: "400px",
-          marginBottom: "1rem",
-        }}
-      >
-        What can you
-        <br />
-        <Typer
-          words={verbs}
-          prefersReducedMotionWord="do"
-          delay={{
-            betweenTypedLetters: [150, 300],
-            betweenBackspacedLetters: [50, 100],
-            betweenWords: [2000, 2500],
-            cursor: 500,
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
+      <Stack flexDirection='column' alignItems='center'>
+        <Typography
+          variant="h1"
+          sx={{
+            fontSize: "clamp(2rem, 2rem + 1.6667vw, 3rem)",
+            fontFamily: "Open Sans, sans-serif",
+            color: "#382C56",
+            lineHeight: "1.3",
+            textAlign: "center",
+            maxWidth: "400px",
+            marginBottom: "1rem",
           }}
-        />
-        {" with"}
-        <br />
-        HeLx today?
-      </Typography>
+        >
+          What can you
+          <br />
+          <Typer
+            words={verbs}
+            prefersReducedMotionWord="do"
+            delay={{
+              betweenTypedLetters: [150, 300],
+              betweenBackspacedLetters: [50, 100],
+              betweenWords: [2000, 2500],
+              cursor: 500,
+            }}
+          />
+          {" with"}
+          <br />
+          HeLx today?
+        </Typography>
 
-      <Typography
-        variant="subtitle1"
-        sx={{
-          color: "#808080",
-        }}
-      >
-        {subheading}
-      </Typography>
-    </Stack>
+        <Typography
+          variant="subtitle1"
+          sx={{
+            color: "#808080",
+          }}
+        >
+          {subheading}
+        </Typography>
+      </Stack>
+    </MaxWidthWrapper>
   );
 };
 

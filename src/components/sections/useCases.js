@@ -1,28 +1,14 @@
 import React from "react";
-import { Typography, Box, Grid, Button } from "@mui/material";
+import { Typography, Box, Grid, Button, useTheme } from "@mui/material";
+import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 
-// TODO: This is kind of not ideal but it works for now, I also applied overflow
-// hidden on the body to prevent the horizontal scrollbar. We may want to rethink
-// the maxWidth wrapper for these full bleed styles.
-const fullBleedStyles = {
-  width: "100vw",
-  marginLeft: "calc(50% - 50vw)",
-};
 
 export const UseCasesSection = ({ content }) => {
+  const theme = useTheme();
+
   return (
-    <Box
-      py="4rem"
-      sx={{
-        backgroundColor: "#F6F6F5",
-        ...fullBleedStyles,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        // padding: "32px",
-      }}
-    >
-      <Box sx={{ maxWidth: "1200px", padding: "32px" }}>
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
+      <Box>
         <Typography
           pb='2rem'
           variant="h1"
@@ -80,6 +66,6 @@ export const UseCasesSection = ({ content }) => {
           ))}
         </Grid>
       </Box>
-    </Box>
+    </MaxWidthWrapper>
   );
 };

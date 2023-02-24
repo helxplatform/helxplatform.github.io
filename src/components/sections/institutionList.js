@@ -9,16 +9,7 @@ export const InstitutionList = ({ content }) => {
   return (
     <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
       <Stack gap="2rem">
-        <Typography
-          sx={{
-            fontSize: "clamp(1.5rem, 1.5rem + 1.6667vw, 2.2rem)",
-            fontFamily: "Open Sans, sans-serif",
-            fontWeight: 400,
-            color: "#382C56",
-            lineHeight: "1.3",
-            textAlign: "center",
-          }}
-        >
+        <Typography variant="h2">
           HeLx is made possible through the following funders
         </Typography>
         <Stack

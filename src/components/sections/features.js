@@ -42,7 +42,7 @@ export const FeaturesSection = ({ content }) => {
                 <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
                   {feature.title}
                 </Typography>
-                <Typography>{feature.subheading}</Typography>
+                <Typography variant='subtitle2'>{feature.subheading}</Typography>
               </Box>
             </FeatureCard>
           </Grid>

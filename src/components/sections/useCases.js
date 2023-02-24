@@ -9,16 +9,8 @@ export const UseCasesSection = ({ content }) => {
   return (
     <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
       <Box>
-        <Typography
-          pb='2rem'
-          variant="h1"
-          sx={{
-            fontSize: "clamp(2rem, 2rem + 1.6667vw, 3rem)",
-            fontFamily: "Open Sans, sans-serif",
-            color: "#382C56",
-            marginBottom: "2rem",
-          }}
-        >
+        <Typography variant="h2">
+
           How is HeLx being used?
         </Typography>
         <Grid container spacing={{ md: 8, sm: 6, xs: 4 }}>
@@ -38,15 +30,7 @@ export const UseCasesSection = ({ content }) => {
                 )}
                 <Box>
                   {!useCase.image && (
-                    <Typography
-                      variant="h1"
-                      sx={{
-                        fontSize: "clamp(1.8rem, 1.8rem + 1.6667vw, 2.5rem)",
-                        fontFamily: "Open Sans, sans-serif",
-                        color: "#4D4D4D",
-                        marginBottom: "1rem",
-                      }}
-                    >
+                    <Typography variant="h3" sx={{textAlign: 'center'}}>
                       {useCase.heading}
                     </Typography>
                   )}

@@ -30,7 +30,7 @@ export const Subfooter = () => {
           display: 'flex',
           justifyContent: 'center',
         }}>
-          <Button variant="outlined">
+          <Button variant="outlined" sx={{textTransform: "revert"}}>
             Contact Us
           </Button>
         </Box>

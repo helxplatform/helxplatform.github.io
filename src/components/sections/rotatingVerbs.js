@@ -1,5 +1,6 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { forwardRef, useEffect, useRef, useState } from "react";
 import { Box, Stack, Typography, useTheme, Zoom } from "@mui/material";
+import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
@@ -25,7 +26,8 @@ export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
           <WordAnimation
             words={verbs}
             delay={{ betweenWords: 2000, transitionDuration: 500 }}
-            sx={{ fontSize: '1.3em', color: "#239BA6" }}
+            prefersReducedMotionWord="build"
+            sx={{ fontSize: "1.3em", color: "#239BA6" }}
           />
           <br />
           with HeLx today?
@@ -44,10 +46,11 @@ export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
   );
 };
 
-export const WordAnimation = ({ words, delay, sx }) => {
+export const WordAnimation = ({ words, delay, prefersReducedMotionWord, sx }) => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [visible, setVisible] = useState(false);
   const timeoutRef = useRef(null);
+  const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
     const setNextTimeout = () => {
@@ -65,15 +68,25 @@ export const WordAnimation = ({ words, delay, sx }) => {
   }, [delay, visible]);
 
   return (
-    <Zoom
-      in={visible}
-      timeout={delay.transitionDuration}
-      onEnter={() => setCurrentWordIndex((prev) => (prev + 1) % words.length)}
-    >
-      <Box component="span" sx={{ ...sx, display: "inline-block" }}>
-        {words[currentWordIndex]}
-      </Box>
-    </Zoom>
+    <>
+      {prefersReducedMotion ? (
+        <Box component="span" sx={{ ...sx, display: "inline-block" }}>
+          {prefersReducedMotionWord}
+        </Box>
+      ) : (
+        <Zoom
+          in={visible}
+          timeout={delay.transitionDuration}
+          onEnter={() =>
+            setCurrentWordIndex((prev) => (prev + 1) % words.length)
+          }
+        >
+          <Box component="span" sx={{ ...sx, display: "inline-block" }}>
+            {words[currentWordIndex]}
+          </Box>
+        </Zoom>
+      )}
+    </>
   );
 };
 

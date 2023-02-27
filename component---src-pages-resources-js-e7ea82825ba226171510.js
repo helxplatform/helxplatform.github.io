@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhelx_marketing_site=self.webpackChunkhelx_marketing_site||[]).push([[834],{1402:function(e,t,n){n.r(t);var l=n(7294),a=n(4833),c=n(4011);t.default=()=>l.createElement(l.Fragment,null,l.createElement(c.Lt,{content:a.GA}),l.createElement(c.kW,{content:a.Xl}))}}]);
-//# sourceMappingURL=component---src-pages-resources-js-e7ea82825ba226171510.js.map

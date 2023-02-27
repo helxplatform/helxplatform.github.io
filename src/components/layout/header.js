@@ -18,9 +18,9 @@ const Brand = props => {
     <Box component={ Link } to="/" style={ style } { ...props }>
       <StaticImage
         style={{ margin: '0 auto' }}
-        src='../../images/tempHelxLogo.png'
+        src='../../images/helxLogo.svg'
         alt="HeLx Logo"
-        placeholder="tracedSVG"
+        placeholder="dominantColor"
         layout="constrained"
         width={ 150 }
         className="brand"
@@ -48,6 +48,8 @@ const Toggler = ({ active, clickHandler }) => {
 }
 
 const Menu = () => {
+  const theme = useTheme()
+
   const mainMenuLinks = [
     {
       title: 'Home',
@@ -88,11 +90,20 @@ const Menu = () => {
       </Box>
       <Button
         to="mailto:helx@lists.renci.org"
-        variant="outlined"
-        sx={{textTransform: "revert", marginY:'1.2rem'}}
-          >
-            Contact
-          </Button>
+        variant="contained"
+        color="info"
+        sx={{
+          textTransform: "revert", 
+          margin:"1.7rem auto",
+          '&:hover': {
+            color: theme.palette.branding.deepPurple,
+            backgroundColor: `${ theme.palette.branding.deepPurple }11`,
+            border: `1px solid ${ theme.palette.branding.deepPurple }11`
+          }
+        }}
+      >
+        Contact
+      </Button>
     </Fragment>
   )
 }

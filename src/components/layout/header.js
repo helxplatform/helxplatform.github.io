@@ -137,8 +137,8 @@ const MobileMenu = () => {
         {
           mainMenuLinks.map((page) => (
             <Link
-              to={ `/${page.contentfulid}` }
-              key={ `mobile-main-menu-${ page.contentfulid }` }
+              to={ `/${page.slug}` }
+              key={ `mobile-main-menu-${ page.slug }` }
               onClick={ () => setMenuOpen(false) }
               activeClassName="active"
             >{ page.title }</Link>

@@ -28,10 +28,10 @@ export const FaqsSection = ({ content }) => {
                 aria-controls={`question-${index + 1}-content`}
                 id={`question-${index + 1}-header`}
               >
-                <Typography color={theme.palette.branding.deepPurple} fontWeight="bold">{faq.question}</Typography>
+                <Typography color="inherit" fontWeight="bold">{faq.question}</Typography>
               </StyledAccordionSummary>
               <StyledAccordionDetails>
-                <Typography>{faq.answer}</Typography>
+                <Typography variant="body1">{faq.answer}</Typography>
               </StyledAccordionDetails>
             </StyledAccordion>
           ))}
@@ -44,7 +44,8 @@ export const FaqsSection = ({ content }) => {
 const StyledAccordion = styled((props) => (
   <Accordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
-  border: `1px solid ${theme.palette.branding.deepPurple}`,
+  border: `1px solid rgba(0 0 0 / 0.15)`,
+  backgroundColor: "transparent",
   transition: 'border-radius 500ms',
   '&:first-of-type': {
     borderRadius: '8px 8px 0 0',
@@ -72,10 +73,11 @@ const StyledAccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor: theme.palette.secondary.main
+  backgroundColor: theme.palette.branding.earthBlue,
+  color: theme.palette.branding.offWhite,
 }));
 
 const StyledAccordionDetails = styled(AccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
-  // borderTop: '1px solid rgba(0, 0, 0, .125)',
+  borderTop: `1px solid rgba(0 0 0 / 0.15)`,
 }));

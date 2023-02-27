@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Box, Stack, Typography, useTheme, Zoom } from "@mui/material";
 import { usePrefersReducedMotion } from "../../hooks/usePrefersReducedMotion";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";

@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Box, Container, Drawer, IconButton, useMediaQuery, Paper } from '@mui/material'
+import { Box, Button, Container, Drawer, IconButton, useMediaQuery, Paper } from '@mui/material'
 import { Menu as MenuIcon, Close as CloseMenuIcon } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { Link } from '../link'
@@ -68,23 +68,32 @@ const Menu = () => {
   ]
 
   return (
-    <Box component="nav" sx={{
-      flex: 1,
-      display: 'flex',
-      justifyContent: 'center',
-    }}>
-      {
-        mainMenuLinks.map((page) => (
-          <Link
-            to={`/${page.slug}`}
-            key={ `main-menu-${ page.slug }` }
-            activeClassName="active"
+    <Fragment>
+      <Box component="nav" sx={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'center',
+      }}>
+        {
+          mainMenuLinks.map((page) => (
+            <Link
+              to={`/${page.slug}`}
+              key={ `main-menu-${ page.slug }` }
+              activeClassName="active"
+            >
+              { page.title }
+            </Link>
+          ))
+        }
+      </Box>
+      <Button
+        to="mailto:helx@lists.renci.org"
+        variant="outlined"
+        sx={{textTransform: "revert", marginY:'1.2rem'}}
           >
-            { page.title }
-          </Link>
-        ))
-      }
-    </Box>
+            Contact
+          </Button>
+    </Fragment>
   )
 }
 
@@ -201,14 +210,6 @@ export const Header = () => {
       <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Brand />
         { compact ? <MobileMenu /> : <Menu /> }
-          <Link
-            to="mailto:helx@lists.renci.org"
-            key="main-menu-contact"
-            activeClassName="active"
-          >
-            Contact
-          </Link>
-
       </Container>
     </Paper>
   )

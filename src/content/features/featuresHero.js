@@ -1,4 +1,4 @@
-import featuresLex from '../../images/features/lex-features-page-header-1.png'
+import featuresLex from '../../images/features/lex-features-hero.svg'
 
 export const featuresHero = {
   "image": featuresLex,

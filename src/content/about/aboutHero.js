@@ -1,4 +1,4 @@
-import aboutLex from '../../images/about/lex-about-page-header.png'
+import aboutLex from '../../images/about/lex-hero-about.svg'
 
 export const aboutHero = {
   "image": aboutLex,

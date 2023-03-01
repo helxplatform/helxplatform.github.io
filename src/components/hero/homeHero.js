@@ -7,7 +7,7 @@ export const HomeHero = ({ content }) => {
   const theme = useTheme()
 
   return (
-    <MaxWidthWrapper backgroundColor={theme.palette.branding.deepPurple}>
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.deepPurple} sx={{ my: 0 }}>
       <Box
         sx={{
           height: '400px',

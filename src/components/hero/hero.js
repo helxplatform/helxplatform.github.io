@@ -10,7 +10,7 @@ export const Hero = ({ content }) => {
           {content.title}
         </Typography>
         {content.subheading && <Typography mb='1rem' variant="subtitle1" sx={{ maxWidth: 500, textAlign: 'center' }}>{content.subheading}</Typography>}
-        <img src={content.image} alt="Lex" style={{ width: "100%" }} />
+        <img src={content.image} alt="Lex" style={{ width: "100%" }} loading="lazy" />
       </Stack>
     </MaxWidthWrapper>
   );

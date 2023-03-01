@@ -44,6 +44,7 @@ export const ResourceCardSection = ({ content }) => {
                     src={resource.image}
                     draggable={false}
                     style={{ width: "100%" }}
+                    loading="lazy"
                   />
                 </Button>
                 <Typography

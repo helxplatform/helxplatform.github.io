@@ -37,7 +37,7 @@ export const HomeHero = ({ content }) => {
           paddingTop: '7rem',
           overflow: 'hidden',
         }}>
-          <img src={content.image} style={{ margin: '0 auto', width: 400 }} />
+          <img src={content.image} style={{ margin: '0 auto', width: 400 }} loading="lazy" />
         </Box>
       </Box>
     </MaxWidthWrapper>    

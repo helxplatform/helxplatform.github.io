@@ -36,7 +36,7 @@ export const FeaturesSection = ({ content }) => {
           <Grid item md={4} sm={6} xs={12} key={index} alignItems="stretch">
             <FeatureCard>
               <Box sx={{ minHeight: 100 }}>
-                <img src={feature.image} style={{ display: "block", height: 75 }} />
+                <img src={feature.image} style={{ display: "block", height: 75 }} loading="lazy" />
               </Box>
               <Box>
                 <Typography mb="1rem" sx={{ fontWeight: "bold" }}>

@@ -1,6 +1,6 @@
-import technical from '../../images/resources/tech-doc-icon-resource.png'
-import userFacing from '../../images/resources/user-facing-doc-icon-resources.png'
-import futureVideos from '../../images/resources/future-vid-icon-resources.png'
+import technical from '../../images/resources/tech-doc-icon-resources.svg'
+import userFacing from '../../images/resources/user-facing-doc-icon-resources.svg'
+import futureVideos from '../../images/resources/future-vid-icon-resources.svg'
 
 export const resourceCards = [
   {

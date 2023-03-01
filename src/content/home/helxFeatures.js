@@ -1,9 +1,9 @@
-import applications from '../../images/home/applications-workflow-home.png'
-import search from '../../images/home/complex-search-func-icon-home.png'
-import openSource from '../../images/home/open-source-icon-home.png'
-import scalable from '../../images/home/scalable-icon-home.png'
-import flexible from '../../images/home/flexible-and cust-icon-home.png'
-import metadata from '../../images/home/metadata-driven-icon-home.png'
+import applications from '../../images/home/applications-workflow-home.svg'
+import search from '../../images/home/complex-search-func-icon-home.svg'
+import openSource from '../../images/home/open-source-icon-home.svg'
+import scalable from '../../images/home/scalable-icon-home.svg'
+import flexible from '../../images/home/flexibility-icon-home.svg'
+import metadata from '../../images/home/metadata-driven-icon-home.svg'
 
 
 export const helxFeatures = [

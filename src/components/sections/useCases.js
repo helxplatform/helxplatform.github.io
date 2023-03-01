@@ -25,6 +25,7 @@ export const UseCasesSection = ({ content }) => {
                         display: "block",
                         maxHeight: 100,
                       }}
+                      loading="lazy"
                     />
                   </Box>
                 )}

@@ -1,4 +1,4 @@
-import SciDAS from '../../images/features/scidas-logo-feature.png'
+import SciDAS from '../../images/features/scidas-logo.svg'
 import BDC from '../../images/features/bdc-logo.svg'
 
 export const useCases = [

@@ -36,6 +36,7 @@ export const InstitutionList = ({ content }) => {
                   src={institution.image}
                   alt={institution.institutionName}
                   style={{ display: "block", maxHeight: 100 }}
+                  loading="lazy"
                 />
               </a>
             </Box>

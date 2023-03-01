@@ -28,7 +28,7 @@ export const FaqsSection = ({ content }) => {
                 aria-controls={`question-${index + 1}-content`}
                 id={`question-${index + 1}-header`}
               >
-                <Typography color="inherit" fontWeight="bold">{faq.question}</Typography>
+                <Typography>{faq.question}</Typography>
               </StyledAccordionSummary>
               <StyledAccordionDetails>
                 <Typography variant="body1">{faq.answer}</Typography>
@@ -75,6 +75,15 @@ const StyledAccordionSummary = styled((props) => (
 ))(({ theme }) => ({
   backgroundColor: theme.palette.branding.earthBlue,
   color: theme.palette.branding.offWhite,
+
+  '& .MuiTypography-root': {
+    color: 'inherit',
+    fontWeight: 'bold',
+  },
+
+  '& .MuiAccordionSummary-expandIconWrapper': {
+    color: 'inherit',
+  }
 }));
 
 const StyledAccordionDetails = styled(AccordionDetails)(({ theme }) => ({

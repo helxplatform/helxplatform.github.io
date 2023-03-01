@@ -1,7 +1,6 @@
 import * as React from "react"
 import { Box, Typography, Button } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
-import { StaticImage } from 'gatsby-plugin-image'
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 
 export const HomeHero = ({ content }) => {

@@ -4,7 +4,7 @@ import { useTheme } from '@mui/material/styles'
 import { StaticImage } from 'gatsby-plugin-image'
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 
-export const HomeHero = () => {
+export const HomeHero = ({ content }) => {
   const theme = useTheme()
 
   return (
@@ -16,9 +16,9 @@ export const HomeHero = () => {
         }}
       >
         <Box sx={{width: '400px', padding: '4rem 3rem 1rem'}}>
-          <Typography variant="h1" sx={{color: theme.palette.branding.offWhite}}>Do more with your data.</Typography>
+          <Typography variant="h1" sx={{color: theme.palette.branding.offWhite}}>{content.title}</Typography>
           <Typography variant="body2">
-            Welcome to your new collaborative analysis workspace
+            {content.subheading}
           </Typography>
           <Button variant='filled' size='medium' sx={{
             color: theme.palette.branding.deepPurple, 
@@ -37,15 +37,7 @@ export const HomeHero = () => {
           paddingTop: '7rem',
           overflow: 'hidden',
         }}>
-          <StaticImage
-          style={{ margin: '0 auto' }}
-          src='../../images/lex.svg'
-          alt="HeLx Logo"
-          placeholder="tracedSVG"
-          layout="constrained"
-          width={ 400 }
-          className="brand"
-        />
+          <img src={content.image} style={{ margin: '0 auto', width: 400 }} />
         </Box>
       </Box>
     </MaxWidthWrapper>    

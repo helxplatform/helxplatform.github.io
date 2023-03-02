@@ -7,7 +7,7 @@ export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
   const theme = useTheme();
   
   return (
-    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} sx={{ mb: 0 }}>
       <Stack flexDirection='column' alignItems='center'>
         <Typography
           variant="h1"

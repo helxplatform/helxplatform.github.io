@@ -18,6 +18,9 @@ const palette = {
   secondary: {
     main: branding.scienceGreen
   },
+  info: {
+    main: branding.yellow
+  },
   branding: branding,
 }
 

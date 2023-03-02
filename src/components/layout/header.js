@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Box, Container, Drawer, IconButton, useMediaQuery, Paper } from '@mui/material'
+import { Box, Button, Container, Drawer, IconButton, useMediaQuery, Paper, Typography } from '@mui/material'
 import { Menu as MenuIcon, Close as CloseMenuIcon } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { Link } from '../link'
@@ -18,9 +18,9 @@ const Brand = props => {
     <Box component={ Link } to="/" style={ style } { ...props }>
       <StaticImage
         style={{ margin: '0 auto' }}
-        src='../../images/tempHelxLogo.png'
+        src='../../images/helxLogo.svg'
         alt="HeLx Logo"
-        placeholder="tracedSVG"
+        placeholder="dominantColor"
         layout="constrained"
         width={ 150 }
         className="brand"
@@ -48,6 +48,8 @@ const Toggler = ({ active, clickHandler }) => {
 }
 
 const Menu = () => {
+  const theme = useTheme()
+
   const mainMenuLinks = [
     {
       title: 'Home',
@@ -68,23 +70,41 @@ const Menu = () => {
   ]
 
   return (
-    <Box component="nav" sx={{
-      flex: 1,
-      display: 'flex',
-      justifyContent: 'center',
-    }}>
-      {
-        mainMenuLinks.map((page) => (
-          <Link
-            to={`/${page.slug}`}
-            key={ `main-menu-${ page.slug }` }
-            activeClassName="active"
-          >
-            { page.title }
-          </Link>
-        ))
-      }
-    </Box>
+    <Fragment>
+      <Box component="nav" sx={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'center',
+      }}>
+        {
+          mainMenuLinks.map((page) => (
+            <Link
+              to={`/${page.slug}`}
+              key={ `main-menu-${ page.slug }` }
+              activeClassName="active"
+            >
+              { page.title }
+            </Link>
+          ))
+        }
+      </Box>
+      <Button
+        to="mailto:helx@lists.renci.org"
+        variant="contained"
+        color="info"
+        sx={{
+          textTransform: "revert", 
+          margin:"1.7rem auto",
+          '&:hover': {
+            color: theme.palette.branding.deepPurple,
+            backgroundColor: `${ theme.palette.branding.deepPurple }11`,
+            border: `1px solid ${ theme.palette.branding.deepPurple }11`
+          }
+        }}
+      >
+        Contact
+      </Button>
+    </Fragment>
   )
 }
 
@@ -201,14 +221,6 @@ export const Header = () => {
       <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Brand />
         { compact ? <MobileMenu /> : <Menu /> }
-          <Link
-            to="mailto:helx@lists.renci.org"
-            key="main-menu-contact"
-            activeClassName="active"
-          >
-            Contact
-          </Link>
-
       </Container>
     </Paper>
   )

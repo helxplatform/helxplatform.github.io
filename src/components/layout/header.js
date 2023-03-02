@@ -112,6 +112,10 @@ const MobileMenu = () => {
   const theme = useTheme()
   const mainMenuLinks = [
     {
+      title: 'Home',
+      slug: ''
+    },
+    {
       title: 'About',
       slug: 'about'
     },
@@ -140,10 +144,22 @@ const MobileMenu = () => {
       display: 'flex',
       justifyContent: 'flex-start',
       alignItems: 'center',
-      fontSize: '1.5rem',
-      padding: '2rem',
+      padding: '1rem 2rem',
       transition: 'background-color 250ms',
+      '&:hover': {
+        color: theme.palette.branding.darkGranite,
+        backgroundColor: `${ theme.palette.branding.deepPurple }24`,
+      },
     },
+    '& a.active': {
+      backgroundColor: `${ theme.palette.branding.deepPurple }44`,
+      color: theme.palette.branding.deepPurple,
+      '&:hover': {
+        color: theme.palette.branding.deepPurple,
+        backgroundColor: `${ theme.palette.branding.deepPurple }44`,
+      },
+    },
+
   }
 
   const handleClickToggler = () => {
@@ -161,7 +177,11 @@ const MobileMenu = () => {
               key={ `mobile-main-menu-${ page.slug }` }
               onClick={ () => setMenuOpen(false) }
               activeClassName="active"
-            >{ page.title }</Link>
+            >
+              <Typography variant='subtitle1'>
+                { page.title }
+              </Typography>
+            </Link>
           ))
         }
         <Link
@@ -169,7 +189,11 @@ const MobileMenu = () => {
           key={ `mobile-main-menu-contact` }
           onClick={ () => setMenuOpen(false) }
           activeClassName="active"
-        >Contact</Link>
+        >
+          <Typography variant='subtitle1'>
+            Contact
+          </Typography>
+        </Link>
       </Drawer>
       <Toggler active={ menuOpen } clickHandler={ handleClickToggler } />
     </Fragment>

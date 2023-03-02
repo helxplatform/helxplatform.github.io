@@ -83,7 +83,9 @@ const Menu = () => {
               key={ `main-menu-${ page.slug }` }
               activeClassName="active"
             >
-              { page.title }
+              <Typography variant='body1'>
+                { page.title }
+              </Typography>
             </Link>
           ))
         }
@@ -102,7 +104,9 @@ const Menu = () => {
           }
         }}
       >
-        Contact
+        <Typography variant='subtitle2'>
+          Contact
+        </Typography>
       </Button>
     </Fragment>
   )

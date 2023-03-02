@@ -8,7 +8,8 @@ const ExternalLink = ({ to, children, ...props }) => {
       href={ to }
       target="_blank"
       rel="noopener noreferrer"
-    >{ children }</a>
+      style={{textDecoration: "none"}}
+      >{ children }</a>
   )
 }
 

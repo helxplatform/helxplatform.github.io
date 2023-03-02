@@ -90,24 +90,28 @@ const Menu = () => {
           ))
         }
       </Box>
-      <Button
+      <Link
         to="mailto:helx@lists.renci.org"
-        variant="contained"
-        color="info"
-        sx={{
-          textTransform: "revert", 
-          margin:"1.7rem auto",
-          '&:hover': {
-            color: theme.palette.branding.deepPurple,
-            backgroundColor: `${ theme.palette.branding.deepPurple }11`,
-            border: `1px solid ${ theme.palette.branding.deepPurple }11`
-          }
-        }}
+        style={{textDecoration: "none"}}
       >
-        <Typography variant='subtitle2'>
-          Contact
-        </Typography>
-      </Button>
+        <Button
+          variant="contained"
+          color="info"
+          sx={{
+            textTransform: "revert", 
+            margin:"1.7rem auto",
+            '&:hover': {
+              color: theme.palette.branding.deepPurple,
+              backgroundColor: `${ theme.palette.branding.deepPurple }11`,
+              border: `1px solid ${ theme.palette.branding.deepPurple }11`
+            }
+          }}
+        >
+          <Typography variant='subtitle2'>
+            Contact
+          </Typography>
+        </Button>
+      </Link>
     </Fragment>
   )
 }
@@ -189,7 +193,7 @@ const MobileMenu = () => {
           ))
         }
         <Link
-          to="/contact"
+          to="mailto:helx@lists.renci.org"
           key={ `mobile-main-menu-contact` }
           onClick={ () => setMenuOpen(false) }
           activeClassName="active"

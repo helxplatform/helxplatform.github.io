@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { Typography, Grid, Accordion, AccordionSummary, AccordionDetails, Paper } from "@mui/material";
 import { ExpandMore } from "@mui/icons-material";
 import { styled } from "@mui/system";
 import { useTheme } from "@emotion/react";
@@ -21,20 +21,22 @@ export const FaqsSection = ({ content }) => {
           >Questions?</Typography>
         </Grid>
         <Grid item md={8} sm={12} xs={12}>
-          {content.map((faq, index) => (
-            <StyledAccordion key={index}>
-              <StyledAccordionSummary
-                expandIcon={<ExpandMore />}
-                aria-controls={`question-${index + 1}-content`}
-                id={`question-${index + 1}-header`}
-              >
-                <Typography>{faq.question}</Typography>
-              </StyledAccordionSummary>
-              <StyledAccordionDetails>
-                <Typography variant="body1">{faq.answer}</Typography>
-              </StyledAccordionDetails>
-            </StyledAccordion>
-          ))}
+          <Paper elevation={2} sx={{borderRadius: '8px'}}>
+            {content.map((faq, index) => (
+              <StyledAccordion key={index}>
+                <StyledAccordionSummary
+                  expandIcon={<ExpandMore />}
+                  aria-controls={`question-${index + 1}-content`}
+                  id={`question-${index + 1}-header`}
+                >
+                  <Typography variant="body2">{faq.question}</Typography>
+                </StyledAccordionSummary>
+                <StyledAccordionDetails>
+                  <Typography variant="body1">{faq.answer}</Typography>
+                </StyledAccordionDetails>
+              </StyledAccordion>
+            ))}
+          </Paper>
         </Grid>
       </Grid>
     </MaxWidthWrapper>
@@ -73,8 +75,8 @@ const StyledAccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor: theme.palette.branding.earthBlue,
-  color: theme.palette.branding.offWhite,
+  backgroundColor: `${theme.palette.branding.deepPurple}20`,
+  color: theme.palette.branding.deepPurple,
 
   '& .MuiTypography-root': {
     color: 'inherit',

@@ -37,9 +37,7 @@ export const Subfooter = () => {
             textTransform: "revert", 
             margin:"1.7rem auto",
             '&:hover': {
-              color: theme.palette.branding.deepPurple,
-              backgroundColor: `${ theme.palette.branding.deepPurple }11`,
-              border: `1px solid ${ theme.palette.branding.deepPurple }11`
+              backgroundColor: `${ theme.palette.branding.yellow }70`,
             }
           }}
         >

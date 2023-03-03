@@ -31,7 +31,11 @@ export const IllustrationTextSection = ({ content }) => {
                 display={{ md: "block", xs: "none" }}
                 key={`${index}-illustration`}
               >
-                <img src={section.illustration} style={{ width: "100%" }} loading="lazy" />
+                <img
+                  src={section.illustration} 
+                  alt={section.illustrationName}
+                  style={{ maxWidth: "300px" }} 
+                  loading="lazy" />
               </Grid>
             );
 

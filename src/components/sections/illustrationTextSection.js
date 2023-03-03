@@ -18,6 +18,7 @@ const AboutCard = styled(Box)(({ theme }) => ({
 
 const IllustrationItem = ({section}) => (
   <Box sx={{
+    display: { sm: 'none', md: 'flex' } ,
     flex: {
       sm: '0 0',
       md: 1
@@ -41,7 +42,7 @@ const TextItem = ({section}) => (
 )
 
 
- const IllustrationTextSection2 = ({ content }) => {
+export const IllustrationTextSection = ({ content }) => {
   return (
     <MaxWidthWrapper maxWidth='md'>
       {
@@ -50,7 +51,7 @@ const TextItem = ({section}) => (
           return (
             <Stack
               direction={contentOrder}
-              spacing={6}
+              spacing={{ sm: 0, md: 6 }}
               key={`illustrationSection-${index}`}
             >
               <IllustrationItem section={section}/>
@@ -62,49 +63,3 @@ const TextItem = ({section}) => (
     </MaxWidthWrapper>
   )
 }
-
-export const IllustrationTextSection = ({ content }) => {
-  return (
-    <MaxWidthWrapper>
-      <Box>
-        <Grid container spacing={{ md: 16, sm: 0 }}>
-          {content.reduce((accum, section, index) => {
-            const thisSection = [];
-
-            const IllustrationItem = (
-              <Grid
-                item
-                md={6}
-                sm={12}
-                display={{ md: "block", xs: "none" }}
-                key={`${index}-illustration`}
-              >
-                <img src={section.illustration} style={{ width: "100%" }} loading="lazy" />
-              </Grid>
-            );
-
-          const TextItem = (
-            <Grid item md={6} sm={12} key={`${index}-text`}>
-              <AboutCard>
-                <Typography variant='h3'>{section.title}</Typography>
-                
-                <Typography variant='body1'>{section.subtitle}</Typography>
-              </AboutCard>
-            </Grid>
-          );
-
-            if (index % 2 === 0) {
-              thisSection.push(IllustrationItem);
-              thisSection.push(TextItem);
-            } else {
-              thisSection.push(TextItem);
-              thisSection.push(IllustrationItem);
-            }
-
-            return [...accum, ...thisSection];
-          }, [])}
-        </Grid>
-      </Box>
-    </MaxWidthWrapper>
-  );
-};

@@ -5,8 +5,8 @@ export const history = [
   {
     "illustration": about1,
     "illustrationName": "Technical Infrastructure Illustration",
-    "title": "HeLx is operated out of the Renaissance Computing Institute (RENCI) at the University of North Carolina at Chapel Hill",
-    "subtitle": "HeLx was developed across the timeline of RENCI empowering diverse science communities to use advanced computing infrastructures."
+    "title": "HeLx is operated out of the Renaissance Computing Institute (RENCI)",
+    "subtitle": "HeLx was developed across the timeline of Renaissance Computing Institute (RENCI) at the University of North Carolina at Chapel Hill empowering diverse science communities to use advanced computing infrastructures."
   },
   {
     "illustration": about2,

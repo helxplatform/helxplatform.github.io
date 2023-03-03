@@ -14,6 +14,12 @@ module.exports = {
         "trackingId": "G-PEWT74G972"
       }
     }, 
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `src/images/helxLogo.svg`
+      }
+    },
     "gatsby-plugin-image", 
     "gatsby-plugin-sharp", 
     "gatsby-transformer-sharp", 

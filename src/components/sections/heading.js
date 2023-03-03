@@ -1,15 +1,13 @@
-import React, { Fragment } from 'react'
-import { Typography, Container } from '@mui/material'
-import { Pre } from '../pre'
+import React from 'react'
+import { Typography } from '@mui/material'
+import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const HeadingSection = ({content}) => { 
 
   return (
-    <Fragment>
-      <Container maxWidth="sm" sx={{ textAlign: 'center', marginY: '2rem'}}>
-        <Typography variant='h2' sx={{marginX:"2rem"}}>{content.title}</Typography>
-        <Typography variant='subtitle1'>{content.subtitle}</Typography>
-      </Container>
-    </Fragment>
+    <MaxWidthWrapper maxWidth="sm" sx={{textAlign: 'center', mb: 0}}>
+      <Typography variant='h2'>{content.title}</Typography>
+      <Typography variant='subtitle1'>{content.subtitle}</Typography>
+    </MaxWidthWrapper>
   )
 }

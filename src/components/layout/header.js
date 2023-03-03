@@ -94,7 +94,7 @@ const Menu = () => {
         to="mailto:helx@lists.renci.org"
         style={{textDecoration: "none"}}
       >
-        <Button
+        {/* <Button
           variant="contained"
           color="info"
           sx={{
@@ -104,11 +104,11 @@ const Menu = () => {
               backgroundColor: `${ theme.palette.branding.yellow }70`,
             }
           }}
-        >
-          <Typography variant='subtitle2'>
-            Contact
+        > */}
+          <Typography variant='body1'>
+            Contact Us
           </Typography>
-        </Button>
+        {/* </Button> */}
       </Link>
     </Fragment>
   )

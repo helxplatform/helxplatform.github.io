@@ -30,9 +30,21 @@ export const Subfooter = () => {
           display: 'flex',
           justifyContent: 'center',
         }}>
-          <Button variant="outlined" sx={{textTransform: "revert"}}>
+        <Button
+          variant="contained"
+          color="info"
+          sx={{
+            textTransform: "revert", 
+            margin:"1.7rem auto",
+            '&:hover': {
+              backgroundColor: `${ theme.palette.branding.yellow }70`,
+            }
+          }}
+        >
+          <Typography variant='subtitle2'>
             Contact Us
-          </Button>
+          </Typography>
+        </Button>
         </Box>
       </Stack>
     </Container>

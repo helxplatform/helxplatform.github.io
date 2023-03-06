@@ -22,7 +22,6 @@ const Brand = props => {
         alt="HeLx Logo"
         placeholder="dominantColor"
         layout="constrained"
-        width={ 150 }
         className="brand"
       />
     </Box>
@@ -94,23 +93,21 @@ const Menu = () => {
         to="mailto:helx@lists.renci.org"
         style={{textDecoration: "none"}}
       >
-        <Button
+        {/* <Button
           variant="contained"
           color="info"
           sx={{
             textTransform: "revert", 
             margin:"1.7rem auto",
             '&:hover': {
-              color: theme.palette.branding.deepPurple,
-              backgroundColor: `${ theme.palette.branding.deepPurple }11`,
-              border: `1px solid ${ theme.palette.branding.deepPurple }11`
+              backgroundColor: `${ theme.palette.branding.yellow }70`,
             }
           }}
-        >
-          <Typography variant='subtitle2'>
-            Contact
+        > */}
+          <Typography variant='body1'>
+            Contact Us
           </Typography>
-        </Button>
+        {/* </Button> */}
       </Link>
     </Fragment>
   )

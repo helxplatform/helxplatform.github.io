@@ -28,7 +28,7 @@ const IllustrationItem = ({section}) => (
       <img
       src={section.illustration} 
       alt={section.illustrationName}
-      style={{ maxWidth: "300px" }} 
+      style={{ maxWidth: "270px" }} 
       loading="lazy" />
   </Box>
 )
@@ -51,6 +51,7 @@ export const IllustrationTextSection = ({ content }) => {
             <Stack
               direction={contentOrder}
               spacing={{ sm: 0, md: 6 }}
+              sx={{mb: '1rem'}}
               key={`illustrationSection-${index}`}
             >
               <IllustrationItem section={section}/>

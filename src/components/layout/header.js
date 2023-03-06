@@ -22,7 +22,6 @@ const Brand = props => {
         alt="HeLx Logo"
         placeholder="dominantColor"
         layout="constrained"
-        width={ 150 }
         className="brand"
       />
     </Box>

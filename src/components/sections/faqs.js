@@ -29,10 +29,10 @@ export const FaqsSection = ({ content }) => {
                   aria-controls={`question-${index + 1}-content`}
                   id={`question-${index + 1}-header`}
                 >
-                  <Typography variant="body2">{faq.question}</Typography>
+                  <Typography variant="subtitle1">{faq.question}</Typography>
                 </StyledAccordionSummary>
                 <StyledAccordionDetails>
-                  <Typography variant="body1">{faq.answer}</Typography>
+                  <Typography variant="subtitle2">{faq.answer}</Typography>
                 </StyledAccordionDetails>
               </StyledAccordion>
             ))}

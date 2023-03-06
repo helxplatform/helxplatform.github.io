@@ -6,7 +6,6 @@ import { useTheme } from "@mui/material";
 
 const FeatureCard = styled(Box)(({ theme }) => ({
   backgroundColor: "#fff",
-  ...theme.typography.body2,
   padding: theme.spacing(4),
   textAlign: "center",
   color: theme.palette.text.secondary,

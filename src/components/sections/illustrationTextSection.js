@@ -4,7 +4,6 @@ import { styled } from "@mui/system";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 const AboutCard = styled(Box)(({ theme }) => ({
-  ...theme.typography.body2,
   padding: theme.spacing(4),
   color: theme.palette.text.secondary,
   height: "100%",

@@ -4,7 +4,7 @@ import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const Hero = ({ content }) => {
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper maxWidth='sm'>
       <Stack alignItems='center'>
         <Typography variant="h1">
           {content.title}

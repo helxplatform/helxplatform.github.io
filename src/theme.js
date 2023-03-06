@@ -27,11 +27,11 @@ const palette = {
 const typography = {
   fontFamily: ['"Open Sans"', 'sans-serif'],
   h1: {
-    fontSize: 'clamp(3.2rem, 2rem + 1.6667vw, 4.2rem)',
+    fontSize: 'clamp(3rem, 2rem + 1.6667vw, 3.5rem)',
     fontFamily: 'Montserrat',
-    fontWeight: 900,
+    fontWeight: 700,
     marginBottom: '2rem',
-    lineHeight: '1.5',
+    lineHeight: '1.2',
     color: "#392D57"
   },
   h2: {
@@ -65,8 +65,9 @@ const typography = {
     color: '#392D57'
   },
   body2: {
+    fontFamily: 'Montserrat',
     fontSize: '1.2rem',
-    lineHeight: 1.75,
+    lineHeight: 1.5,
     letterSpacing: '0.8px',
     fontWeight: 500,
     color: '#F5F6F5'

@@ -15,11 +15,15 @@ export const HomeHero = ({ content }) => {
     >
       <Box
         sx={{
-          maxWidth: "500px",
+        maxWidth: "500px",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
           gap: "1rem",
+
+          [theme.breakpoints.down(BREAKPOINT)]: {
+            maxWidth: '450px'
+          },
         }}
       >
         <Typography
@@ -56,7 +60,7 @@ export const HomeHero = ({ content }) => {
           [theme.breakpoints.down(BREAKPOINT)]: {
             top: "revert",
             bottom: 0,
-            transform: "translate(0, 40%)",
+            transform: "translate(0, 30%)",
           },
         }}
       >

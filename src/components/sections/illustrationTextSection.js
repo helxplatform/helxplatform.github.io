@@ -2,6 +2,7 @@ import React from "react";
 import { Typography, Box, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
+import { useTheme } from "@emotion/react";
 
 const AboutCard = styled(Box)(({ theme }) => ({
   padding: theme.spacing(4),
@@ -11,7 +12,6 @@ const AboutCard = styled(Box)(({ theme }) => ({
   flexDirection: "column",
   justifyContent: "center",
   gap: theme.spacing(1),
-  textAlign: 'center',
   flex: 1,
 }));
 
@@ -28,7 +28,7 @@ const IllustrationItem = ({section}) => (
       <img
       src={section.illustration} 
       alt={section.illustrationName}
-      style={{ maxWidth: "270px" }} 
+      style={{ maxWidth: "400px" }} 
       loading="lazy" />
   </Box>
 )
@@ -42,16 +42,19 @@ const TextItem = ({section}) => (
 
 
 export const IllustrationTextSection = ({ content }) => {
+  const theme = useTheme();
+
   return (
-    <MaxWidthWrapper maxWidth='md'>
+    <MaxWidthWrapper maxWidth='lg' sx={{ [theme.breakpoints.up('md')]: { my: '8rem' }}}>
       {
         content.map((section, index) => {
           const contentOrder = index % 2 === 0 ? 'row' : 'row-reverse'
           return (
             <Stack
               direction={contentOrder}
-              spacing={{ sm: 0, md: 6 }}
-              sx={{mb: '1rem'}}
+              alignItems='center'
+              spacing={{ xs: 0, sm: 0, md: 6 }}
+              mb={{ xs: 0, sm: 0, md: '6rem' }}
               key={`illustrationSection-${index}`}
             >
               <IllustrationItem section={section}/>

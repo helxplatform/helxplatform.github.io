@@ -23,7 +23,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import { MaxWidthWrapper } from "../components/layout/maxWidthWrapper";
 import { useTheme } from "@emotion/react";
 
-const formScriptURL = ``;
+const FORM_SCRIPT_URL = `https://script.google.com/macros/s/AKfycbwJlHgI1yxk9edvVR7f0-fbiAyg7gYx-ZvHUO8K6R1r5wxot-BA3_28VQEfAbxceIhbbQ/exec`;
 
 const subjectOptions = [
   { value: "question", displayText: "I have a question" },
@@ -80,7 +80,7 @@ export const Contact = ({ presets }) => {
 
   const onSubmit = () => {
     axios
-      .post(formScriptURL, new FormData(formRef.current))
+      .post(FORM_SCRIPT_URL, new FormData(formRef.current))
       .then((response) => {
         console.log(response);
       })

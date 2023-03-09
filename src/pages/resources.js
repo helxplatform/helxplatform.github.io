@@ -12,3 +12,5 @@ const ResourcesPage = () => {
 }
 
 export default ResourcesPage
+
+export const Head = () => <title>Resources</title>

@@ -16,3 +16,5 @@ const AboutPage = () => {
 }
 
 export default AboutPage
+
+export const Head = () => <title>About HeLx</title>

@@ -36,7 +36,7 @@ export const UseCasesSection = ({ content }) => {
                   </Box>
                 )}
                 <Typography>{useCase.paragraph}</Typography>
-                <Button
+                {/* <Button
                   mt="1rem"
                   variant="contained"
                   color="secondary"
@@ -44,7 +44,7 @@ export const UseCasesSection = ({ content }) => {
                   sx={{ marginTop: 'auto', color: "white", textTransform: "revert" }}
                 >
                   Learn more
-                </Button>
+                </Button> */}
               </Box>
             </Grid>
           ))}

@@ -49,7 +49,7 @@ export const HomeHero = ({ content }) => {
             textTransform: "none",
             backgroundColor: theme.palette.branding.yellow,
             "&:hover": {
-              backgroundColor: `${theme.palette.branding.yellow}c0`,
+              backgroundColor: `${theme.palette.branding.yellow}70`,
             },
           }}
         >

@@ -17,8 +17,8 @@ export const UseCasesSection = ({ content }) => {
           {content.map((useCase, index) => (
             <Grid item md={6} xs={12} key={index} alignItems="stretch">
               <Box sx={{ height: "100%", display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: '1rem' }}>
-                {useCase.image && (
-                  <Box sx={{ minHeight: 120, alignSelf: 'center' }}>
+                {useCase.image ? (
+                  <Box sx={{ minHeight: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%'  }}>
                     <img
                       src={useCase.image}
                       style={{
@@ -28,16 +28,15 @@ export const UseCasesSection = ({ content }) => {
                       loading="lazy"
                     />
                   </Box>
-                )}
-                <Box>
-                  {!useCase.image && (
-                    <Typography variant="h3" sx={{textAlign: 'center'}}>
+                ):(
+                  <Box sx={{ minHeight: '100px', display: 'flex', justifyContent: 'center', alignItems: 'flex-end', width: '100%'  }}>
+                    <Typography variant="h3" sx={{textAlign: 'center', marginBottom: '0'}}>
                       {useCase.heading}
                     </Typography>
-                  )}
-                  <Typography>{useCase.paragraph}</Typography>
-                </Box>
-                <Button
+                  </Box>
+                )}
+                <Typography>{useCase.paragraph}</Typography>
+                {/* <Button
                   mt="1rem"
                   variant="contained"
                   color="secondary"
@@ -45,7 +44,7 @@ export const UseCasesSection = ({ content }) => {
                   sx={{ marginTop: 'auto', color: "white", textTransform: "revert" }}
                 >
                   Learn more
-                </Button>
+                </Button> */}
               </Box>
             </Grid>
           ))}

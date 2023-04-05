@@ -1,9 +1,12 @@
 import React from "react";
 import { Typography, Box, Grid, Button, Link } from "@mui/material";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
-
+import { ExternalLinkIcon } from "../icons"
+import { useTheme } from "@emotion/react";
 
 export const ResourceCardSection = ({ content }) => {
+  const theme = useTheme();
+
   return (
     <MaxWidthWrapper>
       <Typography
@@ -54,6 +57,11 @@ export const ResourceCardSection = ({ content }) => {
                   }}
                 >
                   {resource.title}
+                  <ExternalLinkIcon
+                    fill={theme.palette.branding.deepPurple}
+                    size={14}
+                    style={{ marginLeft: "0.25rem" }}
+                  />
                 </Typography>
               </Box>
             </Link>

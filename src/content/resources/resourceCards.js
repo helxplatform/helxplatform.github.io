@@ -16,6 +16,6 @@ export const resourceCards = [
   {
     "image": futureVideos,
     "title": "Videos and Support",
-    "link": "www.youtube.com"
+    "link": "https://www.youtube.com"
   }
 ]

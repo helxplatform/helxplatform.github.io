@@ -10,7 +10,7 @@ export const InstitutionList = ({ content }) => {
     <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
       <Stack gap="2rem">
         <Typography variant="h2">
-          HeLx is made possible through the following funders
+          HeLx is made possible through projects supported by the following funders
         </Typography>
         <Stack
           direction={"row"}

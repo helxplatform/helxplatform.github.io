@@ -3,11 +3,6 @@ import BDC from '../../images/features/bdc-logo.svg'
 
 export const useCases = [
   {
-    "image": BDC,
-    "heading": "NHLBI BioData Catalyst",
-    "paragraph": "Dug, BioData Catalyst’s semantic search, is powered by HeLx. Dug has indexed TOPMed phenotypic concepts and dbGaP study variables for all studies in BioData Catalyst. The full-text search also uses ontologies and controlled vocabularies to discover connections between elements of datasets, performing a form of automated curation."
-  },
-  {
     "image": SciDAS,
     "heading": "SciDAS",
     "paragraph": "For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU-intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand."

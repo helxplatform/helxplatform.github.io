@@ -22,6 +22,8 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { MaxWidthWrapper } from "../components/layout/maxWidthWrapper";
 import { useTheme } from "@emotion/react";
+import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
+import { FeedbackForm } from '../components/feedback-form'
 
 const FORM_SCRIPT_URL = `https://script.google.com/macros/s/AKfycbwJlHgI1yxk9edvVR7f0-fbiAyg7gYx-ZvHUO8K6R1r5wxot-BA3_28VQEfAbxceIhbbQ/exec`;
 
@@ -90,6 +92,9 @@ export const Contact = ({ presets }) => {
   };
 
   return (
+    <GoogleReCaptchaProvider
+    reCaptchaKey="6Ldg7hcnAAAAAJ_4nMzQtUIH-SDvqnYLuFfxmUY5"
+  >
     <MaxWidthWrapper maxWidth="md">
       <Typography variant="h1" textAlign="center">
         Contact Us
@@ -186,13 +191,18 @@ export const Contact = ({ presets }) => {
             )}
           </FormControl>
           <Stack direction="row" gap={4} sx={{ "& > button": { flex: 1 } }}>
-            <Button onClick={handleClickClearForm} variant="outlined">
+            <Button
+              onClick={handleClickClearForm}
+              variant="outlined"
+              sx={{fontFamily: "Open Sans", letterSpacing: "0.3px"}}
+            >
               Clear
             </Button>
             <Button
               onClick={handleSubmit(onSubmit)}
               variant="contained"
               disabled={Object.keys(errors).length > 0}
+              sx={{backgroundColor: theme.palette.branding.deepPurple, fontFamily: "Open Sans", letterSpacing: "0.3px"}}
             >
               Submit
             </Button>
@@ -219,7 +229,11 @@ export const Contact = ({ presets }) => {
           </Dialog>
         </Stack>
       </Paper>
+
     </MaxWidthWrapper>
+    <FeedbackForm  />
+
+    </GoogleReCaptchaProvider>
   );
 };
 

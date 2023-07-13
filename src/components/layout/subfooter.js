@@ -1,7 +1,8 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Box, Typography, Stack, Button, Container } from '@mui/material'
 import { useTheme } from '@mui/material/styles'
 import './layout.css'
+import { Link } from 'gatsby'
 
 export const Subfooter = () => {
   const theme = useTheme()
@@ -31,6 +32,8 @@ export const Subfooter = () => {
           justifyContent: 'center',
         }}>
         <Button
+          component={Link}
+          to='/contact'
           variant="contained"
           color="info"
           sx={{

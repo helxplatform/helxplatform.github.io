@@ -90,7 +90,7 @@ const Menu = () => {
         }
       </Box>
       <Link
-        to="mailto:helx@lists.renci.org"
+        to="/contact"
         style={{textDecoration: "none"}}
       >
         {/* <Button

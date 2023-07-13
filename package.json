@@ -18,8 +18,10 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@hookform/resolvers": "^2.9.11",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.4",
+    "axios": "^1.4.0",
     "gatsby": "^5.4.1",
     "gatsby-plugin-google-analytics": "^5.4.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
@@ -29,8 +31,13 @@
     "gatsby-plugin-sharp": "^5.4.0",
     "gatsby-source-filesystem": "^5.4.0",
     "gatsby-transformer-sharp": "^5.4.0",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-hook-form": "^7.43.5",
+    "react-router-dom": "^6.14.1",
+    "yup": "^1.0.2"
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"

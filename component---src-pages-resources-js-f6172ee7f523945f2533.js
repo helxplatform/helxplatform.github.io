@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkhelx_marketing_site=self.webpackChunkhelx_marketing_site||[]).push([[834],{1402:function(e,t,n){n.r(t),n.d(t,{Head:function(){return a}});var l=n(7294),c=n(8879),r=n(6787);t.default=()=>l.createElement(l.Fragment,null,l.createElement(r.Lt,{content:c.GA}),l.createElement(r.kW,{content:c.Xl}));const a=()=>l.createElement("title",null,"Resources")}}]);
-//# sourceMappingURL=component---src-pages-resources-js-f6172ee7f523945f2533.js.map

@@ -3,6 +3,7 @@ import { Typography } from '@mui/material'
 import { featuresHero, helxFunctions, useCases } from '../content'
 import { Hero } from '../components/hero/hero'
 import { FunctionsSection, UseCasesSection } from '../components/sections/'
+import { Subfooter } from '../components/layout/subfooter'
 
 const FeaturesPage = () => {
   return (
@@ -10,6 +11,7 @@ const FeaturesPage = () => {
       <Hero content={featuresHero}/>
       <FunctionsSection content={helxFunctions}/>
       <UseCasesSection content={useCases}/>
+      <Subfooter/>
     </Fragment>
   )
 }

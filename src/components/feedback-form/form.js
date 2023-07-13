@@ -116,17 +116,23 @@ export const FeedbackForm = ({ presets }) => {
    * the actual message-sending function,
    * which gets wrapped with react-hook-form's `handleSubmit`.
    */
-  const submitHandler = useCallback(() => {
-    axios.post(FORM_URL, new FormData(formRef.current))
+  const submitHandler = useCallback((data) => {
+    const form = new FormData();
+    
+    Object.entries(data).forEach(([label, response]) => {
+      form.append(label, response);
+    })
+    form.append("token", token.current);
+
+    axios.post(FORM_URL, form)
       .then(response => {
-        console.log(response)
         if (response.status === 200) {
           setShowThanks(true)
         }
       })
       .catch(error => {
         console.error(error.message)
-        // notify(<ErrorNotification />, 'error')
+       return <ErrorNotification/>
       })
   }, [])
 

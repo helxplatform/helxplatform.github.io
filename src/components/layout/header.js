@@ -190,8 +190,7 @@ const MobileMenu = () => {
           ))
         }
         <Link
-          to="mailto:helx@lists.renci.org"
-          key={ `mobile-main-menu-contact` }
+          to="/contact"
           onClick={ () => setMenuOpen(false) }
           activeClassName="active"
         >

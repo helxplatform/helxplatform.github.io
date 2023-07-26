@@ -5,6 +5,25 @@ import { Menu as MenuIcon, Close as CloseMenuIcon } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { Link } from '../link'
 
+const mainMenuLinks = [
+  {
+    title: 'Home',
+    slug: ''
+  },
+  {
+    title: 'About',
+    slug: 'about'
+  },
+  {
+    title: 'Features',
+    slug: 'features'
+  },
+  {
+    title: 'Resources',
+    slug: 'resources'
+  }
+]
+
 const Brand = props => {
   const style = {
     alignItems: 'center',
@@ -46,27 +65,8 @@ const Toggler = ({ active, clickHandler }) => {
   )
 }
 
-const Menu = () => {
+const Menu = ({mainMenuLinks}) => {
   const theme = useTheme()
-
-  const mainMenuLinks = [
-    {
-      title: 'Home',
-      slug: ''
-    },
-    {
-      title: 'About',
-      slug: 'about'
-    },
-    {
-      title: 'Features',
-      slug: 'features'
-    },
-    {
-      title: 'Resources',
-      slug: 'resources'
-    }
-  ]
 
   return (
     <Fragment>
@@ -93,47 +93,17 @@ const Menu = () => {
         to="/contact"
         style={{textDecoration: "none"}}
       >
-        {/* <Button
-          variant="contained"
-          color="info"
-          sx={{
-            textTransform: "revert", 
-            margin:"1.7rem auto",
-            '&:hover': {
-              backgroundColor: `${ theme.palette.branding.yellow }70`,
-            }
-          }}
-        > */}
-          <Typography variant='body1'>
-            Contact Us
-          </Typography>
-        {/* </Button> */}
+        <Typography variant='body1'>
+          Contact Us
+        </Typography>
       </Link>
     </Fragment>
   )
 }
 
-const MobileMenu = () => {
+const MobileMenu = ({mainMenuLinks}) => {
   const theme = useTheme()
-  const mainMenuLinks = [
-    {
-      title: 'Home',
-      slug: ''
-    },
-    {
-      title: 'About',
-      slug: 'about'
-    },
-    {
-      title: 'Features',
-      slug: 'features'
-    },
-    {
-      title: 'Resources',
-      slug: 'resources'
-    }
-  ]
-    const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const styles = {
     display: 'flex',
@@ -190,8 +160,7 @@ const MobileMenu = () => {
           ))
         }
         <Link
-          to="mailto:helx@lists.renci.org"
-          key={ `mobile-main-menu-contact` }
+          to="/contact"
           onClick={ () => setMenuOpen(false) }
           activeClassName="active"
         >
@@ -249,7 +218,7 @@ export const Header = () => {
     <Paper component="header" sx={styles.root}>
       <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Brand />
-        { compact ? <MobileMenu /> : <Menu /> }
+        { compact ? <MobileMenu mainMenuLinks={mainMenuLinks}/> : <Menu mainMenuLinks={mainMenuLinks} /> }
       </Container>
     </Paper>
   )

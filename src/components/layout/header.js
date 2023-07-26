@@ -93,21 +93,9 @@ const Menu = () => {
         to="/contact"
         style={{textDecoration: "none"}}
       >
-        {/* <Button
-          variant="contained"
-          color="info"
-          sx={{
-            textTransform: "revert", 
-            margin:"1.7rem auto",
-            '&:hover': {
-              backgroundColor: `${ theme.palette.branding.yellow }70`,
-            }
-          }}
-        > */}
-          <Typography variant='body1'>
-            Contact Us
-          </Typography>
-        {/* </Button> */}
+        <Typography variant='body1'>
+          Contact Us
+        </Typography>
       </Link>
     </Fragment>
   )

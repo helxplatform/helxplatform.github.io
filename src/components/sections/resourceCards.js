@@ -21,7 +21,7 @@ export const ResourceCardSection = ({ content }) => {
       >
         Resources
       </Typography>
-      <Grid container spacing={4} my="2rem">
+      <Grid container spacing={4} my="2rem" sx={{display: "flex", justifyContent: "center"}}>
         {content.map((resource, index) => (
           <Grid item md={4} sm={12} xs={12} key={index}>
             <Link href={resource.link} target="_blank">

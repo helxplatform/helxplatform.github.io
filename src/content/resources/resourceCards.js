@@ -12,10 +12,5 @@ export const resourceCards = [
     "image": userFacing,
     "title": "User-facing Documentation",
     "link": "https://helx.gitbook.io/helx-documentation/"
-  },
-  {
-    "image": futureVideos,
-    "title": "Videos and Support",
-    "link": "https://www.youtube.com"
   }
 ]

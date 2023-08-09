@@ -1,5 +1,8 @@
 import SciDAS from '../../images/features/scidas-logo.svg'
 import BDC from '../../images/features/bdc-logo.svg'
+import BRAINI from '../../images/features/brain-i-colors-logo.png'
+import EduHelx from '../../images/features/eduhelx-logo.png'
+import RestartingResearch from '../../images/features/restartingresearch-logo.png'
 
 export const useCases = [
   {
@@ -9,15 +12,18 @@ export const useCases = [
     
   },
   {
+    "image": EduHelx,
     "heading": "EduHeLx",
     "paragraph": "EduHeLx empowers students to explore the field of data science in an environment which prioritizes student investigation, focus, and cooperative discovery. EduHeLx instances are launched for each individual educator and course, making them fully customizable and unique for the students and course material. EduHeLx is currently deployed for select UNC-Chapel Hill courses. "    
   },
   {
-    "heading": "Blackbalsam",
-    "paragraph": "Blackbalsam is an open source data science environment with an initial focus on the COVID-19 response for UNC-Chapel Hill students and faculty. Blackbalsam’s interface uses a Jupyter notebook environment featuring artificial intelligence, visualization, and scalable computing capabilities."
+    "image": RestartingResearch,
+    "heading": "Restarting Research",
+    "paragraph": "Restarting Research is a project for data management and analytics of COVID-19 RT-PCR and custom Antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science Jupyter notebooks in Python and R kernels as environments for data science experimentation."
 
   },
   {
+    "image": BRAINI,
     "heading": "BRAIN-I",
     "paragraph": "BRAIN-I is a computational infrastructure for handling huge medical images combined with a discovery environment where neuroscience researchers can run custom applications and conduct their analysis. BRAIN-I handles big data and computation in a user-friendly way so even new researchers can focus fully on their science."    
   }

@@ -1,5 +1,5 @@
-import about1 from '../../images/about/illustration-1-about.svg'
-import about2 from '../../images/about/illustration-2-about.svg'
+import about1 from '../../assets/illustration-1-about.svg'
+import about2 from '../../assets/illustration-2-about.svg'
 
 export const history = [
   {

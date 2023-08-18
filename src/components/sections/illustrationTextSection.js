@@ -15,7 +15,9 @@ const AboutCard = styled(Box)(({ theme }) => ({
   flex: 1,
 }));
 
-const IllustrationItem = ({section}) => (
+const IllustrationItem = ({section}) => {
+  const Image = section.illustration
+  return (
   <Box sx={{
     display: { sm: 'none', md: 'flex' } ,
     flex: {
@@ -25,13 +27,19 @@ const IllustrationItem = ({section}) => (
     justifyContent: 'center',
     alignItems: 'center',
   }}>
-      <img
-      src={section.illustration} 
-      alt={section.illustrationName}
-      style={{ maxWidth: "250px" }} 
-      loading="lazy" />
+    {
+      Image ? (
+        <Image style={{ maxWidth: "250px" }} />
+      ) : (
+        <img
+        src={section.illustration} 
+        alt={section.illustrationName}
+        style={{ maxWidth: "250px" }} 
+        loading="lazy" /> 
+      )
+    }
   </Box>
-)
+)}
 
 const TextItem = ({section}) => (
   <AboutCard>

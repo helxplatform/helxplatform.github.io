@@ -25,7 +25,7 @@ const palette = {
 }
 
 const typography = {
-  fontFamily: ['"Open Sans"', 'sans-serif'],
+  fontFamily: ['"Open Sans"', 'sans-serif'].join(','),
   h1: {
     fontSize: 'clamp(3rem, 2rem + 1.6667vw, 3.5rem)',
     fontFamily: 'Montserrat',
@@ -60,7 +60,6 @@ const typography = {
   body1: {
     fontSize: '1.1rem',
     lineHeight: 1.5,
-    letterSpacing: '0.4px',
     fontWeight: 400,
     color: '#392D57'
   },

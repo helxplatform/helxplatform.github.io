@@ -8,12 +8,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        "trackingId": "G-PEWT74G972"
-      }
-    }, 
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `src/images/helxLogo.svg`

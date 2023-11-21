@@ -6,21 +6,20 @@ import RestartingResearch from '../../images/features/restartingresearch-logo.pn
 
 export const useCases = [
   {
+    "image": EduHelx,
+    "heading": "EduHeLx",
+    "paragraph": "EduHeLx empowers students to explore the field of data science in an environment which prioritizes student investigation, focus, and cooperative discovery. EduHeLx instances are launched for each individual educator and course, making them fully customizable and unique for the students and course material. EduHeLx is currently deployed for select UNC-Chapel Hill courses."    
+  },
+  {
     "image": SciDAS,
     "heading": "SciDAS",
     "paragraph": "For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU-intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand."
     
   },
   {
-    "image": EduHelx,
-    "heading": "EduHeLx",
-    "paragraph": "EduHeLx empowers students to explore the field of data science in an environment which prioritizes student investigation, focus, and cooperative discovery. EduHeLx instances are launched for each individual educator and course, making them fully customizable and unique for the students and course material. EduHeLx is currently deployed for select UNC-Chapel Hill courses. "    
-  },
-  {
     "image": RestartingResearch,
-    "heading": "Restarting Research",
-    "paragraph": "Restarting Research is a project for data management and analytics of COVID-19 RT-PCR and custom Antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science Jupyter notebooks in Python and R kernels as environments for data science experimentation."
-
+    "heading": "restarting Research",
+    "paragraph": "restarting Research is a project for data management and analytics of COVID-19 RT-PCR and custom antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science notebooks in Python and R kernels as environments for data science experimentation."
   },
   {
     "image": BRAINI,

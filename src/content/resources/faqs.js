@@ -8,7 +8,15 @@ export const questions = [
     "answer": "HeLx was designed to have a very user-friendly interface. While some tools or apps may require use of the command line, the majority of your team’s work will be completed entirely through an easy-to-use web interface."
   },
   {
-    "question": "How much does HeLx cost to run?",
-    "answer": "HeLx is an open-source tool. Working with our team for new development and deployment requires dedicated Team HeLx effort, but once your instance of HeLx is running and stable, there is no payment required to HeLx and RENCI."
+    "question": "I have a homegrown app - can it be a deployment on HeLx?",
+    "answer": "If your app can be containerized, it can be a part of your HeLx instance."
+  },
+  {
+    "question": "Can data be uploaded to share with a user group?",
+    "answer": "Data used on HeLx can be shared internally or externally. The limit for sharing is customizable to each HeLx instance."
+  },
+  {
+    "question": "Can HeLx handle very large data sets and large computation jobs?",
+    "answer": "We can. For working with large data sets, iRODS is our preferred way of handling data. For data or research that will require large amounts of computation resources, the number of GPUs allocated comes down to funding of your project and how you want to integrate HeLx into your project."
   }
 ]

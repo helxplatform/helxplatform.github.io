@@ -23,7 +23,7 @@ export const Subfooter = () => {
           flex: '4'
         }}>
           <Typography variant='h3'>
-            Have more questions about HeLx? Check out our documentation or reach out to the team to learn more.
+            Have more questions about HeLx? Reach out to the team to learn more.
           </Typography>
         </Box>
         <Box sx={{

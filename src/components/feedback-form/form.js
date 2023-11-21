@@ -105,8 +105,8 @@ export const FeedbackForm = ({ presets }) => {
         </Typography>
         <Typography paragraph>
           Please send an email
-          to <a href="mailto:neurobridges-team@renci.org">
-          neurobridges-team@renci.org</a> instead.
+          to <a href="mailto:helx@lists.renci.org">
+          helx@lists.renci.org</a> instead.
         </Typography>
       </Box>
     )

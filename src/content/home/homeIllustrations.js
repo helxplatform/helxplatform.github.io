@@ -13,7 +13,7 @@ export const homeSection = [
     "illustration": home2,
     "illustrationName": "Data Science Tools Illustration",
     "title": "We bring the right tools for each team in a secure, scalable portal.",
-    "subtitle": "Each deployment of HeLx is fully customizable for your domain-specific data-driven needs. No mandatory extras, no surprise addons--just your toolsets and your data."
+    "subtitle": "Each deployment of HeLx is fully customizable for your domain-specific data-driven needs. No mandatory extras, no surprise add-ons - just your toolsets and your data."
   },
   {
     "illustration": home3,

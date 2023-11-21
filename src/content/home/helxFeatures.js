@@ -10,12 +10,12 @@ export const helxFeatures = [
   {
     "image": applications,
     "title": "Applications and Workflow",
-    "subheading": "Choose from pre-loaded industry standard tools and apps or customize above and beyond to support your work." 
+    "subheading": "Choose from pre-loaded industry standard tools and apps or customize above and beyond to support your work" 
   },
   {
     "image": search,
     "title": "Complex Search Functionality",
-    "subheading": "Includes full text-driven knowledge graph augmented semantic search"
+    "subheading": "Includes full text-driven knowledge-graph-augmented semantic search"
   },
   {
     "image": openSource,

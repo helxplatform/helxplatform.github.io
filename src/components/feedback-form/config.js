@@ -7,10 +7,8 @@ import * as yup from 'yup'
 //
 
 export const subjectOptions = [
-  { value: 'question', displayText: 'I have a question' },
-  { value: 'suggestion', displayText: 'I have a suggestion' },
-  { value: 'bug', displayText: 'I found a bug!' },
-  { value: 'other', displayText: 'Other' },
+  { value: "helx", displayText: "I'd like to learn more about HeLx" },
+  { value: "other", displayText: "Other" },
 ]
 
 //

@@ -28,7 +28,7 @@ const IllustrationItem = ({section}) => (
       <img
       src={section.illustration} 
       alt={section.illustrationName}
-      style={{ maxWidth: "250px" }} 
+      style={{ maxWidth: "350px", maxHeight: "200px" }} 
       loading="lazy" />
   </Box>
 )

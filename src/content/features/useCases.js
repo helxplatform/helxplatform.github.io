@@ -1,5 +1,4 @@
 import SciDAS from '../../images/features/scidas-logo.svg'
-import BDC from '../../images/features/bdc-logo.svg'
 import BRAINI from '../../images/features/brain-i-colors-logo.png'
 import EduHelx from '../../images/features/eduhelx-logo.png'
 import RestartingResearch from '../../images/features/restartingresearch-logo.png'

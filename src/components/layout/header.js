@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Box, Button, Container, Drawer, IconButton, useMediaQuery, Paper, Typography } from '@mui/material'
+import { Box, Container, Drawer, IconButton, useMediaQuery, Paper, Typography } from '@mui/material'
 import { Menu as MenuIcon, Close as CloseMenuIcon } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { Link } from '../link'

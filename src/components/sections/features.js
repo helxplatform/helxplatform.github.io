@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Typography, Grid, Box } from "@mui/material";
 import { styled } from "@mui/system";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Typography } from '@mui/material'
 import { aboutHero, history, institutions } from '../content'
 import { Hero } from '../components/hero/hero'
 import { IllustrationTextSection, InstitutionList } from '../components/sections'

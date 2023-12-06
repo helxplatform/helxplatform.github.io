@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react'
-import { Typography, Box } from '@mui/material'
 import { HomeHero } from '../components/hero/homeHero'
 import { homeSection, rotatingVerbs, helxFeatures, homeHero }  from '../content'
 import { HeadingSection, IllustrationTextSection, RotatingVerbs, FeaturesSection } from '../components/sections'

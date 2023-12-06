@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Button, useTheme } from "@mui/material";
+import { Typography, Box, Grid, useTheme } from "@mui/material";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 
 

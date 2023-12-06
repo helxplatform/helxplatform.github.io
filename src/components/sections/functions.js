@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const FunctionsSection = ({ content }) => {

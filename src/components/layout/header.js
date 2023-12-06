@@ -187,7 +187,7 @@ export const Header = () => {
       position: 'sticky',
       top: 0,
       padding: 0,
-      height: '6rem',
+      height: '3rem',
       zIndex: 999,
       backgroundColor: theme.palette.branding.offWhite,
       boxShadow: 'none',

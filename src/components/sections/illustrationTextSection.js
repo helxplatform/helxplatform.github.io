@@ -6,7 +6,7 @@ import { useTheme } from "@emotion/react";
 
 const AboutCard = styled(Box)(({ theme }) => ({
   padding: theme.spacing(4),
-  color: theme.palette.text.secondary,
+  color: theme.palette.text.primary,
   height: "100%",
   display: "flex",
   flexDirection: "column",

@@ -11,7 +11,7 @@ export const Footer = () => {
     <Box
       component="footer"
       sx={{
-        background: theme.palette.branding.offWhite,
+        background: theme.palette.branding.lightGrey,
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

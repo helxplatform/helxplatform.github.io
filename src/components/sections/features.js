@@ -8,7 +8,7 @@ const FeatureCard = styled(Box)(({ theme }) => ({
   backgroundColor: "#fff",
   padding: theme.spacing(4),
   textAlign: "center",
-  color: theme.palette.text.secondary,
+  color: theme.palette.text.primary,
   borderRadius: "16px",
   height: "100%",
 

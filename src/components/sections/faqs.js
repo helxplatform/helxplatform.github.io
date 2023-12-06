@@ -75,8 +75,8 @@ const StyledAccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor: `${theme.palette.branding.deepPurple}20`,
-  color: theme.palette.branding.deepPurple,
+  backgroundColor: `${theme.palette.primary.main}20`,
+  color: theme.palette.primary.main,
 
   '& .MuiTypography-root': {
     color: 'inherit',

@@ -29,15 +29,20 @@ export const HomeHero = ({ content }) => {
       >
         <Typography
           variant="h1"
+          color={theme.palette.branding.offWhite}
           sx={{
-            color: theme.palette.branding.offWhite,
             margin: 0,
             lineHeight: 1.3,
           }}
         >
           {content.title}
         </Typography>
-        <Typography variant="body2">{content.subheading}</Typography>
+        <Typography 
+          variant="body2" 
+          color={theme.palette.branding.offWhite}
+        >
+          {content.subheading}
+        </Typography>
         <Button
           variant="filled"
           size="medium"
@@ -45,15 +50,15 @@ export const HomeHero = ({ content }) => {
           to="/features"
           sx={{
             marginTop: '100px',
-            color: theme.palette.branding.deepPurple,
+            color: theme.palette.primary.main,
             textTransform: "none",
-            backgroundColor: theme.palette.branding.yellow,
+            backgroundColor: theme.palette.secondary.main,
             "&:hover": {
-              backgroundColor: `${theme.palette.branding.yellow}70`,
+              backgroundColor: `${theme.palette.secondary.main}70`,
             },
           }}
         >
-          <Typography variant="subtitle2">Why use Helx?</Typography>
+          <Typography variant="body2">Why use Helx?</Typography>
         </Button>
       </Box>
 

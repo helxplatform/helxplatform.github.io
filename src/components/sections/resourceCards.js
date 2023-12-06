@@ -58,7 +58,7 @@ export const ResourceCardSection = ({ content }) => {
                 >
                   {resource.title}
                   <ExternalLinkIcon
-                    fill={theme.palette.branding.deepPurple}
+                    fill={theme.palette.primary.main}
                     size={14}
                     style={{ marginLeft: "0.25rem" }}
                   />

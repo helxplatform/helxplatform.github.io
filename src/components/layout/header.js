@@ -123,15 +123,15 @@ const MobileMenu = ({mainMenuLinks}) => {
       transition: 'background-color 250ms',
       '&:hover': {
         color: theme.palette.branding.darkGranite,
-        backgroundColor: `${ theme.palette.branding.deepPurple }24`,
+        backgroundColor: `${ theme.palette.primary.main }24`,
       },
     },
     '& a.active': {
-      backgroundColor: `${ theme.palette.branding.deepPurple }44`,
-      color: theme.palette.branding.deepPurple,
+      backgroundColor: `${ theme.palette.primary.main }44`,
+      color: theme.palette.primary.main,
       '&:hover': {
-        color: theme.palette.branding.deepPurple,
-        backgroundColor: `${ theme.palette.branding.deepPurple }44`,
+        color: theme.palette.primary.main,
+        backgroundColor: `${ theme.palette.primary.main }44`,
       },
     },
 
@@ -201,16 +201,16 @@ export const Header = () => {
         transition: 'background-color 250ms, color 250ms',
       },
       '& a.active': {
-        backgroundColor: `${ theme.palette.branding.deepPurple }24`,
-        color: theme.palette.branding.deepPurple,
+        backgroundColor: `${ theme.palette.primary.main }24`,
+        color: theme.palette.primary.main,
         '&:hover': {
-          color: theme.palette.branding.deepPurple,
-          backgroundColor: `${ theme.palette.branding.deepPurple }24`,
+          color: theme.palette.primary.main,
+          backgroundColor: `${ theme.palette.primary.main }24`,
         },
       },
       '& a:hover': {
-        color: theme.palette.branding.deepPurple,
-        backgroundColor: `${ theme.palette.branding.deepPurple }11`,
+        color: theme.palette.primary.main,
+        backgroundColor: `${ theme.palette.primary.main }11`,
       },
     },
   }

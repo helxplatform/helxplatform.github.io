@@ -8,20 +8,30 @@ const branding = {
   earthBlue: '#37698B',
   dataGreen: '#239BA6',
   yellow: '#FDB614',
-  lightGrey: '#555555'
+  lightGrey: '#BFBFBF',
+  coyoteBrown: '#7C6354',
+  frenchGrey: '#C8BFC7',
+  fuchsiaRose: '#C94277',
+  thistle: '#DBC2CF',
+  bittersweet: '#FF785A'
 }
 
 const palette = {
   primary: {
-    main: branding.darkGranite,
+    main: branding.deepPurple,
   },
   secondary: {
-    main: branding.scienceGreen
-  },
-  info: {
     main: branding.yellow
   },
+  info: {
+    main: branding.scienceGreen
+  },
   branding: branding,
+  text: {
+    primary: branding.deepPurple,
+    secondary: branding.scienceGreen,
+    disabled: branding.coyoteBrown
+  },
 }
 
 const typography = {
@@ -36,7 +46,7 @@ const typography = {
   h2: {
     fontSize: 'clamp(2rem, 2rem + 1.6667vw, 2.5rem)',
     fontFamily: 'Montserrat',
-    fontWeight: 700,
+    fontWeight: 600,
     marginBottom: '2rem',
     lineHeight: 1.5,
   },
@@ -44,7 +54,6 @@ const typography = {
     fontSize: 'clamp(1.4rem, 1.4rem + 1.6667vw, 1.8rem)',
     marginBottom: '1rem',
     fontWeight: 600,
-    letterSpacing: '0.6px',
     lineHeight: 1.35,
   },
   h4: {
@@ -55,26 +64,23 @@ const typography = {
     fontSize: '1.2rem',
   },
   body1: {
-    fontSize: '1.1rem',
+    fontSize: '1rem',
     lineHeight: 1.5,
     fontWeight: 400,
   },
   body2: {
-    fontFamily: 'Montserrat',
     fontSize: '1.2rem',
     lineHeight: 1.5,
-    letterSpacing: '0.8px',
-    fontWeight: 500,
+    letterSpacing: '0.5px',
+    fontWeight: 600,
   },
   subtitle1: {
     fontSize: '1.2rem',
     lineHeight: 1.5,
-    letterSpacing: '0.8px',
     fontWeight: 400,
   },
   subtitle2: {
     fontWeight: 400,
-    letterSpacing: '0.6px',
     fontSize: '0.9rem',
   },
 }

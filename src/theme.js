@@ -32,7 +32,6 @@ const typography = {
     fontWeight: 700,
     marginBottom: '2rem',
     lineHeight: '1.2',
-    color: "#392D57"
   },
   h2: {
     fontSize: 'clamp(2rem, 2rem + 1.6667vw, 2.5rem)',
@@ -40,7 +39,6 @@ const typography = {
     fontWeight: 700,
     marginBottom: '2rem',
     lineHeight: 1.5,
-    color: "#392D57"
   },
   h3: {
     fontSize: 'clamp(1.4rem, 1.4rem + 1.6667vw, 1.8rem)',
@@ -48,7 +46,6 @@ const typography = {
     fontWeight: 600,
     letterSpacing: '0.6px',
     lineHeight: 1.35,
-    color: "#555555"
   },
   h4: {
     fontSize: 'clamp(1.1rem, 0.8000rem + 1.3333vw, 1.5rem)',
@@ -61,7 +58,6 @@ const typography = {
     fontSize: '1.1rem',
     lineHeight: 1.5,
     fontWeight: 400,
-    color: '#392D57'
   },
   body2: {
     fontFamily: 'Montserrat',
@@ -69,21 +65,18 @@ const typography = {
     lineHeight: 1.5,
     letterSpacing: '0.8px',
     fontWeight: 500,
-    color: '#F5F6F5'
   },
   subtitle1: {
     fontSize: '1.2rem',
     lineHeight: 1.5,
     letterSpacing: '0.8px',
     fontWeight: 400,
-    color: '#392D57'
   },
   subtitle2: {
     fontWeight: 400,
     letterSpacing: '0.6px',
     fontSize: '0.9rem',
   },
-  
 }
 
 

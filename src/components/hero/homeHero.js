@@ -75,7 +75,7 @@ export const HomeHero = ({ content }) => {
           },
         }}
       >
-        <img src={content.image} style={{ width: "100%" }} />
+        <img src={content.image} style={{ width: "100%" }} alt="Lex, a friendly pixelated character, waving"/>
       </Box>
     </MaxWidthWrapper>
   );

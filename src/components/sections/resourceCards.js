@@ -48,6 +48,7 @@ export const ResourceCardSection = ({ content }) => {
                     draggable={false}
                     style={{ width: "100%" }}
                     loading="lazy"
+                    alt={`${resource.title}-link`}
                   />
                 </Button>
                 <Typography

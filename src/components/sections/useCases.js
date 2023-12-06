@@ -27,6 +27,7 @@ export const UseCasesSection = ({ content }) => {
                         maxWidth: '250px'
                       }}
                       loading="lazy"
+                      alt={`${useCase.heading}-logo`}
                     />
                   </Box>
                 ):(

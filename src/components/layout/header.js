@@ -190,7 +190,7 @@ export const Header = () => {
       height: '3rem',
       zIndex: 999,
       backgroundColor: theme.palette.branding.offWhite,
-      boxShadow: 'none',
+      boxShadow: '0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgb(0,0,0,0.02)',
       '& a': {
         display: 'flex',
         padding: '1rem',
@@ -215,7 +215,7 @@ export const Header = () => {
     },
   }
   return (
-    <Paper component="header" sx={styles.root}>
+    <Paper component="header" elevation="8" square sx={styles.root}>
       <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Brand />
         { compact ? <MobileMenu mainMenuLinks={mainMenuLinks}/> : <Menu mainMenuLinks={mainMenuLinks} /> }

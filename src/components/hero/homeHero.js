@@ -11,7 +11,7 @@ export const HomeHero = ({ content }) => {
 
   return (
     <MaxWidthWrapper
-      backgroundColor={theme.palette.branding.deepPurple}
+      backgroundImage='linear-gradient(230deg, #392d57, #3b2a56, #3c2855, #3e2554, #402252, #421f51, #441b4f, #46174d, #48134a, #490e48, #4b0745, #4d0042)'
       sx={{ my: 0, position: "relative", py: "2rem", overflow: "hidden" }}
     >
       <Box

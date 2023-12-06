@@ -27,7 +27,7 @@ export const RotatingVerbs = ({ content: { heading, verbs, subheading } }) => {
             words={verbs}
             delay={{ betweenWords: 2000, transitionDuration: 500 }}
             prefersReducedMotionWord="build"
-            sx={{ fontSize: "1.3em", color: "#239BA6" }}
+            sx={{ fontSize: "1.3em", color: "#44BC9C" }}
           />
           <br />
           with HeLx today?

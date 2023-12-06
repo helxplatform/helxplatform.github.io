@@ -31,7 +31,7 @@ export const InstitutionList = ({ content }) => {
                 },
               }}
             >
-              <a href={institution.link} target="_blank">
+              <a href={institution.link} target="_blank" rel="noreferrer">
                 <img
                   src={institution.image}
                   alt={institution.institutionName}

@@ -25,12 +25,12 @@ export const Footer = () => {
         spacing={{ xs: 1, md: 4 }}
         sx={{padding: '2rem 0 1.5rem'}}
       >
-        <Link href="https://renci.org" target="_blank" underline="hover">
+        <Link href="https://renci.org" target="_blank" rel="noopener" underline="hover">
           <Typography paragraph>
             &copy; { new Date().getFullYear() }  Renaissance Computing Institute
           </Typography>
         </Link>      
-        <Link href="https://github.com/helxplatform" target="_blank" underline="hover" >
+        <Link href="https://github.com/helxplatform" target="_blank" rel="noopener" underline="hover" >
           <Stack
             direction="row"
             spacing={1}

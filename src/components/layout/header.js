@@ -82,7 +82,7 @@ const Menu = ({mainMenuLinks}) => {
               key={ `main-menu-${ page.slug }` }
               activeClassName="active"
             >
-              <Typography variant='body1'>
+              <Typography sx={{fontWeight: '500'}}>
                 { page.title }
               </Typography>
             </Link>
@@ -93,7 +93,7 @@ const Menu = ({mainMenuLinks}) => {
         to="/contact"
         style={{textDecoration: "none"}}
       >
-        <Typography variant='body1'>
+        <Typography sx={{fontWeight: '500'}}>
           Contact Us
         </Typography>
       </Link>
@@ -153,7 +153,7 @@ const MobileMenu = ({mainMenuLinks}) => {
               onClick={ () => setMenuOpen(false) }
               activeClassName="active"
             >
-              <Typography variant='subtitle1'>
+              <Typography sx={{fontWeight: '500'}}>
                 { page.title }
               </Typography>
             </Link>
@@ -164,7 +164,7 @@ const MobileMenu = ({mainMenuLinks}) => {
           onClick={ () => setMenuOpen(false) }
           activeClassName="active"
         >
-          <Typography variant='subtitle1'>
+          <Typography sx={{fontWeight: '500'}}>
             Contact
           </Typography>
         </Link>

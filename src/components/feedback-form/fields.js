@@ -5,11 +5,14 @@ import {
 } from '@mui/material'
 import { Controller, useFormContext } from 'react-hook-form'
 import { subjectOptions } from './config'
+import { useTheme } from "@mui/material/styles";
 
 //
 
 export const NameField = () => {
   const { formState, register } = useFormContext()
+  const theme = useTheme();
+
   return (
     <FormControl>
       <TextField
@@ -18,6 +21,11 @@ export const NameField = () => {
         variant="outlined"
         { ...register('name') }
         error={ !!formState.errors.name }
+        sx={{
+          '.MuiFormLabel-root': {
+            color: theme.palette.primary.main
+          },
+        }}
       />
       {
         'name' in formState.errors && <FormHelperText>{ formState.errors.name.message }</FormHelperText>
@@ -30,6 +38,8 @@ export const NameField = () => {
 
 export const EmailField = () => {
   const { formState, register } = useFormContext()
+  const theme = useTheme();
+
   return (
     <FormControl>
       <TextField
@@ -38,6 +48,12 @@ export const EmailField = () => {
         variant="outlined"
         { ...register('email') }
         error={ !!formState.errors.email }
+        sx={{
+          '.MuiFormLabel-root': {
+            color: theme.palette.primary.main
+          },
+        }}
+
       />
       {
         'email' in formState.errors && <FormHelperText>{ formState.errors.email.message }</FormHelperText>
@@ -50,9 +66,15 @@ export const EmailField = () => {
 
 export const SubjectField = () => {
   const { control, formState } = useFormContext()
+  const theme = useTheme();
+
   return (
-    <FormControl>
-      <InputLabel id="subject-select-label">Subject</InputLabel>
+    <FormControl sx={{
+      '.MuiFormLabel-root': {
+        color: theme.palette.primary.main
+      },
+    }}>
+      <InputLabel id="subject-select-label" color="primary">Subject</InputLabel>
       <Controller
         name="subject"
         control={ control }
@@ -64,6 +86,7 @@ export const SubjectField = () => {
             variant="outlined"
             { ...field }
             error={ !!formState.errors.subject }
+            
           >
             {
               subjectOptions.map(option => (
@@ -87,6 +110,8 @@ export const SubjectField = () => {
 
 export const MessageField = () => {
   const { formState, register } = useFormContext()
+  const theme = useTheme();
+
   return (
     <FormControl>
       <TextField
@@ -96,6 +121,12 @@ export const MessageField = () => {
         { ...register('message') }
         error={ !!formState.errors.message }
         multiline rows={ 5 }
+        sx={{
+          '.MuiFormLabel-root': {
+            color: theme.palette.primary.main
+          },
+        }}
+
       />
       {
         'message' in formState.errors && <FormHelperText>{ formState.errors.message.message }</FormHelperText>

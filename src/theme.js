@@ -21,7 +21,8 @@ const palette = {
     main: branding.deepPurple,
   },
   secondary: {
-    main: branding.yellow
+    main: branding.yellow,
+    light: '#FDDB8D'
   },
   info: {
     main: branding.scienceGreen

@@ -24,7 +24,7 @@ const mainMenuLinks = [
   }
 ]
 
-const Brand = props => {
+export const Brand = props => {
   const style = {
     alignItems: 'center',
     display: 'inline-flex',

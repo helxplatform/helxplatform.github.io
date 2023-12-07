@@ -50,11 +50,11 @@ export const HomeHero = ({ content }) => {
           to="/features"
           sx={{
             marginTop: '100px',
-            color: theme.palette.primary.main,
             textTransform: "none",
             backgroundColor: theme.palette.secondary.main,
+            filter: `drop-shadow(5px 5px 5px ${theme.palette.branding.darkGranite} )`,
             "&:hover": {
-              backgroundColor: `${theme.palette.secondary.main}70`,
+              backgroundColor: theme.palette.secondary.light,
             },
           }}
         >

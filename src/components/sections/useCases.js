@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Button, useTheme } from "@mui/material";
+import { Typography, Box, Grid, useTheme } from "@mui/material";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 
 
@@ -27,6 +27,7 @@ export const UseCasesSection = ({ content }) => {
                         maxWidth: '250px'
                       }}
                       loading="lazy"
+                      alt={`${useCase.heading}-logo`}
                     />
                   </Box>
                 ):(

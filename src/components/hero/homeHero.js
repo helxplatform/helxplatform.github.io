@@ -11,7 +11,7 @@ export const HomeHero = ({ content }) => {
 
   return (
     <MaxWidthWrapper
-      backgroundColor={theme.palette.branding.deepPurple}
+      backgroundImage='linear-gradient(230deg, #392d57, #3e1b4a, #420039)'
       sx={{ my: 0, position: "relative", py: "2rem", overflow: "hidden" }}
     >
       <Box
@@ -29,15 +29,20 @@ export const HomeHero = ({ content }) => {
       >
         <Typography
           variant="h1"
+          color={theme.palette.branding.offWhite}
           sx={{
-            color: theme.palette.branding.offWhite,
             margin: 0,
             lineHeight: 1.3,
           }}
         >
           {content.title}
         </Typography>
-        <Typography variant="body2">{content.subheading}</Typography>
+        <Typography 
+          variant="body2" 
+          color={theme.palette.branding.offWhite}
+        >
+          {content.subheading}
+        </Typography>
         <Button
           variant="filled"
           size="medium"
@@ -45,15 +50,15 @@ export const HomeHero = ({ content }) => {
           to="/features"
           sx={{
             marginTop: '100px',
-            color: theme.palette.branding.deepPurple,
             textTransform: "none",
-            backgroundColor: theme.palette.branding.yellow,
+            backgroundColor: theme.palette.secondary.main,
+            filter: `drop-shadow(5px 5px 5px ${theme.palette.branding.darkGranite} )`,
             "&:hover": {
-              backgroundColor: `${theme.palette.branding.yellow}70`,
+              backgroundColor: theme.palette.secondary.light,
             },
           }}
         >
-          <Typography variant="subtitle2">Why use Helx?</Typography>
+          <Typography variant="body2">Why use Helx?</Typography>
         </Button>
       </Box>
 
@@ -70,7 +75,7 @@ export const HomeHero = ({ content }) => {
           },
         }}
       >
-        <img src={content.image} style={{ width: "100%" }} />
+        <img src={content.image} style={{ width: "100%" }} alt="Lex, a friendly pixelated character, waving"/>
       </Box>
     </MaxWidthWrapper>
   );

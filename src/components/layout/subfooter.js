@@ -35,16 +35,16 @@ export const Subfooter = () => {
           component={Link}
           to='/contact'
           variant="contained"
-          color="info"
+          color="secondary"
           sx={{
             textTransform: "revert", 
             margin:"1.7rem auto",
             '&:hover': {
-              backgroundColor: `${ theme.palette.branding.yellow }70`,
+              backgroundColor: `${ theme.palette.secondary.main }70`,
             }
           }}
         >
-          <Typography variant='subtitle2'>
+          <Typography variant='body2'>
             Contact Us
           </Typography>
         </Button>

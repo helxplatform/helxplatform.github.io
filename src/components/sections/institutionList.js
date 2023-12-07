@@ -9,7 +9,7 @@ export const InstitutionList = ({ content }) => {
   return (
     <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
       <Stack gap="2rem">
-        <Typography variant="h2">
+        <Typography variant="h2" align="center">
           HeLx is made possible through projects supported by the following funders
         </Typography>
         <Stack
@@ -31,7 +31,7 @@ export const InstitutionList = ({ content }) => {
                 },
               }}
             >
-              <a href={institution.link} target="_blank">
+              <a href={institution.link} target="_blank" rel="noreferrer">
                 <img
                   src={institution.image}
                   alt={institution.institutionName}

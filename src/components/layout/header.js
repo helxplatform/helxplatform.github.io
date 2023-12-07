@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { Box, Button, Container, Drawer, IconButton, useMediaQuery, Paper, Typography } from '@mui/material'
+import { Box, Container, Drawer, IconButton, useMediaQuery, Paper, Typography } from '@mui/material'
 import { Menu as MenuIcon, Close as CloseMenuIcon } from '@mui/icons-material'
 import { useTheme } from '@mui/material/styles'
 import { Link } from '../link'
@@ -82,7 +82,7 @@ const Menu = ({mainMenuLinks}) => {
               key={ `main-menu-${ page.slug }` }
               activeClassName="active"
             >
-              <Typography variant='body1'>
+              <Typography sx={{fontWeight: '500'}}>
                 { page.title }
               </Typography>
             </Link>
@@ -93,7 +93,7 @@ const Menu = ({mainMenuLinks}) => {
         to="/contact"
         style={{textDecoration: "none"}}
       >
-        <Typography variant='body1'>
+        <Typography sx={{fontWeight: '500'}}>
           Contact Us
         </Typography>
       </Link>
@@ -123,15 +123,15 @@ const MobileMenu = ({mainMenuLinks}) => {
       transition: 'background-color 250ms',
       '&:hover': {
         color: theme.palette.branding.darkGranite,
-        backgroundColor: `${ theme.palette.branding.deepPurple }24`,
+        backgroundColor: `${ theme.palette.primary.main }24`,
       },
     },
     '& a.active': {
-      backgroundColor: `${ theme.palette.branding.deepPurple }44`,
-      color: theme.palette.branding.deepPurple,
+      backgroundColor: `${ theme.palette.primary.main }44`,
+      color: theme.palette.primary.main,
       '&:hover': {
-        color: theme.palette.branding.deepPurple,
-        backgroundColor: `${ theme.palette.branding.deepPurple }44`,
+        color: theme.palette.primary.main,
+        backgroundColor: `${ theme.palette.primary.main }44`,
       },
     },
 
@@ -153,7 +153,7 @@ const MobileMenu = ({mainMenuLinks}) => {
               onClick={ () => setMenuOpen(false) }
               activeClassName="active"
             >
-              <Typography variant='subtitle1'>
+              <Typography sx={{fontWeight: '500'}}>
                 { page.title }
               </Typography>
             </Link>
@@ -164,7 +164,7 @@ const MobileMenu = ({mainMenuLinks}) => {
           onClick={ () => setMenuOpen(false) }
           activeClassName="active"
         >
-          <Typography variant='subtitle1'>
+          <Typography sx={{fontWeight: '500'}}>
             Contact
           </Typography>
         </Link>
@@ -187,10 +187,10 @@ export const Header = () => {
       position: 'sticky',
       top: 0,
       padding: 0,
-      height: '6rem',
+      height: '3rem',
       zIndex: 999,
       backgroundColor: theme.palette.branding.offWhite,
-      boxShadow: 'none',
+      boxShadow: '0px 5px 5px -3px rgba(0,0,0,0.2), 0px 8px 10px 1px rgb(0,0,0,0.02)',
       '& a': {
         display: 'flex',
         padding: '1rem',
@@ -201,21 +201,21 @@ export const Header = () => {
         transition: 'background-color 250ms, color 250ms',
       },
       '& a.active': {
-        backgroundColor: `${ theme.palette.branding.deepPurple }24`,
-        color: theme.palette.branding.deepPurple,
+        backgroundColor: `${ theme.palette.primary.main }24`,
+        color: theme.palette.primary.main,
         '&:hover': {
-          color: theme.palette.branding.deepPurple,
-          backgroundColor: `${ theme.palette.branding.deepPurple }24`,
+          color: theme.palette.primary.main,
+          backgroundColor: `${ theme.palette.primary.main }24`,
         },
       },
       '& a:hover': {
-        color: theme.palette.branding.deepPurple,
-        backgroundColor: `${ theme.palette.branding.deepPurple }11`,
+        color: theme.palette.primary.main,
+        backgroundColor: `${ theme.palette.primary.main }11`,
       },
     },
   }
   return (
-    <Paper component="header" sx={styles.root}>
+    <Paper component="header" elevation="8" square sx={styles.root}>
       <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Brand />
         { compact ? <MobileMenu mainMenuLinks={mainMenuLinks}/> : <Menu mainMenuLinks={mainMenuLinks} /> }

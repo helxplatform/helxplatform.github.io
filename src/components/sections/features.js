@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Typography, Grid, Box } from "@mui/material";
 import { styled } from "@mui/system";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
@@ -8,7 +8,7 @@ const FeatureCard = styled(Box)(({ theme }) => ({
   backgroundColor: "#fff",
   padding: theme.spacing(4),
   textAlign: "center",
-  color: theme.palette.text.secondary,
+  color: theme.palette.text.primary,
   borderRadius: "16px",
   height: "100%",
 
@@ -35,7 +35,7 @@ export const FeaturesSection = ({ content }) => {
           <Grid item md={4} sm={6} xs={12} key={index} alignItems="stretch">
             <FeatureCard>
               <Box sx={{ minHeight: 100 }}>
-                <img src={feature.image} style={{ display: "block", height: 75 }} loading="lazy" />
+                <img src={feature.image} style={{ display: "block", height: 75 }} loading="lazy" alt={feature.title} />
               </Box>
               <Box>
                 <Typography mb="1rem" sx={{ fontWeight: "bold" }}>

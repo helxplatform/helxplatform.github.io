@@ -19,13 +19,15 @@ const branding = {
 const palette = {
   primary: {
     main: branding.deepPurple,
+    light: '#6a54a2',
   },
   secondary: {
     main: branding.yellow,
-    light: '#FDDB8D'
+    light: '#fecc5a'
   },
   info: {
-    main: branding.scienceGreen
+    main: branding.scienceGreen,
+    light: '#7cd0ba'
   },
   branding: branding,
   text: {
@@ -70,7 +72,7 @@ const typography = {
     fontWeight: 400,
   },
   body2: {
-    fontSize: '1.2rem',
+    fontSize: '1.1rem',
     lineHeight: 1.5,
     letterSpacing: '0.5px',
     fontWeight: 600,

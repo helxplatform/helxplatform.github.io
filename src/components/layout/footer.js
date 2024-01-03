@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, Typography, Link, Stack } from '@mui/material'
+import { Box, Typography, Stack } from '@mui/material'
+import { Link } from '../link'
 import { useTheme } from '@mui/material/styles'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import './layout.css'

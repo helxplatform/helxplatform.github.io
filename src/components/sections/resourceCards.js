@@ -3,6 +3,7 @@ import { Typography, Box, Grid, Button, Link as MUILink} from "@mui/material";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 import { ExternalLinkIcon } from "../icons"
 import { useTheme } from "@emotion/react";
+import { Link } from "../link"
 
 export const ResourceCardSection = ({ content }) => {
   const theme = useTheme();
@@ -24,7 +25,7 @@ export const ResourceCardSection = ({ content }) => {
       <Grid container spacing={4} my="2rem" sx={{display: "flex", justifyContent: "center"}}>
         {content.map((resource, index) => (
           <Grid item md={4} sm={12} xs={12} key={index}>
-            <MUILink href={resource.link} target="_blank" rel="noopener">
+            <Link to={resource.link}>
               <Box
                 display="flex"
                 flexDirection={{ md: "column", sm: "row" }}
@@ -65,7 +66,7 @@ export const ResourceCardSection = ({ content }) => {
                   />
                 </Typography>
               </Box>
-            </MUILink>
+            </Link>
           </Grid>
         ))}
       </Grid>

@@ -1,15 +1,16 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { Link as GatsbyLink } from 'gatsby'
+import { Link as MUILink } from '@mui/material'
 
 const ExternalLink = ({ to, children, ...props }) => {
   return (
-    <a
+    <MUILink
       href={ to }
       target="_blank"
       rel="noopener noreferrer"
       style={{textDecoration: "none"}}
-      >{ children }</a>
+      >{ children }</MUILink>
   )
 }
 

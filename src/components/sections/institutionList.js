@@ -1,5 +1,6 @@
 import React from "react";
 import { Typography, Stack, Box } from "@mui/material";
+import { Link } from '../link'
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 import { useTheme } from '@mui/material/styles'
 
@@ -31,14 +32,14 @@ export const InstitutionList = ({ content }) => {
                 },
               }}
             >
-              <a href={institution.link} target="_blank" rel="noreferrer">
+              <Link to={institution.link}>
                 <img
                   src={institution.image}
                   alt={institution.institutionName}
                   style={{ display: "block", maxHeight: 100 }}
                   loading="lazy"
                 />
-              </a>
+              </Link>
             </Box>
           ))}
         </Stack>

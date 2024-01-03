@@ -1,0 +1,55 @@
+import React from 'react'
+import { Box, Typography, Stack, Button, Container } from '@mui/material'
+import { useTheme } from '@mui/material/styles'
+import './layout.css'
+import { Link } from 'gatsby'
+
+export const Subfooter = () => {
+  const theme = useTheme()
+
+  return (
+    <Container maxWidth="md">
+      <Stack
+        direction={{ xs: 'column', md: 'row' }}
+        spacing={{ xs: 1, md: 2 }}
+        sx={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          marginY: '4rem',
+        }}
+      >
+        <Box sx={{
+          flex: '4'
+        }}>
+          <Typography variant='h3'>
+            Have more questions about HeLx? Reach out to the team to learn more.
+          </Typography>
+        </Box>
+        <Box sx={{
+          flex: '1',
+          display: 'flex',
+          justifyContent: 'center',
+        }}>
+        <Button
+          component={Link}
+          to='/contact'
+          variant="contained"
+          color="secondary"
+          sx={{
+            textTransform: "revert", 
+            margin:"1.7rem auto",
+            '&:hover': {
+              backgroundColor: `${ theme.palette.secondary.main }70`,
+            }
+          }}
+        >
+          <Typography variant='body2'>
+            Contact Us
+          </Typography>
+        </Button>
+        </Box>
+      </Stack>
+    </Container>
+  )
+}

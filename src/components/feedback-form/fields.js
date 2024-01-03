@@ -65,39 +65,22 @@ export const EmailField = () => {
 //
 
 export const SubjectField = () => {
-  const { control, formState } = useFormContext()
+  const { formState, register } = useFormContext()
   const theme = useTheme();
 
   return (
-    <FormControl sx={{
-      '.MuiFormLabel-root': {
-        color: theme.palette.primary.main
-      },
-    }}>
-      <InputLabel id="subject-select-label" color="primary">Subject</InputLabel>
-      <Controller
+    <FormControl>
+      <TextField
         name="subject"
-        control={ control }
-        render={ ({ field }) => (
-          <Select
-            labelId="subject-select-label"
-            name="subject"
-            label="Subject"
-            variant="outlined"
-            { ...field }
-            error={ !!formState.errors.subject }
-            
-          >
-            {
-              subjectOptions.map(option => (
-                <MenuItem
-                  key={ `subject-option-${ option.value }` }
-                  value={ option.value }
-                >{ option.displayText }</MenuItem>
-              ))
-            }
-          </Select>
-        ) }
+        label="Subject"
+        variant="outlined"
+        { ...register('subject')}
+        error={ !!formState.errors.subject }
+        sx={{
+          '.MuiFormLabel-root': {
+            color: theme.palette.primary.main
+          },
+        }}
       />
       {
         'subject' in formState.errors && <FormHelperText>{ formState.errors.subject.message }</FormHelperText>

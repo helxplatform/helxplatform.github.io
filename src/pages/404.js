@@ -25,9 +25,9 @@ const NotFoundPage = () => {
         }}>404</Typography>
         
         <StaticImage 
-          src='../images/about/lex-hero-about.svg' 
+          src='../images/confused-lex.png' 
           alt="Lex" 
-          style={{ width: "30%" }} 
+          style={{ width: "20%" }} 
           loading="lazy" 
         />
         <br/>

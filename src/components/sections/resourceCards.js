@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Button, Link as MUILink} from "@mui/material";
+import { Typography, Box, Grid, Button } from "@mui/material";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 import { ExternalLinkIcon } from "../icons"
 import { useTheme } from "@emotion/react";

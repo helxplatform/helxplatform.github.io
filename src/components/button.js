@@ -6,7 +6,7 @@ import { useTheme } from '@mui/material/styles'
 
 
 
-export const Button = ({to, color, children, ...props}) => {
+export const Button = ({to, color, children,  sx = [], ...props}) => {
   const theme = useTheme();
 
   return (
@@ -15,10 +15,12 @@ export const Button = ({to, color, children, ...props}) => {
     variant="contained"
     size="medium"
     color={ color }
-    sx={{
+    sx={[{
       textTransform: "none",
       padding: "0.5rem 2rem"
-    }}
+    },
+    ...(Array.isArray(sx) ? sx : [sx]),
+  ]}
     {...props}
   >
     <Typography variant="body2">

@@ -1,10 +1,11 @@
 import * as React from "react"
-import { Link } from "gatsby"
 import { Brand } from "../components/layout/header"
 import { MaxWidthWrapper } from "../components/layout/maxWidthWrapper"
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from "../components/link";
+import { Button } from "../components/button";
 
 const NotFoundPage = () => {
   const theme = useTheme();
@@ -34,22 +35,15 @@ const NotFoundPage = () => {
 
         <Typography variant="body2">We're sorry. This page does not exist.</Typography>
         <br/>
-        
+        <br/>
 
         <Button
-          variant="filled"
-          size="medium"
           component={Link}
-          to="/features"
+          to="/"
           sx={{
-            textTransform: "none",
-            padding: '0.75rem 2rem',
-            marginBottom: '2rem',
             backgroundImage: 'linear-gradient(270deg, #392D57, #8f4183)',
             color: 'white',
-            borderRadius: '1rem',
             filter: `drop-shadow(5px 5px 5px ${theme.palette.branding.deepPurple}50 )`,
-
             "&:hover": {
               backgroundImage: 'linear-gradient(270deg, #392D5790, #8f418390)',
             },
@@ -57,6 +51,7 @@ const NotFoundPage = () => {
         >
           <Typography variant="body2">Go to Homepage</Typography>
         </Button>
+        <br/>
         <br/>
         <Typography paragraph><Link to="/"><Brand/></Link></Typography>
       </Box>

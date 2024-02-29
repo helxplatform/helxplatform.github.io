@@ -1,0 +1,45 @@
+{
+  "name": "helx-marketing-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "helx-marketing-site",
+  "author": "Suejin Kim",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@hookform/resolvers": "^3.3.2",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
+    "axios": "^1.6.2",
+    "gatsby": "^4.25.7",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-google-gtag": "^4.25.0",
+    "gatsby-plugin-image": "^2.25.0",
+    "gatsby-plugin-manifest": "^4.25.0",
+    "gatsby-plugin-material-ui": "^4.1.0",
+    "gatsby-plugin-sharp": "^4.25.0",
+    "gatsby-source-filesystem": "^4.25.0",
+    "gatsby-transformer-sharp": "^4.25.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "react-hook-form": "^7.48.2",
+    "react-router-dom": "^6.20.1",
+    "yup": "^1.3.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}

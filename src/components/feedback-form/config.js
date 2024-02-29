@@ -22,8 +22,7 @@ export const schema = yup.object().shape({
     .email('Invalid email format'),
   subject: yup
     .string()
-    .oneOf(subjectOptions.map(option => option.value))
-    .required('Please select the most applicable subject.'),
+    .required('Please enter a subject.'),
   message: yup
     .string()
     .required('Please enter a message.'),

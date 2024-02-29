@@ -1,8 +1,9 @@
 import * as React from "react";
-import { Box, Typography, Button } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
-import { Link } from "gatsby";
+import { Link } from "../link";
+import { Button } from "../button";
 
 const BREAKPOINT = 875;
 
@@ -40,25 +41,16 @@ export const HomeHero = ({ content }) => {
         <Typography 
           variant="body2" 
           color={theme.palette.branding.offWhite}
+          sx={{marginBottom: '120px'}}
         >
           {content.subheading}
         </Typography>
         <Button
-          variant="filled"
-          size="medium"
           component={Link}
           to="/features"
-          sx={{
-            marginTop: '100px',
-            textTransform: "none",
-            backgroundColor: theme.palette.secondary.main,
-            filter: `drop-shadow(5px 5px 5px ${theme.palette.branding.darkGranite} )`,
-            "&:hover": {
-              backgroundColor: theme.palette.secondary.light,
-            },
-          }}
+          color="secondary"
         >
-          <Typography variant="body2">Why use Helx?</Typography>
+          Why use Helx?
         </Button>
       </Box>
 

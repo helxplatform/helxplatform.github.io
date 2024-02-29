@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 import PropTypes from 'prop-types'
-import { Box, Button, Divider, Stack, Typography } from '@mui/material'
+import { Box, Divider, Stack, Typography } from '@mui/material'
+import { Button } from '../button'
 import {
   Check as CheckIcon,
   Refresh as ResetIcon,
@@ -161,7 +162,8 @@ export const FeedbackForm = ({ presets }) => {
 
       <Stack
         direction="row"
-        gap={ 4 }
+        gap={ 8 }
+        justifyContent="center"
         sx={{
           '& > button': { flex: 1 },
           minWidth: '100%',

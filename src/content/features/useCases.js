@@ -12,17 +12,22 @@ export const useCases = [
   {
     "image": SciDAS,
     "heading": "SciDAS",
-    "paragraph": "For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU-intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand."
-    
+    "paragraph": "For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU-intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand.",
+    "linkText": "Learn about SciDAS here",
+    "linkURL": "https://renci.org/research/network-research-and-infrastructure/scientific-data-analysis-at-scale-scidas/"
   },
   {
     "image": RestartingResearch,
-    "heading": "restarting Research",
-    "paragraph": "restarting Research is a project for data management and analytics of COVID-19 RT-PCR and custom antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science notebooks in Python and R kernels as environments for data science experimentation."
+    "heading": "Restarting Research",
+    "paragraph": "Restarting Research is a project for data management and analytics of COVID-19 RT-PCR and custom antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science notebooks in Python and R kernels as environments for data science experimentation.",
+    "linkText": "Learn about the Restarting Research project here",
+    "linkURL": "https://tracs.unc.edu/index.php/news-articles/1704-covid-19-study-recruiting-unc-faculty-students-and-staff-involved-with-research-on-campus"
   },
   {
     "image": BRAINI,
     "heading": "BRAIN-I",
-    "paragraph": "BRAIN-I is a computational infrastructure for handling huge medical images combined with a discovery environment where neuroscience researchers can run custom applications and conduct their analysis. BRAIN-I handles big data and computation in a user-friendly way so even new researchers can focus fully on their science."    
+    "paragraph": "BRAIN-I is a computational infrastructure for handling huge medical images combined with a discovery environment where neuroscience researchers can run custom applications and conduct their analysis. BRAIN-I handles big data and computation in a user-friendly way so even new researchers can focus fully on their science.",
+    "linkText": "Learn more about the team using BRAIN-I",
+    "linkURL": "https://www.steinlab.org/"
   }
 ]

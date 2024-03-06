@@ -1,7 +1,7 @@
 import React from "react";
-import { Typography, Box, Grid, useTheme } from "@mui/material";
+import { Typography, Box, Button, Grid, useTheme } from "@mui/material";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
-
+import { Link } from '../link'
 
 export const UseCasesSection = ({ content }) => {
   const theme = useTheme();
@@ -10,7 +10,6 @@ export const UseCasesSection = ({ content }) => {
     <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
       <Box>
         <Typography variant="h2">
-
           How is HeLx being used?
         </Typography>
         <Grid container spacing={{ md: 8, sm: 6, xs: 4 }}>
@@ -38,15 +37,17 @@ export const UseCasesSection = ({ content }) => {
                   </Box>
                 )}
                 <Typography>{useCase.paragraph}</Typography>
-                {/* <Button
-                  mt="1rem"
-                  variant="contained"
-                  color="secondary"
-                  size="medium"
-                  sx={{ marginTop: 'auto', color: "white", textTransform: "revert" }}
-                >
-                  Learn more
-                </Button> */}
+                { useCase.linkText && (
+                  <Box sx={{display: 'flex', justifyContent:'center', width: '100%'}}>
+                  <Link to={useCase.linkURL}>
+                  <Button mt="1rem" variant="contained" color="primary" size="medium"
+                    sx={{textTransform: "revert" }}
+                  >
+                    {useCase.linkText}
+                  </Button>
+                  </Link>
+                </Box>
+                )}
               </Box>
             </Grid>
           ))}

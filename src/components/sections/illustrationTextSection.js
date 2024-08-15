@@ -17,7 +17,7 @@ const AboutCard = styled(Box)(({ theme }) => ({
 
 const IllustrationItem = ({section}) => (
   <Box sx={{
-    display: { sm: 'none', md: 'flex' } ,
+    display: { xs: 'none', sm: 'none', md: 'flex' } ,
     flex: {
       sm: '0 0',
       md: 1

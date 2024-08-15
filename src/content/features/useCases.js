@@ -21,7 +21,7 @@ export const useCases = [
   {
     "image": RestartingResearch,
     "heading": "Restarting Research",
-    "paragraph": "Restarting Research is a project for data management and analytics of COVID-19 RT-PCR and custom antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science notebooks in Python and R kernels as environments for data science experimentation.",
+    "paragraph": "Restarting Research (ReCCAP) is a project for data management and analytics of COVID-19 RT-PCR and custom antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science notebooks in Python and R kernels as environments for data science experimentation.",
     "linkText": "Learn about the Restarting Research project here",
     "linkURL": "https://tracs.unc.edu/index.php/news-articles/1704-covid-19-study-recruiting-unc-faculty-students-and-staff-involved-with-research-on-campus"
   },

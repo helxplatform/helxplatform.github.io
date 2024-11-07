@@ -6,11 +6,12 @@ export const MaxWidthWrapper = ({
   backgroundColor = 'transparent',
   children,
   backgroundImage,
+  gutterBottom,
   sx
 }) => {
   return (
-    <Box sx={{ backgroundColor, backgroundImage, width: "100%", display: 'flow-root' }}> {/* flow-root disables margin collapse */}
-      <Container maxWidth={maxWidth} sx={{ marginY: '4rem', ...sx}}>
+    <Box sx={{ backgroundColor, backgroundImage, width: "100%", display: 'flow-root', mb: gutterBottom && 5 }}> {/* flow-root disables margin collapse */}
+      <Container maxWidth={maxWidth} sx={{  ...sx}}>
         {children}
       </Container>
     </Box>

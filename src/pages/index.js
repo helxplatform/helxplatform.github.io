@@ -16,11 +16,11 @@ const IndexPage = () => {
 
       <HeadingSection content={headingContent1}/>
 
-      <IllustrationTextSection content={homeSection}/>
+      <IllustrationTextSection content={homeSection} imageSize="small"/>
 
       <RotatingVerbs content={rotatingVerbs}/>
 
-      <FeaturesSection content={helxFeatures}/>
+      <FeaturesSection content={helxFeatures} columns={3}/>
 
       <Subfooter/>
     </Fragment>

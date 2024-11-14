@@ -1,6 +1,10 @@
 import photoLectureHall from '../../images/eduhelx/photo-lecture-hall.png'
 import photoWomanWithComputer from '../../images/eduhelx/photo-woman-with-computer.png'
 
+export const readMoreEduhelxHeading = {
+  title: 'Read the Latest EduHeLx News',
+}
+
 export const readMoreEduhelx = [
   {
     "illustration": photoLectureHall,

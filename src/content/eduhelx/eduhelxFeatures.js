@@ -3,6 +3,11 @@ import flexibleIcon from '../../images/eduhelx/flexible-icon.png'
 import launchIcon from '../../images/eduhelx/launch-icon.png'
 import cloudBasedIcon from '../../images/eduhelx/cloud-based-icon.png'
 
+export const eduhelxFeaturesHeading = {
+  title: 'Fantastic Features',
+  subtitle: 'EduHeLx is customized for the unique needs of your classroom, your materials, and your students.'
+}
+
 export const eduhelxFeatures = [
   {
     "image": customizedIcon,
@@ -22,6 +27,6 @@ export const eduhelxFeatures = [
   {
     "image": cloudBasedIcon,
     "title": "Cloud Native, Lightweight Orchestration",
-    "subheading": "As a low-code, dynamically orchestrated, metadata driven framework, EduHeLx provides instructors as well as students a uniquely no-download, low-barrier entry to their classroom environment"
+    "subheading": "As a low-code, dynamically orchestrated, metadata driven framework, EduHeLx provides instructors and students a uniquely no-download, low-barrier entry to their classroom environment"
   }
 ]

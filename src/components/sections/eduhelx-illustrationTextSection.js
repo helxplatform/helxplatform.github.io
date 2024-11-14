@@ -2,10 +2,8 @@ import React from "react";
 import { Typography, Box, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
-import { useTheme } from "@emotion/react";
 
 const AboutCard = styled(Box)(({ theme }) => ({
-  padding: theme.spacing(2),
   color: theme.palette.text.primary,
   height: "100%",
   display: "flex",
@@ -47,11 +45,10 @@ const TextItem = ({section}) => (
 )
 
 
-export const EduHelxIllustrationTextSection = ({ content, left, sx }) => {
-  const theme = useTheme();
+export const EduHelxIllustrationTextSection = ({ content, left }) => {
 
   return (
-    <MaxWidthWrapper maxWidth='lg' sx={{ my: '2rem', [theme.breakpoints.up('md')]: { my: '1rem' }, ...sx}}>
+    <MaxWidthWrapper maxWidth='lg' gutterBottom>
       {
         content.map((section, index) => {
           const contentOrder = left ? 'row-reverse' : index % 2 === 0 ? 'row' : 'row-reverse'
@@ -60,7 +57,6 @@ export const EduHelxIllustrationTextSection = ({ content, left, sx }) => {
               direction={contentOrder}
               alignItems='center'
               spacing={{ xs: 0, sm: 0, md: 6 }}
-              mb={{ xs: 0, sm: 0, md: '2rem' }}
               key={`illustrationSection-${index}`}
             >
               <IllustrationItem section={section}/>

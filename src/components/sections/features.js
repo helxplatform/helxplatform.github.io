@@ -23,7 +23,7 @@ export const FeaturesSection = ({ content, columns }) => {
   const columnWidth = columns === 3 ? 4 : columns === 2 ? 6 : 12
   
   return (
-    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} maxWidth='xl'>   
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} maxWidth='xl' gutterBottom>   
     <Box
       sx={{
         display: "flex",

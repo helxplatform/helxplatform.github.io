@@ -9,7 +9,7 @@ export const FaqsSection = ({ content }) => {
   const theme = useTheme();
 
   return (
-    <MaxWidthWrapper maxWidth='xl' backgroundColor={theme.palette.branding.offWhite}>
+    <MaxWidthWrapper maxWidth='xl' backgroundColor={theme.palette.branding.offWhite} gutterBottom>
       <Grid
         container
         spacing={{ md: 4, sm: 2, xs: 2 }}

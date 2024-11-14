@@ -13,10 +13,8 @@ export const EduHelxHero = ({ content }) => {
   return (
     <MaxWidthWrapper
       backgroundImage='linear-gradient(230deg, #372D54, #372D54)'
-      sx={{ 
-        my: 0, 
-        py: 6, 
-      }}
+      noMargin
+      gutterBottom
     >
       <Box
         sx={{
@@ -39,11 +37,11 @@ export const EduHelxHero = ({ content }) => {
             fontWeight: 300,
           }}
         >
-          In Your Classroom <br/>
           Why Choose <img 
             src={EduHelxLogo} 
             style={{maxWidth: '300px', verticalAlign: 'middle' }}
-          />{" "}?
+          /><br/>
+          in Your Classroom?
         </Typography>
         <Box sx={{
           maxWidth: "550px",

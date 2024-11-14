@@ -45,14 +45,14 @@ const TextItem = ({section}) => (
 )
 
 
-export const IllustrationTextSection = ({ content, left, backgroundColor, imageSize }) => {
+export const IllustrationTextSection = ({ content, left, backgroundColor, imageSize, sx }) => {
   const theme = useTheme();
 
   return (
     <MaxWidthWrapper
       maxWidth='lg'
       backgroundColor={backgroundColor}
-      sx={{ [theme.breakpoints.up('md')]: { my: '4rem' } }}
+      gutterBottom
     >
       {
         content.map((section, index) => {

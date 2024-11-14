@@ -10,7 +10,7 @@ export const Contact = () => {
     <GoogleReCaptchaProvider
       reCaptchaKey="6Ldg7hcnAAAAAJ_4nMzQtUIH-SDvqnYLuFfxmUY5"
     >
-      <MaxWidthWrapper maxWidth="md">
+      <MaxWidthWrapper maxWidth="md" gutterBottom>
         <Typography variant="h1" textAlign="center">
           Contact Us
         </Typography>

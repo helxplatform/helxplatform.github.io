@@ -7,7 +7,7 @@ export const UseCasesSection = ({ content }) => {
   const theme = useTheme();
 
   return (
-    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} gutterBottom>
       <Box>
         <Typography variant="h2">
           How is HeLx being used?

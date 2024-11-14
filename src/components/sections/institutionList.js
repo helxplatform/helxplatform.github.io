@@ -8,7 +8,7 @@ export const InstitutionList = ({ content }) => {
   const theme = useTheme()
 
   return (
-    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite}>
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} gutterBottom>
       <Stack gap="2rem">
         <Typography variant="h2" align="center">
           HeLx is made possible through projects supported by the following funders

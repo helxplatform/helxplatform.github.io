@@ -3,7 +3,6 @@ import { MaxWidthWrapper } from "../layout/maxWidthWrapper"
 import { Box, IconButton, Typography, Card, CardContent } from '@mui/material';
 import styled from '@emotion/styled';
 import { ArrowBack, ArrowForward } from '@mui/icons-material';
-import { useTheme } from "@emotion/react";
 
 const CarouselWrapper = styled(Box)({
   display: 'flex',
@@ -70,7 +69,6 @@ const NavigationButton = styled(IconButton)({
 });
 
 export const TestimonialSection = ({ items }) => {
-  const theme = useTheme();
 
   const [currentIndex, setCurrentIndex] = useState(0);
 

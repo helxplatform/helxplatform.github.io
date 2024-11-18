@@ -70,7 +70,6 @@ const Toggler = ({ active, clickHandler }) => {
 }
 
 const Menu = ({mainMenuLinks}) => {
-  const theme = useTheme()
 
   return (
     <Fragment>

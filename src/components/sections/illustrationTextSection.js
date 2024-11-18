@@ -2,7 +2,6 @@ import React from "react";
 import { Typography, Box, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
-import { useTheme } from "@emotion/react";
 import { Link } from "../link"
 
 const AboutCard = styled(Box)(({ theme }) => ({
@@ -45,8 +44,7 @@ const TextItem = ({section}) => (
 )
 
 
-export const IllustrationTextSection = ({ content, left, backgroundColor, imageSize, sx }) => {
-  const theme = useTheme();
+export const IllustrationTextSection = ({ content, left, backgroundColor, imageSize }) => {
 
   return (
     <MaxWidthWrapper

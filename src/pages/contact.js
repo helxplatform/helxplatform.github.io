@@ -4,7 +4,7 @@ import { MaxWidthWrapper } from "../components/layout/maxWidthWrapper";
 import { GoogleReCaptchaProvider } from 'react-google-recaptcha-v3'
 import { FeedbackForm } from '../components/feedback-form'
 
-export const Contact = () => {
+const Contact = () => {
 
   return (
     <GoogleReCaptchaProvider

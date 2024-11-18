@@ -2,8 +2,6 @@ import * as React from "react";
 import { Box, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
-import { Link } from "../link";
-import { Button } from "../button";
 import EduHelxLogo from "../../images/eduhelx/EduHeLx-logo.png"
 const BREAKPOINT = 750;
 
@@ -39,6 +37,7 @@ export const EduHelxHero = ({ content }) => {
         >
           Why Choose <img 
             src={EduHelxLogo} 
+            alt="EduHeLx logo"
             style={{maxWidth: '300px', verticalAlign: 'middle' }}
           /><br/>
           in Your Classroom?

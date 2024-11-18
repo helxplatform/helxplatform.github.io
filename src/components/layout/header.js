@@ -23,7 +23,7 @@ const mainMenuLinks = [
     slug: 'resources'
   },
   {
-    title: 'EduHelx',
+    title: 'EduHeLx',
     slug: 'eduhelx'
   }
 ]

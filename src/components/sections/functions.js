@@ -4,7 +4,7 @@ import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
 
 export const FunctionsSection = ({ content }) => {
   return (
-    <MaxWidthWrapper>
+    <MaxWidthWrapper gutterBottom>
       <Typography variant="h2">
         What can HeLx do for you?
       </Typography>

@@ -14,6 +14,7 @@ export const HomeHero = ({ content }) => {
     <MaxWidthWrapper
       backgroundImage='linear-gradient(230deg, #392d57, #3e1b4a, #420039)'
       sx={{ my: 0, position: "relative", py: "2rem", overflow: "hidden" }}
+      noMargin
     >
       <Box
         sx={{

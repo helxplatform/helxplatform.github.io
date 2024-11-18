@@ -18,11 +18,12 @@ const FeatureCard = styled(Box)(({ theme }) => ({
 }));
 
 
-export const FeaturesSection = ({ content }) => {
+export const FeaturesSection = ({ content, columns }) => {
   const theme = useTheme();
+  const columnWidth = columns === 3 ? 4 : columns === 2 ? 6 : 12
   
   return (
-    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} maxWidth='xl'>   
+    <MaxWidthWrapper backgroundColor={theme.palette.branding.offWhite} maxWidth='xl' gutterBottom>   
     <Box
       sx={{
         display: "flex",
@@ -32,7 +33,7 @@ export const FeaturesSection = ({ content }) => {
     >
       <Grid container spacing={4} pb="4rem" sx={{ maxWidth: "1300px", padding: "32px" }}>
         {content.map((feature, index) => (
-          <Grid item md={4} sm={6} xs={12} key={index} alignItems="stretch">
+          <Grid item md={columnWidth} sm={6} xs={12} key={index} alignItems="stretch">
             <FeatureCard>
               <Box sx={{ minHeight: 100 }}>
                 <img src={feature.image} style={{ display: "block", height: 75 }} loading="lazy" alt={feature.title} />

@@ -12,7 +12,7 @@ import { EduHelxIllustrationTextSection, FeaturesSection, HeadingSection, Testim
 import { Subfooter } from '../components/layout/subfooter'
 import { useTheme } from "@emotion/react";
 
-const EduHelxPage = () => {
+const EduHeLxPage = () => {
   const theme = useTheme();
 
   return (
@@ -49,6 +49,6 @@ const EduHelxPage = () => {
   )
 }
 
-export default EduHelxPage
+export default EduHeLxPage
 
-export const Head = () => <title>EduHelx Page</title>
+export const Head = () => <title>EduHeLx Page</title>

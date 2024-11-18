@@ -23,7 +23,7 @@ const mainMenuLinks = [
     slug: 'resources'
   },
   {
-    title: 'EduHelx',
+    title: 'EduHeLx',
     slug: 'eduhelx'
   }
 ]
@@ -70,7 +70,6 @@ const Toggler = ({ active, clickHandler }) => {
 }
 
 const Menu = ({mainMenuLinks}) => {
-  const theme = useTheme()
 
   return (
     <Fragment>

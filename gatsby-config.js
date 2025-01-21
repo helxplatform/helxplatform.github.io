@@ -4,36 +4,49 @@
 module.exports = {
   siteMetadata: {
     title: `helx-marketing-site`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        icon: `src/images/helxLogo.svg`
-      }
-    },
-    "gatsby-plugin-image", 
-    "gatsby-plugin-sharp", 
-    "gatsby-transformer-sharp", 
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        "name": "images",
-        "path": "./src/images/"
+        icon: `src/images/helxLogo.svg`,
       },
-      __key: "images"
-    }, 
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content",
+        path: "./src/content/",
+      },
+    },
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
     "gatsby-plugin-material-ui",
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `open sans\:300,400,500,600`,
-          `montserrat\:500,600,700,800,900`
+          `montserrat\:500,600,700,800,900`,
         ],
-        display: 'swap'
-      }
+        display: "swap",
+      },
     },
     {
       resolve: `gatsby-plugin-google-gtag`,
@@ -41,5 +54,5 @@ module.exports = {
         trackingIds: ["G-PEWT74G972"],
       },
     },
-  ]
+  ],
 };

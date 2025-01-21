@@ -1,32 +1,41 @@
-import React, { Fragment } from 'react'
-import { HomeHero } from '../components/hero/homeHero'
-import { homeSection, rotatingVerbs, helxFeatures, homeHero }  from '../content'
-import { HeadingSection, IllustrationTextSection, RotatingVerbs, FeaturesSection } from '../components/sections'
-import { Subfooter } from '../components/layout/subfooter'
+import React, { Fragment } from "react";
+import { HomeHero } from "../components/hero/homeHero";
+import { homeSection, rotatingVerbs, helxFeatures, homeHero } from "../content";
+import {
+  HeadingSection,
+  IllustrationTextSection,
+  RotatingVerbs,
+  FeaturesSection,
+} from "../components/sections";
+import { Subfooter } from "../components/layout/subfooter";
+// import NathanTest from "../content/about/nathan-test.mdx";
 
 const headingContent1 = {
-  title: 'Launch, Analyze, and Discover Your Data With HeLx',
-  subtitle: 'HeLx empowers researchers in domains from plant genomics to neuroscience to work with their preferred tools and apps in the cloud at scale.'
-}
+  title: "Launch, Analyze, and Discover Your Data With HeLx",
+  subtitle:
+    "HeLx empowers researchers in domains from plant genomics to neuroscience to work with their preferred tools and apps in the cloud at scale.",
+};
 
 const IndexPage = () => {
   return (
     <Fragment>
-      <HomeHero content={homeHero}/>
+      <HomeHero content={homeHero} />
 
-      <HeadingSection content={headingContent1}/>
+      {/* <NathanTest /> */}
 
-      <IllustrationTextSection content={homeSection} imageSize="small"/>
+      <HeadingSection content={headingContent1} />
 
-      <RotatingVerbs content={rotatingVerbs}/>
+      <IllustrationTextSection content={homeSection} imageSize="small" />
 
-      <FeaturesSection content={helxFeatures} columns={3}/>
+      <RotatingVerbs content={rotatingVerbs} />
 
-      <Subfooter/>
+      <FeaturesSection content={helxFeatures} columns={3} />
+
+      <Subfooter />
     </Fragment>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home Page</title>;

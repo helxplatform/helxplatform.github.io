@@ -8,7 +8,7 @@ import {
   FeaturesSection,
 } from "../components/sections";
 import { Subfooter } from "../components/layout/subfooter";
-// import NathanTest from "../content/about/nathan-test.mdx";
+import NathanTest from "../content/about/nathan-test.mdx";
 
 const headingContent1 = {
   title: "Launch, Analyze, and Discover Your Data With HeLx",
@@ -21,7 +21,7 @@ const IndexPage = () => {
     <Fragment>
       <HomeHero content={homeHero} />
 
-      {/* <NathanTest /> */}
+      <NathanTest />
 
       <HeadingSection content={headingContent1} />
 

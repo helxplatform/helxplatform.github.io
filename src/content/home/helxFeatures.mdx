@@ -1,25 +1,13 @@
 import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
-import { Box, Grid, Typography } from "@mui/material";
-import { styled } from "@mui/system";
+import { Grid, Box, Typography } from "@mui/material";
+import { FeatureCard } from "../../components/sections/features";
+
 import applications from "../../images/home/applications-workflow-home.svg";
 import search from "../../images/home/complex-search-func-icon-home.svg";
 import openSource from "../../images/home/open-source-icon-home.svg";
 import scalable from "../../images/home/scalable-icon-home.svg";
 import flexible from "../../images/home/flexibility-icon-home.svg";
 import metadata from "../../images/home/metadata-driven-icon-home.svg";
-
-// Styled FeatureCard component
-const FeatureCard = styled(Box)(({ theme }) => ({
-backgroundColor: "#fff",
-padding: theme.spacing(4),
-textAlign: "center",
-color: theme.palette.text.primary,
-borderRadius: "16px",
-height: "100%",
-display: "flex",
-flexDirection: "column",
-alignItems: "center",
-}));
 
 # Features
 
@@ -32,7 +20,6 @@ alignItems: "center",
     }}
   >
     <Grid container spacing={4} pb="4rem" sx={{ maxWidth: "1300px", padding: "32px" }}>
-      {/* Feature Cards - looping through helxFeatures */}
       <Grid item md={4} sm={6} xs={12}>
         <FeatureCard>
           <Box sx={{ minHeight: 100 }}>
@@ -48,7 +35,7 @@ alignItems: "center",
           </Box>
         </FeatureCard>
       </Grid>
-      
+
       <Grid item md={4} sm={6} xs={12}>
         <FeatureCard>
           <Box sx={{ minHeight: 100 }}>

@@ -1,0 +1,134 @@
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
+import { Box, Grid, Typography } from "@mui/material";
+import { styled } from "@mui/system";
+import applications from "../../images/home/applications-workflow-home.svg";
+import search from "../../images/home/complex-search-func-icon-home.svg";
+import openSource from "../../images/home/open-source-icon-home.svg";
+import scalable from "../../images/home/scalable-icon-home.svg";
+import flexible from "../../images/home/flexibility-icon-home.svg";
+import metadata from "../../images/home/metadata-driven-icon-home.svg";
+
+// Styled FeatureCard component
+const FeatureCard = styled(Box)(({ theme }) => ({
+backgroundColor: "#fff",
+padding: theme.spacing(4),
+textAlign: "center",
+color: theme.palette.text.primary,
+borderRadius: "16px",
+height: "100%",
+display: "flex",
+flexDirection: "column",
+alignItems: "center",
+}));
+
+# Features
+
+<MaxWidthWrapper backgroundColor="offWhite" maxWidth="xl" gutterBottom>
+  <Box
+    sx={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    }}
+  >
+    <Grid container spacing={4} pb="4rem" sx={{ maxWidth: "1300px", padding: "32px" }}>
+      {/* Feature Cards - looping through helxFeatures */}
+      <Grid item md={4} sm={6} xs={12}>
+        <FeatureCard>
+          <Box sx={{ minHeight: 100 }}>
+            <img src={applications} style={{ display: "block", height: 75 }} loading="lazy" alt="Applications and Workflow" />
+          </Box>
+          <Box>
+            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
+              Applications and Workflow
+            </Typography>
+            <Typography variant="subtitle2">
+              Choose from pre-loaded industry standard tools and apps or customize above and beyond to support your work
+            </Typography>
+          </Box>
+        </FeatureCard>
+      </Grid>
+      
+      <Grid item md={4} sm={6} xs={12}>
+        <FeatureCard>
+          <Box sx={{ minHeight: 100 }}>
+            <img src={search} style={{ display: "block", height: 75 }} loading="lazy" alt="Complex Search Functionality" />
+          </Box>
+          <Box>
+            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
+              Complex Search Functionality
+            </Typography>
+            <Typography variant="subtitle2">
+              Includes full text-driven knowledge-graph-augmented semantic search
+            </Typography>
+          </Box>
+        </FeatureCard>
+      </Grid>
+
+      <Grid item md={4} sm={6} xs={12}>
+        <FeatureCard>
+          <Box sx={{ minHeight: 100 }}>
+            <img src={openSource} style={{ display: "block", height: 75 }} loading="lazy" alt="Open Source" />
+          </Box>
+          <Box>
+            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
+              Open Source
+            </Typography>
+            <Typography variant="subtitle2">
+              Supports multiple authentication providers and authorization models
+            </Typography>
+          </Box>
+        </FeatureCard>
+      </Grid>
+
+      <Grid item md={4} sm={6} xs={12}>
+        <FeatureCard>
+          <Box sx={{ minHeight: 100 }}>
+            <img src={scalable} style={{ display: "block", height: 75 }} loading="lazy" alt="Scalable" />
+          </Box>
+          <Box>
+            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
+              Scalable
+            </Typography>
+            <Typography variant="subtitle2">
+              Scalable native architecture with Kubernetes, Apache Airflow, and Nextflow
+            </Typography>
+          </Box>
+        </FeatureCard>
+      </Grid>
+
+      <Grid item md={4} sm={6} xs={12}>
+        <FeatureCard>
+          <Box sx={{ minHeight: 100 }}>
+            <img src={flexible} style={{ display: "block", height: 75 }} loading="lazy" alt="Flexible and Customizable" />
+          </Box>
+          <Box>
+            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
+              Flexible and Customizable
+            </Typography>
+            <Typography variant="subtitle2">
+              Provides a unified data science workbench tailored to each science community, applicable to and actively used across science domains
+            </Typography>
+          </Box>
+        </FeatureCard>
+      </Grid>
+
+      <Grid item md={4} sm={6} xs={12}>
+        <FeatureCard>
+          <Box sx={{ minHeight: 100 }}>
+            <img src={metadata} style={{ display: "block", height: 75 }} loading="lazy" alt="Metadata Driven" />
+          </Box>
+          <Box>
+            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
+              Metadata Driven
+            </Typography>
+            <Typography variant="subtitle2">
+              Extensible metadata driven architecture simplifies adding data science workspaces
+            </Typography>
+          </Box>
+        </FeatureCard>
+      </Grid>
+    </Grid>
+
+  </Box>
+</MaxWidthWrapper>

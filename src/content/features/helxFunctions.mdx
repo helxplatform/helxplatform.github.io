@@ -1,39 +1,22 @@
-import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
-import { Typography, Grid } from "@mui/material";
+import { SectionGrid, GridItem } from "../../components/sections/functions.js";
 
 # What can HeLx do for you?
 
-<MaxWidthWrapper gutterBottom>
-  <Grid container spacing={{ md: 8, sm: 6, xs: 4 }}>
-    <Grid item md={6} xs={12}>
-      <Typography variant="h3">Data Science Workspaces</Typography>
-      <Typography variant="body1">
-        Existing applications include notebooks, imaging, Apache Spark, and
-        Nextflow workflows with an extensible metadata-driven architecture.
-      </Typography>
-    </Grid>
-    <Grid item md={6} xs={12}>
-      <Typography variant="h3">Semantic Search</Typography>
-      <Typography variant="body1">
-        Access Dug, our intuitive full-text-driven, knowledge-graph-augmented
-        semantic search.
-      </Typography>
-    </Grid>
-    <Grid item md={6} xs={12}>
-      <Typography variant="h3">Portable Installation</Typography>
-      <Typography variant="body1">
-        Scalable cloud-native architecture with Kubernetes, Apache Airflow, and
-        Nextflow.
-      </Typography>
-    </Grid>
-    <Grid item md={6} xs={12}>
-      <Typography variant="h3">
-        Pluggable Persistence and Authorization
-      </Typography>
-      <Typography variant="body1">
-        Open source technology supports multiple authentication providers and
-        authorization models.
-      </Typography>
-    </Grid>
-  </Grid>
-</MaxWidthWrapper>
+<SectionGrid>
+  <GridItem heading="Data Science Workspaces">
+    Existing applications include notebooks, imaging, Apache Spark, and Nextflow
+    workflows with an extensible metadata-driven architecture.
+  </GridItem>
+  <GridItem heading="Semantic Search">
+    Access Dug, our intuitive full-text-driven, knowledge-graph-augmented
+    semantic search.
+  </GridItem>
+  <GridItem heading="Portable Installation">
+    Scalable cloud-native architecture with Kubernetes, Apache Airflow, and
+    Nextflow.
+  </GridItem>
+  <GridItem heading="Pluggable Persistence and Authorization">
+    Open source technology supports multiple authentication providers and
+    authorization models.
+  </GridItem>
+</SectionGrid>

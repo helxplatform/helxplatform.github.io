@@ -1,103 +1,22 @@
-import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
-import { Typography, Box, Grid, Button } from "@mui/material";
-import { Link } from "../../components/link";
-import technical from "../../images/resources/tech-doc-icon-resources.svg";
-import userFacing from "../../images/resources/user-facing-doc-icon-resources.svg";
-import futureVideos from "../../images/resources/future-vid-icon-resources.svg"; // If this image is used later, keep it in the import
+import { SectionGrid, GridItem } from "../../components/sections/functions.js";
 
-<MaxWidthWrapper>
-  <Typography
-    variant="h1"
-    sx={{
-      fontSize: "clamp(2rem, 2rem + 1.6667vw, 3rem)",
-      fontFamily: "Open Sans, sans-serif",
-      color: "#382C56",
-      lineHeight: "1.3",
-      textAlign: "center",
-    }}
-  >
-    Resources
-  </Typography>
+# What can HeLx do for you?
 
-  <Grid container spacing={4} my="2rem" sx={{display: "flex", justifyContent: "center"}}>
-    <Grid item md={4} sm={12} xs={12}>
-      <Link to="https://helx-10.readthedocs.io/en/latest/index.html">
-        <Box
-          display="flex"
-          flexDirection={{ md: "column", sm: "row" }}
-          justifyContent={{ sm: "center", xs: "center" }}
-          gap={{ md: "0.5rem", sm: "1rem", xs: "1rem" }}
-          alignItems="center"
-        >
-          <Button
-            variant="outlined"
-            sx={{
-              flex: { md: "revert", sm: "0 1 150px", xs: "0 1 150px" },
-              width: "100%",
-              padding: "0",
-              border: "none",
-              borderRadius: 0,
-              "&:hover": { border: "none" },
-            }}
-          >
-            <img
-              src={technical}
-              draggable={false}
-              style={{ width: "100%" }}
-              loading="lazy"
-              alt="Technical Documentation link"
-            />
-          </Button>
-          <Typography
-            variant="subtitle1"
-            sx={{
-              flex: { md: "revert", sm: "0 0 220px", xs: "0 0 220px" },
-            }}
-          >
-            Technical Documentation
-          </Typography>
-        </Box>
-      </Link>
-    </Grid>
-    
-    <Grid item md={4} sm={12} xs={12}>
-      <Link to="https://helx.gitbook.io/helx-documentation/">
-        <Box
-          display="flex"
-          flexDirection={{ md: "column", sm: "row" }}
-          justifyContent={{ sm: "center", xs: "center" }}
-          gap={{ md: "0.5rem", sm: "1rem", xs: "1rem" }}
-          alignItems="center"
-        >
-          <Button
-            variant="outlined"
-            sx={{
-              flex: { md: "revert", sm: "0 1 150px", xs: "0 1 150px" },
-              width: "100%",
-              padding: "0",
-              border: "none",
-              borderRadius: 0,
-              "&:hover": { border: "none" },
-            }}
-          >
-            <img
-              src={userFacing}
-              draggable={false}
-              style={{ width: "100%" }}
-              loading="lazy"
-              alt="User-facing Documentation link"
-            />
-          </Button>
-          <Typography
-            variant="subtitle1"
-            sx={{
-              flex: { md: "revert", sm: "0 0 220px", xs: "0 0 220px" },
-            }}
-          >
-            User-facing Documentation
-          </Typography>
-        </Box>
-      </Link>
-    </Grid>
-  </Grid>
-</MaxWidthWrapper>
+<SectionGrid>
+  <GridItem heading="Data Science Workspaces">
+    Existing applications include notebooks, imaging, Apache Spark, and Nextflow
+    workflows with an extensible metadata-driven architecture.
+  </GridItem>
+  <GridItem heading="Semantic Search">
+    Access Dug, our intuitive full-text-driven, knowledge-graph-augmented
+    semantic search.
+  </GridItem>
+  <GridItem heading="Portable Installation">
+    Scalable cloud-native architecture with Kubernetes, Apache Airflow, and
+    Nextflow.
+  </GridItem>
+  <GridItem heading="Pluggable Persistence and Authorization">
+    Open source technology supports multiple authentication providers and
+    authorization models.
+  </GridItem>
+</SectionGrid>

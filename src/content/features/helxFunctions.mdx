@@ -1,22 +1,28 @@
-import { SectionGrid, GridItem } from "../../components/sections/functions.js";
+import {
+  FunctionsSection,
+  FunctionsGridItem,
+} from "../../components/sections/functions.js";
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper"
 
 # What can HeLx do for you?
 
-<SectionGrid>
-  <GridItem heading="Data Science Workspaces">
-    Existing applications include notebooks, imaging, Apache Spark, and Nextflow
-    workflows with an extensible metadata-driven architecture.
-  </GridItem>
-  <GridItem heading="Semantic Search">
-    Access Dug, our intuitive full-text-driven, knowledge-graph-augmented
-    semantic search.
-  </GridItem>
-  <GridItem heading="Portable Installation">
-    Scalable cloud-native architecture with Kubernetes, Apache Airflow, and
-    Nextflow.
-  </GridItem>
-  <GridItem heading="Pluggable Persistence and Authorization">
-    Open source technology supports multiple authentication providers and
-    authorization models.
-  </GridItem>
-</SectionGrid>
+<MaxWidthWrapper gutterBottom>
+  <FunctionsSection>
+    <GridItem heading="Data Science Workspaces">
+      Existing applications include notebooks, imaging, Apache Spark, and Nextflow
+      workflows with an extensible metadata-driven architecture.
+    </GridItem>
+    <GridItem heading="Semantic Search">
+      Access Dug, our intuitive full-text-driven, knowledge-graph-augmented
+      semantic search.
+    </GridItem>
+    <GridItem heading="Portable Installation">
+      Scalable cloud-native architecture with Kubernetes, Apache Airflow, and
+      Nextflow.
+    </GridItem>
+    <GridItem heading="Pluggable Persistence and Authorization">
+      Open source technology supports multiple authentication providers and
+      authorization models.
+    </GridItem>
+  </FunctionsSection>
+</MaxWidthWrapper>

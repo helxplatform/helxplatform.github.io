@@ -1,244 +1,44 @@
-import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
-import { Typography, Box, Button, Grid } from "@mui/material";
-import { Link } from "../link";
-import EduHelx from "../../images/features/eduhelx-logo.png";
-import SciDAS from "../../images/features/scidas-logo.svg";
-import BRAINI from "../../images/features/brain-i-colors-logo.png";
-import RestartingResearch from "../../images/features/restartingresearch-logo.png";
+import { UseCasesSection, UseCasesGridItem } from "../../components/sections/useCases.js";
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper"
 
 # How is HeLx being used?
 
-<MaxWidthWrapper backgroundColor="#f5f5f5" gutterBottom>
-  <Box>
-    <Grid container spacing={{ md: 8, sm: 6, xs: 4 }}>
-      <Grid item md={6} xs={12} alignItems="stretch">
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            gap: "1rem",
-          }}
-        >
-          <Box
-            sx={{
-              minHeight: "100px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-            <img
-              src={EduHelx}
-              style={{ display: "block", maxHeight: 100, maxWidth: "250px" }}
-              loading="lazy"
-              alt="EduHeLx-logo"
-            />
-          </Box>
-          <Typography
-            variant="h3"
-            sx={{ textAlign: "center", marginBottom: "0" }}
-          >
-            EduHeLx
-          </Typography>
-          <Typography>
-            EduHeLx empowers students to explore the field of data science in an
-            environment which prioritizes student investigation, focus, and
-            cooperative discovery. EduHeLx instances are launched for each
-            individual educator and course, making them fully customizable and
-            unique for the students and course material. EduHeLx is currently
-            deployed for select UNC-Chapel Hill courses.
-          </Typography>
-          <Box
-            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
-          >
-            <Link to="/eduhelx">
-              <Button
-                mt="1rem"
-                variant="contained"
-                color="primary"
-                size="medium"
-                sx={{ textTransform: "revert" }}
-              >
-                Learn about EduHeLx here
-              </Button>
-            </Link>
-          </Box>
-        </Box>
-      </Grid>
-
-      <Grid item md={6} xs={12} alignItems="stretch">
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            gap: "1rem",
-          }}
-        >
-          <Box
-            sx={{
-              minHeight: "100px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-            <img
-              src={SciDAS}
-              style={{ display: "block", maxHeight: 100, maxWidth: "250px" }}
-              loading="lazy"
-              alt="SciDAS-logo"
-            />
-          </Box>
-          <Typography
-            variant="h3"
-            sx={{ textAlign: "center", marginBottom: "0" }}
-          >
-            SciDAS
-          </Typography>
-          <Typography>
-            For Scientific Discovery at Scale (SciDAS), HeLx executes the
-            Nextflow workflow engine as an app in Kubernetes to drive highly
-            parallel, GPU-intensive workflows in Kubernetes. The system takes
-            full advantage of the cloud by dynamically scaling costly GPU
-            resources according to demand.
-          </Typography>
-          <Box
-            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
-          >
-            <Link to="https://renci.org/research/network-research-and-infrastructure/scientific-data-analysis-at-scale-scidas/">
-              <Button
-                mt="1rem"
-                variant="contained"
-                color="primary"
-                size="medium"
-                sx={{ textTransform: "revert" }}
-              >
-                Learn about SciDAS here
-              </Button>
-            </Link>
-          </Box>
-        </Box>
-      </Grid>
-
-      <Grid item md={6} xs={12} alignItems="stretch">
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            gap: "1rem",
-          }}
-        >
-          <Box
-            sx={{
-              minHeight: "100px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-            <img
-              src={RestartingResearch}
-              style={{ display: "block", maxHeight: 100, maxWidth: "250px" }}
-              loading="lazy"
-              alt="RestartingResearch-logo"
-            />
-          </Box>
-          <Typography
-            variant="h3"
-            sx={{ textAlign: "center", marginBottom: "0" }}
-          >
-            Restarting Research
-          </Typography>
-          <Typography>
-            Restarting Research (ReCCAP) is a project for data management and
-            analytics of COVID-19 RT-PCR and custom antibody tests of UNC
-            researchers using on-campus laboratories and facilities. Researchers
-            use Blackbalsam and Jupyter Data Science notebooks in Python and R
-            kernels as environments for data science experimentation.
-          </Typography>
-          <Box
-            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
-          >
-            <Link to="https://tracs.unc.edu/index.php/news-articles/1704-covid-19-study-recruiting-unc-faculty-students-and-staff-involved-with-research-on-campus">
-              <Button
-                mt="1rem"
-                variant="contained"
-                color="primary"
-                size="medium"
-                sx={{ textTransform: "revert" }}
-              >
-                Learn about the Restarting Research project here
-              </Button>
-            </Link>
-          </Box>
-        </Box>
-      </Grid>
-
-      <Grid item md={6} xs={12} alignItems="stretch">
-        <Box
-          sx={{
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "flex-start",
-            gap: "1rem",
-          }}
-        >
-          <Box
-            sx={{
-              minHeight: "100px",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              width: "100%",
-            }}
-          >
-            <img
-              src={BRAINI}
-              style={{ display: "block", maxHeight: 100, maxWidth: "250px" }}
-              loading="lazy"
-              alt="BRAINI-logo"
-            />
-          </Box>
-          <Typography
-            variant="h3"
-            sx={{ textAlign: "center", marginBottom: "0" }}
-          >
-            BRAIN-I
-          </Typography>
-          <Typography>
-            BRAIN-I is a computational infrastructure for handling huge medical
-            images combined with a discovery environment where neuroscience
-            researchers can run custom applications and conduct their analysis.
-            BRAIN-I handles big data and computation in a user-friendly way so
-            even new researchers can focus fully on their science.
-          </Typography>
-          <Box
-            sx={{ display: "flex", justifyContent: "center", width: "100%" }}
-          >
-            <Link to="https://www.steinlab.org/">
-              <Button
-                mt="1rem"
-                variant="contained"
-                color="primary"
-                size="medium"
-                sx={{ textTransform: "revert" }}
-              >
-                Learn more about the team using BRAIN-I
-              </Button>
-            </Link>
-          </Box>
-        </Box>
-      </Grid>
-    </Grid>
-  </Box>
+<MaxWidthWrapper backgroundColor="#F5F6F5" gutterBottom>
+  <UseCasesSection>
+    <UseCasesGridItem
+      image="../../images/features/eduhelx-logo.png"
+      heading="EduHeLx"
+      linkText="Learn about EduHeLx here"
+      linkURL="/eduhelx"
+    >
+      EduHeLx empowers students to explore the field of data science in an environment which prioritizes student investigation, focus, and cooperative discovery. EduHeLx instances are launched for each individual educator and course, making them fully customizable and unique for the students and course material. EduHeLx is currently deployed for select UNC-Chapel Hill courses.
+    </UseCasesGridItem>
+  
+    <UseCasesGridItem
+      image="/images/features/scidas-logo.svg"
+      heading="SciDAS"
+      linkText="Learn about SciDAS here"
+      linkURL="https://renci.org/research/network-research-and-infrastructure/scientific-data-analysis-at-scale-scidas/"
+    >
+      For Scientific Discovery at Scale (SciDAS), HeLx executes the Nextflow workflow engine as an app in Kubernetes to drive highly parallel, GPU-intensive workflows in Kubernetes. The system takes full advantage of the cloud by dynamically scaling costly GPU resources according to demand.
+    </UseCasesGridItem>
+  
+    <UseCasesGridItem
+      image="/images/features/restartingresearch-logo.png"
+      heading="Restarting Research"
+      linkText="Learn about the Restarting Research project here"
+      linkURL="https://tracs.unc.edu/index.php/news-articles/1704-covid-19-study-recruiting-unc-faculty-students-and-staff-involved-with-research-on-campus"
+    >
+      Restarting Research (ReCCAP) is a project for data management and analytics of COVID-19 RT-PCR and custom antibody tests of UNC researchers using on-campus laboratories and facilities. Researchers use Blackbalsam and Jupyter Data Science notebooks in Python and R kernels as environments for data science experimentation.
+    </UseCasesGridItem>
+  
+    <UseCasesGridItem
+      image="/images/features/brain-i-colors-logo.png"
+      heading="BRAIN-I"
+      linkText="Learn more about the team using BRAIN-I"
+      linkURL="https://www.steinlab.org/"
+    >
+      BRAIN-I is a computational infrastructure for handling huge medical images combined with a discovery environment where neuroscience researchers can run custom applications and conduct their analysis. BRAIN-I handles big data and computation in a user-friendly way so even new researchers can focus fully on their science.
+    </UseCasesGridItem>
+  </UseCasesSection>
 </MaxWidthWrapper>

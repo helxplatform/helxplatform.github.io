@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import { featuresHero } from "../content";
 import { Hero } from "../components/hero/hero";
-import { FunctionsSection, UseCasesSection } from "../components/sections/";
+import FunctionsSection from "../content/features/helxFunctions.mdx";
+import UseCasesSection from "../content/features/useCases.mdx";
 import { Subfooter } from "../components/layout/subfooter";
 
 const FeaturesPage = () => {

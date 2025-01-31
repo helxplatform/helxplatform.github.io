@@ -1,4 +1,5 @@
-import { FeaturesSection, FeaturesGridItem } from "../../components/sections/features";
+import { FeaturesGridItem } from "../../components/sections/features";
+import { GridContainer } from "../../components/grid.js";
 import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper"
 import applications from "../../images/home/applications-workflow-home.svg";
 import search from "../../images/home/complex-search-func-icon-home.svg";
@@ -9,7 +10,7 @@ import metadata from "../../images/home/metadata-driven-icon-home.svg";
 
 <MaxWidthWrapper backgroundColor="#F5F6F5" maxWidth="xl" gutterBottom>
 
-<FeaturesSection>
+<GridContainer>
   <FeaturesGridItem
     image={applications}
     title="Applications and Workflow"
@@ -51,6 +52,6 @@ import metadata from "../../images/home/metadata-driven-icon-home.svg";
     subheading="Extensible metadata driven architecture simplifies adding data science workspaces"
     altText="Metadata Driven"
   />
-</FeaturesSection>
+</GridContainer>
 
 </MaxWidthWrapper>

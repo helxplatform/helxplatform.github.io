@@ -5,10 +5,10 @@ import {
   HeadingSection,
   IllustrationTextSection,
   RotatingVerbs,
-  FeaturesSection,
 } from "../components/sections";
 import { Subfooter } from "../components/layout/subfooter";
 import NathanTest from "../content/about/nathan-test.mdx";
+import FeaturesSection from "../content/home/helxFeatures.mdx";
 
 const headingContent1 = {
   title: "Launch, Analyze, and Discover Your Data With HeLx",
@@ -29,7 +29,7 @@ const IndexPage = () => {
 
       <RotatingVerbs content={rotatingVerbs} />
 
-      <FeaturesSection content={helxFeatures} columns={3} />
+      <FeaturesSection />
 
       <Subfooter />
     </Fragment>

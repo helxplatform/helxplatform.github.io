@@ -1,7 +1,5 @@
-import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
-import { Grid, Box, Typography } from "@mui/material";
-import { FeatureCard } from "../../components/sections/features";
-
+import { FeaturesSection, FeaturesGridItem } from "../../components/sections/features";
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper"
 import applications from "../../images/home/applications-workflow-home.svg";
 import search from "../../images/home/complex-search-func-icon-home.svg";
 import openSource from "../../images/home/open-source-icon-home.svg";
@@ -9,113 +7,50 @@ import scalable from "../../images/home/scalable-icon-home.svg";
 import flexible from "../../images/home/flexibility-icon-home.svg";
 import metadata from "../../images/home/metadata-driven-icon-home.svg";
 
-# Features
+<MaxWidthWrapper backgroundColor="#F5F6F5" maxWidth="xl" gutterBottom>
 
-<MaxWidthWrapper backgroundColor="offWhite" maxWidth="xl" gutterBottom>
-  <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    }}
-  >
-    <Grid container spacing={4} pb="4rem" sx={{ maxWidth: "1300px", padding: "32px" }}>
-      <Grid item md={4} sm={6} xs={12}>
-        <FeatureCard>
-          <Box sx={{ minHeight: 100 }}>
-            <img src={applications} style={{ display: "block", height: 75 }} loading="lazy" alt="Applications and Workflow" />
-          </Box>
-          <Box>
-            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
-              Applications and Workflow
-            </Typography>
-            <Typography variant="subtitle2">
-              Choose from pre-loaded industry standard tools and apps or customize above and beyond to support your work
-            </Typography>
-          </Box>
-        </FeatureCard>
-      </Grid>
+<FeaturesSection>
+  <FeaturesGridItem
+    image={applications}
+    title="Applications and Workflow"
+    subheading="Choose from pre-loaded industry standard tools and apps or customize above and beyond to support your work"
+    altText="Applications and Workflow"
+  />
+  
+  <FeaturesGridItem
+    image={search}
+    title="Complex Search Functionality"
+    subheading="Includes full text-driven knowledge-graph-augmented semantic search"
+    altText="Complex Search Functionality"
+  />
 
-      <Grid item md={4} sm={6} xs={12}>
-        <FeatureCard>
-          <Box sx={{ minHeight: 100 }}>
-            <img src={search} style={{ display: "block", height: 75 }} loading="lazy" alt="Complex Search Functionality" />
-          </Box>
-          <Box>
-            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
-              Complex Search Functionality
-            </Typography>
-            <Typography variant="subtitle2">
-              Includes full text-driven knowledge-graph-augmented semantic search
-            </Typography>
-          </Box>
-        </FeatureCard>
-      </Grid>
+  <FeaturesGridItem
+    image={openSource}
+    title="Open Source"
+    subheading="Supports multiple authentication providers and authorization models"
+    altText="Open Source"
+  />
 
-      <Grid item md={4} sm={6} xs={12}>
-        <FeatureCard>
-          <Box sx={{ minHeight: 100 }}>
-            <img src={openSource} style={{ display: "block", height: 75 }} loading="lazy" alt="Open Source" />
-          </Box>
-          <Box>
-            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
-              Open Source
-            </Typography>
-            <Typography variant="subtitle2">
-              Supports multiple authentication providers and authorization models
-            </Typography>
-          </Box>
-        </FeatureCard>
-      </Grid>
+  <FeaturesGridItem
+    image={scalable}
+    title="Scalable"
+    subheading="Scalable native architecture with Kubernetes, Apache Airflow, and Nextflow"
+    altText="Scalable"
+  />
 
-      <Grid item md={4} sm={6} xs={12}>
-        <FeatureCard>
-          <Box sx={{ minHeight: 100 }}>
-            <img src={scalable} style={{ display: "block", height: 75 }} loading="lazy" alt="Scalable" />
-          </Box>
-          <Box>
-            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
-              Scalable
-            </Typography>
-            <Typography variant="subtitle2">
-              Scalable native architecture with Kubernetes, Apache Airflow, and Nextflow
-            </Typography>
-          </Box>
-        </FeatureCard>
-      </Grid>
+  <FeaturesGridItem
+    image={flexible}
+    title="Flexible and Customizable"
+    subheading="Provides a unified data science workbench tailored to each science community, applicable to and actively used across science domains"
+    altText="Flexible and Customizable"
+  />
 
-      <Grid item md={4} sm={6} xs={12}>
-        <FeatureCard>
-          <Box sx={{ minHeight: 100 }}>
-            <img src={flexible} style={{ display: "block", height: 75 }} loading="lazy" alt="Flexible and Customizable" />
-          </Box>
-          <Box>
-            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
-              Flexible and Customizable
-            </Typography>
-            <Typography variant="subtitle2">
-              Provides a unified data science workbench tailored to each science community, applicable to and actively used across science domains
-            </Typography>
-          </Box>
-        </FeatureCard>
-      </Grid>
+  <FeaturesGridItem
+    image={metadata}
+    title="Metadata Driven"
+    subheading="Extensible metadata driven architecture simplifies adding data science workspaces"
+    altText="Metadata Driven"
+  />
+</FeaturesSection>
 
-      <Grid item md={4} sm={6} xs={12}>
-        <FeatureCard>
-          <Box sx={{ minHeight: 100 }}>
-            <img src={metadata} style={{ display: "block", height: 75 }} loading="lazy" alt="Metadata Driven" />
-          </Box>
-          <Box>
-            <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
-              Metadata Driven
-            </Typography>
-            <Typography variant="subtitle2">
-              Extensible metadata driven architecture simplifies adding data science workspaces
-            </Typography>
-          </Box>
-        </FeatureCard>
-      </Grid>
-    </Grid>
-
-  </Box>
 </MaxWidthWrapper>

@@ -7,7 +7,12 @@ export const GridContainer = ({
   padding,
 }) => {
   return (
-    <Grid container spacing={spacing} padding={padding}>
+    <Grid
+      container
+      spacing={spacing}
+      padding={padding}
+      sx={{ justifyContent: "center" }}
+    >
       {children}
     </Grid>
   );

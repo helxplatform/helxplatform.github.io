@@ -1,16 +1,16 @@
-import { UseCasesSection, UseCasesGridItem } from "../../components/sections/useCases.js";
-import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper"
-import SciDAS from '../../images/features/scidas-logo.svg'
-import BRAINI from '../../images/features/brain-i-colors-logo.png'
-import EduHelx from '../../images/features/eduhelx-logo.png'
-import RestartingResearch from '../../images/features/restartingresearch-logo.png'
-
+import { UseCasesGridItem } from "../../components/sections/useCases.js";
+import { GridContainer } from "../../components/grid.js";
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
+import SciDAS from "../../images/features/scidas-logo.svg";
+import BRAINI from "../../images/features/brain-i-colors-logo.png";
+import EduHelx from "../../images/features/eduhelx-logo.png";
+import RestartingResearch from "../../images/features/restartingresearch-logo.png";
 
 <MaxWidthWrapper backgroundColor="#F5F6F5" gutterBottom>
 
 # How is HeLx being used?
 
-  <UseCasesSection>
+  <GridContainer padding="2rem 0 2rem 0">
     <UseCasesGridItem
       image={EduHelx}
       heading="EduHeLx"
@@ -46,5 +46,5 @@ import RestartingResearch from '../../images/features/restartingresearch-logo.pn
     >
       BRAIN-I is a computational infrastructure for handling huge medical images combined with a discovery environment where neuroscience researchers can run custom applications and conduct their analysis. BRAIN-I handles big data and computation in a user-friendly way so even new researchers can focus fully on their science.
     </UseCasesGridItem>
-  </UseCasesSection>
+  </GridContainer>
 </MaxWidthWrapper>

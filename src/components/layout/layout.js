@@ -1,15 +1,16 @@
-import React, { Fragment } from 'react'
-import { Header } from './header'
-import { Footer } from './footer'
+import React, { Fragment } from "react";
+import { Header } from "./header";
+import { Footer } from "./footer";
+import { Markdown } from "../markdown";
 
 export const Layout = ({ children }) => {
   return (
     <Fragment>
-        <Header />
+      <Header />
       <main>
-        { children }
+        <Markdown>{children}</Markdown>
       </main>
       <Footer />
     </Fragment>
-  )
-}
+  );
+};

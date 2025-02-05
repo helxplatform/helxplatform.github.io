@@ -25,6 +25,41 @@ const componentMap = () => ({
       </Typography>
     );
   },
+  h2: function Anchor({ node, children, ...props }) {
+    return (
+      <Typography variant="h2" {...props}>
+        {children}
+      </Typography>
+    );
+  },
+  h3: function Anchor({ node, children, ...props }) {
+    return (
+      <Typography variant="h3" {...props}>
+        {children}
+      </Typography>
+    );
+  },
+  h4: function Anchor({ node, children, ...props }) {
+    return (
+      <Typography variant="h4" {...props}>
+        {children}
+      </Typography>
+    );
+  },
+  h5: function Anchor({ node, children, ...props }) {
+    return (
+      <Typography variant="h5" {...props}>
+        {children}
+      </Typography>
+    );
+  },
+  h6: function Anchor({ node, children, ...props }) {
+    return (
+      <Typography variant="h6" {...props}>
+        {children}
+      </Typography>
+    );
+  },
 });
 
 export const Markdown = ({ children }) => {

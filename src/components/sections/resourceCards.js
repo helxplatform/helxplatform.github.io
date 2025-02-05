@@ -8,7 +8,7 @@ export const ResourceCard = ({ image, title, link }) => {
   const theme = useTheme();
 
   return (
-    <Grid item md={4} sm={12} xs={12} justifyContent="center">
+    <Grid item md={4} sm={12} xs={12}>
       <Link to={link}>
         <Box
           display="flex"

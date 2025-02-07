@@ -1,14 +1,11 @@
 import React, { Fragment } from "react";
 import { HomeHero } from "../components/hero/homeHero";
-import { homeSection, rotatingVerbs, homeHero } from "../content";
-import {
-  HeadingSection,
-  IllustrationTextSection,
-  RotatingVerbs,
-} from "../components/sections";
+import { rotatingVerbs, homeHero } from "../content";
+import { HeadingSection, RotatingVerbs } from "../components/sections";
 import { Subfooter } from "../components/layout/subfooter";
 import NathanTest from "../content/about/nathan-test.mdx";
 import FeaturesSection from "../content/home/helxFeatures.mdx";
+import HomeIllustrationSection from "../content/home/homeIllustrations.mdx";
 
 const headingContent1 = {
   title: "Launch, Analyze, and Discover Your Data With HeLx",
@@ -25,7 +22,7 @@ const IndexPage = () => {
 
       <HeadingSection content={headingContent1} />
 
-      <IllustrationTextSection content={homeSection} imageSize="small" />
+      <HomeIllustrationSection />
 
       <RotatingVerbs content={rotatingVerbs} />
 

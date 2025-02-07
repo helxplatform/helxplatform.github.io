@@ -1,15 +1,22 @@
-import React, { Fragment } from 'react'
-import { EduHelxHero } from '../components/hero/eduhelxHero'
-import { 
-  eduhelxHero, 
-  aboutEduhelx, 
-  eduhelxFeaturesHeading, 
-  eduhelxFeatures, 
+import React, { Fragment } from "react";
+import { EduHelxHero } from "../components/hero/eduhelxHero";
+import {
+  eduhelxHero,
+  aboutEduhelx,
+  eduhelxFeaturesHeading,
+  eduhelxFeatures,
   eduHelxTestimonials,
-  readMoreEduhelxHeading, 
-  readMoreEduhelx }  from '../content'
-import { EduHelxIllustrationTextSection, FeaturesSection, HeadingSection, TestimonialSection, IllustrationTextSection } from '../components/sections'
-import { Subfooter } from '../components/layout/subfooter'
+  readMoreEduhelxHeading,
+  readMoreEduhelx,
+} from "../content";
+import {
+  EduHelxIllustrationTextSection,
+  FeaturesSection,
+  HeadingSection,
+  TestimonialSection,
+  IllustrationTextSection,
+} from "../components/sections";
+import { Subfooter } from "../components/layout/subfooter";
 import { useTheme } from "@emotion/react";
 
 const EduHeLxPage = () => {
@@ -17,38 +24,28 @@ const EduHeLxPage = () => {
 
   return (
     <Fragment>
-      <EduHelxHero
-        content={eduhelxHero}
-      />
-      <EduHelxIllustrationTextSection 
-        content={aboutEduhelx} 
-        left={true}
-      />
-      <HeadingSection 
+      <EduHelxHero content={eduhelxHero} />
+      <EduHelxIllustrationTextSection content={aboutEduhelx} left={true} />
+      {/* <HeadingSection 
         content={eduhelxFeaturesHeading}
         backgroundColor={theme.palette.branding.offWhite}
-      />
-      <FeaturesSection 
-        content={eduhelxFeatures}
-        columns={2}
-      />
+      /> */}
+      <FeaturesSection content={eduhelxFeatures} columns={2} />
       {/* Hide Testimonials until content is finalized and approved */}
       {/* <TestimonialSection 
         items={eduHelxTestimonials}  
       /> */}
-      <HeadingSection 
+      {/* <HeadingSection 
         content={readMoreEduhelxHeading}
         maxWidth="lg"
-      />
-      <IllustrationTextSection 
-        content={readMoreEduhelx}
-      />
+      /> */}
+      <IllustrationTextSection content={readMoreEduhelx} />
 
-      <Subfooter/>
+      <Subfooter />
     </Fragment>
-  )
-}
+  );
+};
 
-export default EduHeLxPage
+export default EduHeLxPage;
 
-export const Head = () => <title>EduHeLx Page</title>
+export const Head = () => <title>EduHeLx Page</title>;

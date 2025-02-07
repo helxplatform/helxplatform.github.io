@@ -1,0 +1,35 @@
+import { IllustrationTextSection } from "../../components/sections/illustrationTextSection.js";
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
+import home1 from "../../images/home/illustration-1-home.svg";
+import home2 from "../../images/home/illustration-2-home.svg";
+import home3 from "../../images/home/illustration-3-home.svg";
+
+<MaxWidthWrapper padding="1rem 2rem 1rem 2rem" backgroundColor="#FFFFFF" gutterBottom>
+  <IllustrationTextSection
+    illustration={home1}
+    left={false}
+  >
+    ### HeLx solves technical infrastructure challenges to help researchers focus on their science.
+    
+    Leave the design and implementation of scalability, cloud resources, and account authentication to HeLx so you and your team can focus on what matters most to you.
+  </IllustrationTextSection>
+
+  <IllustrationTextSection
+    illustration={home2}
+    left={true}
+  >
+    ### We bring the right tools for each team in a secure, scalable portal.
+
+    Each deployment of HeLx is fully customizable for your domain-specific data-driven needs. No mandatory extras, no surprise add-ons - just your toolsets and your data.
+  </IllustrationTextSection>
+
+  <IllustrationTextSection
+    illustration={home3}
+    left={false}
+  >
+    ### Bring your own research data.
+
+    Diving into the new, novel, and unknown? HeLx has you covered. Researchers can implement their own datasets for analyses without concern for data use agreements or access requests.
+  </IllustrationTextSection>
+
+</MaxWidthWrapper>

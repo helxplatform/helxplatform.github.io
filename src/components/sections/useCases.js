@@ -2,14 +2,6 @@ import React from "react";
 import { Typography, Box, Button, Grid } from "@mui/material";
 import { Link } from "../link";
 
-export const UseCasesSection = ({ children }) => (
-  <Box sx={{ backgroundColor: "#f5f5f5", padding: "2rem 0" }}>
-    <Grid container spacing={{ md: 8, sm: 6, xs: 4 }}>
-      {children}
-    </Grid>
-  </Box>
-);
-
 export const UseCasesGridItem = ({
   image,
   heading,

@@ -1,16 +1,5 @@
 import React from "react";
 import { Typography, Grid } from "@mui/material";
-import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
-
-export const FunctionsSection = ({ children }) => {
-  return (
-    <MaxWidthWrapper gutterBottom>
-      <Grid container spacing={{ md: 8, sm: 6, xs: 4 }}>
-        {children}
-      </Grid>
-    </MaxWidthWrapper>
-  );
-};
 
 export const FunctionsGridItem = ({ heading, children }) => (
   <Grid item md={6} xs={12}>

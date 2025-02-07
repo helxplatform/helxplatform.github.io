@@ -3,24 +3,24 @@ import { EduHelxHero } from "../components/hero/eduhelxHero";
 import {
   eduhelxHero,
   aboutEduhelx,
-  eduhelxFeaturesHeading,
+  // eduhelxFeaturesHeading,
   eduhelxFeatures,
-  eduHelxTestimonials,
-  readMoreEduhelxHeading,
+  // eduHelxTestimonials,
+  // readMoreEduhelxHeading,
   readMoreEduhelx,
 } from "../content";
 import {
   EduHelxIllustrationTextSection,
   FeaturesSection,
-  HeadingSection,
-  TestimonialSection,
+  // HeadingSection,
+  // TestimonialSection,
   IllustrationTextSection,
 } from "../components/sections";
 import { Subfooter } from "../components/layout/subfooter";
-import { useTheme } from "@emotion/react";
+// import { useTheme } from "@emotion/react";
 
 const EduHeLxPage = () => {
-  const theme = useTheme();
+  // const theme = useTheme();
 
   return (
     <Fragment>
@@ -30,7 +30,8 @@ const EduHeLxPage = () => {
         content={eduhelxFeaturesHeading}
         backgroundColor={theme.palette.branding.offWhite}
       /> */}
-      <FeaturesSection content={eduhelxFeatures} columns={2} />
+      {/* TODO: since FeaturesSection (as a component) doesn't exist anymore, create an mdx file for eduHelxFeatures */}
+      {/* <FeaturesSection content={eduhelxFeatures} columns={2} /> */}
       {/* Hide Testimonials until content is finalized and approved */}
       {/* <TestimonialSection 
         items={eduHelxTestimonials}  

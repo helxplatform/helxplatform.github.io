@@ -15,25 +15,6 @@ export const FeatureCard = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
-export const FeaturesSection = ({ children }) => (
-  <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    }}
-  >
-    <Grid
-      container
-      spacing={4}
-      pb="4rem"
-      sx={{ maxWidth: "1300px", padding: "32px" }}
-    >
-      {children}
-    </Grid>
-  </Box>
-);
-
 export const FeaturesGridItem = ({ image, title, subheading, altText }) => (
   <Grid item md={4} sm={6} xs={12}>
     <FeatureCard>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Stack } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 
 const TextCard = styled(Box)(({ theme }) => ({
@@ -39,6 +39,7 @@ export const IllustrationTextSection = ({ children, left, illustration }) => {
             maxHeight: "50%",
           }}
           loading="lazy"
+          alt=""
         />
       </Box>
       <TextCard>{children}</TextCard>

@@ -15,7 +15,7 @@ export const FeatureCard = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
-export const FeaturesGridItem = ({ image, title, subheading, altText }) => (
+export const GridItem = ({ image, title, subheading, altText }) => (
   <Grid item md={4} sm={6} xs={12}>
     <FeatureCard>
       <Box sx={{ minHeight: 100 }}>
@@ -35,3 +35,5 @@ export const FeaturesGridItem = ({ image, title, subheading, altText }) => (
     </FeatureCard>
   </Grid>
 );
+
+export default GridItem;

@@ -1,4 +1,4 @@
-import { FeaturesGridItem } from "../../components/sections/features";
+import GridItem from "../../components/sections/features";
 import { GridContainer } from "../../components/grid.js";
 import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper"
 import applications from "../../images/home/applications-workflow-home.svg";
@@ -11,46 +11,46 @@ import metadata from "../../images/home/metadata-driven-icon-home.svg";
 <MaxWidthWrapper backgroundColor="#F5F6F5" maxWidth="xl" gutterBottom>
 
 <GridContainer>
-  <FeaturesGridItem
+  <GridItem
     image={applications}
+    altText="Applications and Workflow Icon"
     title="Applications and Workflow"
     subheading="Choose from pre-loaded industry standard tools and apps or customize above and beyond to support your work"
-    altText="Applications and Workflow"
   />
   
-  <FeaturesGridItem
+  <GridItem
     image={search}
+    altText="Complex Search Functionality Icon"
     title="Complex Search Functionality"
     subheading="Includes full text-driven knowledge-graph-augmented semantic search"
-    altText="Complex Search Functionality"
   />
 
-  <FeaturesGridItem
+  <GridItem
     image={openSource}
+    altText="Open Source Icon"
     title="Open Source"
     subheading="Supports multiple authentication providers and authorization models"
-    altText="Open Source"
   />
 
-  <FeaturesGridItem
+  <GridItem
     image={scalable}
+    altText="Scalable Icon"
     title="Scalable"
     subheading="Scalable native architecture with Kubernetes, Apache Airflow, and Nextflow"
-    altText="Scalable"
   />
 
-  <FeaturesGridItem
+  <GridItem
     image={flexible}
+    altText="Flexible and Customizable Icon"
     title="Flexible and Customizable"
     subheading="Provides a unified data science workbench tailored to each science community, applicable to and actively used across science domains"
-    altText="Flexible and Customizable"
   />
 
-  <FeaturesGridItem
+  <GridItem
     image={metadata}
+    altText="Metadata Driven Icon"
     title="Metadata Driven"
     subheading="Extensible metadata driven architecture simplifies adding data science workspaces"
-    altText="Metadata Driven"
   />
 </GridContainer>
 

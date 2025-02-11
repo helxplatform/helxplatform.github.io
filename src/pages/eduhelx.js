@@ -17,31 +17,21 @@ import {
   IllustrationTextSection,
 } from "../components/sections";
 import { Subfooter } from "../components/layout/subfooter";
-// import { useTheme } from "@emotion/react";
+import EduHelxFeaturesSection from "../content/eduhelx/eduHelxFeatures.mdx";
+import EduHelxAbout from "../content/eduhelx/eduHelxAbout.mdx";
+import EduHelxReadMore from "../content/eduhelx/eduHelxReadMore.mdx";
 
 const EduHeLxPage = () => {
-  // const theme = useTheme();
-
   return (
     <Fragment>
       <EduHelxHero content={eduhelxHero} />
-      <EduHelxIllustrationTextSection content={aboutEduhelx} left={true} />
-      {/* <HeadingSection 
-        content={eduhelxFeaturesHeading}
-        backgroundColor={theme.palette.branding.offWhite}
-      /> */}
-      {/* TODO: since FeaturesSection (as a component) doesn't exist anymore, create an mdx file for eduHelxFeatures */}
-      {/* <FeaturesSection content={eduhelxFeatures} columns={2} /> */}
+      <EduHelxAbout />
+      <EduHelxFeaturesSection />
+      <EduHelxReadMore />
       {/* Hide Testimonials until content is finalized and approved */}
       {/* <TestimonialSection 
         items={eduHelxTestimonials}  
       /> */}
-      {/* <HeadingSection 
-        content={readMoreEduhelxHeading}
-        maxWidth="lg"
-      /> */}
-      <IllustrationTextSection content={readMoreEduhelx} />
-
       <Subfooter />
     </Fragment>
   );

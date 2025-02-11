@@ -1,6 +1,7 @@
 import React from "react";
 import { Box, Stack } from "@mui/material";
 import { styled } from "@mui/system";
+import { Link } from "../link";
 
 const TextCard = styled(Box)(({ theme }) => ({
   padding: theme.spacing(4),
@@ -14,7 +15,12 @@ const TextCard = styled(Box)(({ theme }) => ({
   mb: "2rem",
 }));
 
-export const IllustrationTextSection = ({ children, left, illustration }) => {
+export const IllustrationTextSection = ({
+  children,
+  left,
+  illustration,
+  link,
+}) => {
   const contentOrder = left ? "row-reverse" : "row";
 
   return (
@@ -35,14 +41,17 @@ export const IllustrationTextSection = ({ children, left, illustration }) => {
         <img
           src={illustration}
           style={{
-            maxWidth: "50%",
-            maxHeight: "50%",
+            maxWidth: "60%",
+            maxHeight: "60%",
           }}
           loading="lazy"
           alt=""
         />
       </Box>
-      <TextCard>{children}</TextCard>
+      <TextCard>
+        {children}
+        {link && <Link to={link}>Read More ...</Link>}
+      </TextCard>
     </Stack>
   );
 };

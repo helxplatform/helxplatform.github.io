@@ -20,7 +20,7 @@ const componentMap = () => ({
   },
   h1: function Anchor({ node, children, ...props }) {
     return (
-      <Typography variant="h1" sx={{ justifySelf: "center" }} {...props}>
+      <Typography variant="h1" align="center" {...props}>
         {children}
       </Typography>
     );

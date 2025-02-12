@@ -1,16 +1,16 @@
 import React, { Fragment } from "react";
-import { aboutHero, history, institutions } from "../content";
+import { aboutHero } from "../content";
 import { Hero } from "../components/hero/hero";
-import { InstitutionList } from "../components/sections";
 import { Subfooter } from "../components/layout/subfooter";
-// todo: import { AboutIllustrationSection } from mdx
+import InstitutionListSection from "../content/about/institutions.mdx";
+import AboutIllustrationSection from "../content/about/history.mdx";
 
 const AboutPage = () => {
   return (
     <Fragment>
       <Hero content={aboutHero} />
-      {/* <AboutIllustrationSection /> */}
-      <InstitutionList content={institutions} />
+      <AboutIllustrationSection />
+      <InstitutionListSection />
       <Subfooter />
     </Fragment>
   );

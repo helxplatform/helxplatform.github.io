@@ -1,0 +1,30 @@
+import { IllustrationTextSection } from "../../components/sections/illustrationTextSection.js";
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
+import about1 from "../../images/about/Europa-center.png";
+import about2 from "../../images/about/streamline.png";
+
+<MaxWidthWrapper padding="1rem 2rem 1rem 2rem" backgroundColor="#FFFFFF" gutterBottom>
+
+  <IllustrationTextSection
+    illustration={about1}
+    altText="Technical Infrastructure Illustration"
+    left={false}
+  >
+    ### HeLx is operated out of the Renaissance Computing Institute (RENCI)
+
+    HeLx was developed over time as RENCI worked with diverse research communities to create and implement advanced computing infrastructures.
+
+  </IllustrationTextSection>
+
+  <IllustrationTextSection
+    illustration={about2}
+    altText="Data Science Tools Illustration"
+    left={true}
+  >
+    ### Streamlined Data + Research
+
+    We learned that research communities have a wide array of data science tools in their daily toolbox, but provisioning these tools in modern cloud-native environments with appropriate security, networking, and persistence support is daunting. HeLx serves as an on-ramp for research communities to assemble the right tools and to help them scale from on-premise to cloud infrastructures.
+
+  </IllustrationTextSection>
+
+</MaxWidthWrapper>

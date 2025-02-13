@@ -22,7 +22,7 @@ export const GridItem = ({
   altText,
   columnWidth = 3,
 }) => (
-  <Grid item md={columnWidth == 2 ? 6 : 4} sm={6} xs={12}>
+  <Grid item md={columnWidth === 2 ? 6 : 4} sm={6} xs={12}>
     <FeatureCard>
       <Box sx={{ minHeight: 100 }}>
         <img

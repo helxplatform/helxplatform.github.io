@@ -13,6 +13,9 @@ const TextCard = styled(Box)(({ theme }) => ({
   gap: theme.spacing(1),
   flex: 1,
   mb: "2rem",
+  "& h2": {
+    whiteSpace: "nowrap",
+  },
 }));
 
 export const IllustrationTextSection = ({

@@ -27,7 +27,7 @@ const componentMap = () => ({
   },
   h2: function Anchor({ node, children, ...props }) {
     return (
-      <Typography variant="h2" {...props}>
+      <Typography variant="h2" align="center" {...props}>
         {children}
       </Typography>
     );
@@ -55,7 +55,7 @@ const componentMap = () => ({
   },
   h6: function Anchor({ node, children, ...props }) {
     return (
-      <Typography variant="h6" {...props}>
+      <Typography variant="h6" align="center" {...props}>
         {children}
       </Typography>
     );

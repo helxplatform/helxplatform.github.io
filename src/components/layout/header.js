@@ -218,7 +218,7 @@ export const Header = () => {
     },
   }
   return (
-    <Paper component="header" elevation="8" square sx={styles.root}>
+    <Paper component="header" elevation={8} square sx={styles.root}>
       <Container maxWidth="lg" sx={{ display: 'flex', justifyContent: 'space-between' }}>
         <Brand />
         { compact ? <MobileMenu mainMenuLinks={mainMenuLinks}/> : <Menu mainMenuLinks={mainMenuLinks} /> }

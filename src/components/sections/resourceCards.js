@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography, Box, Button, Grid } from "@mui/material";
 import { Link } from "../link";
-import { ExternalLinkIcon } from "../icons";
+import { ExternalLinkIcon } from "../../../icons";
 import { useTheme } from "@emotion/react";
 
 export const ResourceCard = ({ image, title, link }) => {

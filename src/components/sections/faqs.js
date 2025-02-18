@@ -1,7 +1,6 @@
 import React from "react";
 import {
   Typography,
-  Grid,
   Accordion,
   AccordionSummary,
   AccordionDetails,
@@ -9,7 +8,6 @@ import {
 } from "@mui/material";
 import { ExpandMore } from "@mui/icons-material";
 import { styled } from "@mui/system";
-import { useTheme } from "@emotion/react";
 
 // an faq item returns a styled accordion item, with its q & a inside
 export const FaqsItem = ({ children, question }) => {
@@ -31,41 +29,6 @@ export const FaqsWrapper = styled(Paper)(() => ({
   elevation: 2,
   borderRadius: "8px",
 }));
-
-export const FaqsSection = ({ content }) => {
-  const theme = useTheme();
-
-  return (
-    <Grid container spacing={{ md: 4, sm: 2, xs: 2 }}>
-      <Grid item md={4} sm={12} xs={12}>
-        <Typography
-          variant="h2"
-          textAlign={{ md: "left", sm: "center", xs: "center" }}
-        >
-          Questions?
-        </Typography>
-      </Grid>
-      <Grid item md={8} sm={12} xs={12}>
-        <Paper elevation={2} sx={{ borderRadius: "8px" }}>
-          {content.map((faq, index) => (
-            <StyledAccordion key={index}>
-              <StyledAccordionSummary
-                expandIcon={<ExpandMore />}
-                aria-controls={`question-${index + 1}-content`}
-                id={`question-${index + 1}-header`}
-              >
-                <Typography variant="subtitle1">{faq.question}</Typography>
-              </StyledAccordionSummary>
-              <StyledAccordionDetails>
-                <Typography variant="subtitle2">{faq.answer}</Typography>
-              </StyledAccordionDetails>
-            </StyledAccordion>
-          ))}
-        </Paper>
-      </Grid>
-    </Grid>
-  );
-};
 
 const StyledAccordion = styled((props) => (
   <Accordion disableGutters elevation={0} square {...props} />

@@ -1,34 +1,37 @@
 import { IllustrationTextSection } from "../../components/sections/illustrationTextSection.js";
+import { HeadingSection } from "../../components/sections/heading";
 import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
 import photoLectureHall from "../../images/eduhelx/photo-lecture-hall.png";
 import photoWomanWithComputer from "../../images/eduhelx/photo-woman-with-computer.png";
 
 <MaxWidthWrapper padding="1rem 2rem 1rem 2rem" backgroundColor="#FFFFFF" gutterBottom>
   
+<HeadingSection wrap={false}>
   ## Read the Latest EduHeLx News
+</HeadingSection>
 
-  <IllustrationTextSection
-    illustration={photoLectureHall}
-    altText="Photo of Lecture Hall"
-    left={false}
-    link="https://renci.org/blog/eduhelx-a-cloud-based-programming-platform-for-data-science-education/"
-  >
-    ### EduHeLx: A Cloud-based Programming Platform for Data Science Education
+<IllustrationTextSection
+  illustration={photoLectureHall}
+  altText="Photo of Lecture Hall"
+  left={false}
+  link="https://renci.org/blog/eduhelx-a-cloud-based-programming-platform-for-data-science-education/"
+>
+### EduHeLx: A Cloud-based Programming Platform for Data Science Education
 
-    The EduHeLx pilot experiment informed future thinking about incorporating cloud-based technologies in UNC-CH courses, including courses in the new UNC-CH School of Data Science & Society (SDSS).
+The EduHeLx pilot experiment informed future thinking about incorporating cloud-based technologies in UNC-CH courses, including courses in the new UNC-CH School of Data Science & Society (SDSS).
 
-  </IllustrationTextSection>
+</IllustrationTextSection>
 
-  <IllustrationTextSection
-    illustration={photoWomanWithComputer}
-    altText="Photo of Woman With Computer"
-    left={true}
-    link="https://renci.org/blog/chatgpt-used-to-streamline-medical-record-analysis-in-eduhelx/"
-  >
-    ### ChatGPT used to streamline medical record analysis in EduHeLx
+<IllustrationTextSection
+  illustration={photoWomanWithComputer}
+  altText="Photo of Woman With Computer"
+  left={true}
+  link="https://renci.org/blog/chatgpt-used-to-streamline-medical-record-analysis-in-eduhelx/"
+>
+### ChatGPT used to streamline medical record analysis in EduHeLx
 
-    The EduHeLx team at the Renaissance Computing Institute demonstrated time- and cost-saving capabilities of ChatGPT in an educational use case for a UNC-Chapel Hill clinical data science course.
+The EduHeLx team at the Renaissance Computing Institute demonstrated time- and cost-saving capabilities of ChatGPT in an educational use case for a UNC-Chapel Hill clinical data science course.
 
-  </IllustrationTextSection>
+</IllustrationTextSection>
 
 </MaxWidthWrapper>

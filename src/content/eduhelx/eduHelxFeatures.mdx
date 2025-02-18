@@ -1,5 +1,6 @@
 import GridItem from "../../components/sections/features";
-import { GridContainer } from "../../components/grid.js";
+import { GridContainer } from "../../components/grid";
+import { HeadingSection } from "../../components/sections/heading";
 import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
 import customizedIcon from "../../images/eduhelx/customized-icon.png";
 import flexibleIcon from "../../images/eduhelx/flexible-icon.png";
@@ -8,44 +9,47 @@ import cloudBasedIcon from "../../images/eduhelx/cloud-based-icon.png";
 
 <MaxWidthWrapper backgroundColor="#F5F6F5" gutterBottom>
 
-    ## Fantastic Features
+<HeadingSection>
+## Fantastic Features
 
-    ###### EduHelx is customized for the unique needs of your classroom, your materials, and your students.
+###### EduHelx is customized for the unique needs of your classroom, your materials, and your students.
 
-    <GridContainer padding="2rem 0 0 0">
+</HeadingSection>
 
-        <GridItem
-            columnWidth={2}
-            image={customizedIcon}
-            altText="Customized Scaling Icon"
-            title="Customized Scaling"
-            subheading="Each EduHeLx class is deployed using Docker, Kubernetes, and Helm, meaning ease of access to course materials regardless of class size"
-        />
+<GridContainer spacing={4} padding="2rem 0 0 0">
 
-        <GridItem
-            columnWidth={2}
-            image={flexibleIcon}
-            altText="Flexible Data Access Icon"
-            title="Flexible Data Access"
-            subheading="Class data can be shared internally as well as externally. EduHeLx also allows instructors to store files in a shared class folder for access by all students"
-        />
+<GridItem
+  columnWidth={2}
+  image={customizedIcon}
+  altText="Customized Scaling Icon"
+  title="Customized Scaling"
+  subheading="Each EduHeLx class is deployed using Docker, Kubernetes, and Helm, meaning ease of access to course materials regardless of class size"
+/>
 
-        <GridItem
-            columnWidth={2}
-            image={launchIcon}
-            altText="Launch Icon"
-            title="Launch Only What You Need"
-            subheading="EduHeLx tools are containerized applications. Our standard EduHeLx suite provides access to Jupyter notebooks, RStudio, a virtual desktop, and file browser - but custom apps can be added to your instance to support your unique classroom needs"
-        />
+<GridItem
+  columnWidth={2}
+  image={flexibleIcon}
+  altText="Flexible Data Access Icon"
+  title="Flexible Data Access"
+  subheading="Class data can be shared internally as well as externally. EduHeLx also allows instructors to store files in a shared class folder for access by all students"
+/>
 
-        <GridItem
-            columnWidth={2}
-            image={cloudBasedIcon}
-            altText="Cloud Based Icon"
-            title="Cloud Native, Lightweight Orchestration"
-            subheading="As a low-code, dynamically orchestrated, metadata driven framework, EduHeLx provides instructors and students a uniquely no-download, low-barrier entry to their classroom environment"
-        />
+<GridItem
+  columnWidth={2}
+  image={launchIcon}
+  altText="Launch Icon"
+  title="Launch Only What You Need"
+  subheading="EduHeLx tools are containerized applications. Our standard EduHeLx suite provides access to Jupyter notebooks, RStudio, a virtual desktop, and file browser - but custom apps can be added to your instance to support your unique classroom needs"
+/>
 
-    </GridContainer>
+<GridItem
+  columnWidth={2}
+  image={cloudBasedIcon}
+  altText="Cloud Based Icon"
+  title="Cloud Native, Lightweight Orchestration"
+  subheading="As a low-code, dynamically orchestrated, metadata driven framework, EduHeLx provides instructors and students a uniquely no-download, low-barrier entry to their classroom environment"
+/>
+
+</GridContainer>
 
 </MaxWidthWrapper>

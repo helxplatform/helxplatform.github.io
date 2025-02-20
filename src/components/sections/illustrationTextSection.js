@@ -17,7 +17,7 @@ const TextCard = styled(Box)(({ theme }) => ({
     whiteSpace: "nowrap",
   },
   "& p": {
-    fontSize: "1.2rem",
+    fontSize: "1.1rem",
     lineHeight: 1.5,
     fontWeight: 400,
   },

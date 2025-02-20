@@ -10,10 +10,13 @@ import { ExpandMore } from "@mui/icons-material";
 import { styled } from "@mui/system";
 
 // an faq item returns a styled accordion item, with its q & a inside
-export const FaqsItem = ({ children, question }) => {
+export const FaqsItem = ({ children, question, index }) => {
   return (
     <StyledAccordion>
-      <StyledAccordionSummary expandIcon={<ExpandMore />}>
+      <StyledAccordionSummary
+        expandIcon={<ExpandMore />}
+        aria-controls={`question-${index + 1}-content`}
+      >
         <Typography variant="subtitle1">{question}</Typography>
       </StyledAccordionSummary>
       <StyledAccordionDetails>

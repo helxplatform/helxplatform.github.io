@@ -12,24 +12,44 @@ import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
 
 <FaqsWrapper>
 
-  <FaqsItem question="Is HeLx only for academic researchers?">
-    Absolutely not. HeLx provides a powerful suite of data analysis tools and apps. If you and your team have data that requires flexibility, portability, and collaboration, then HeLx could be a powerful asset for your data analysis.
+  <FaqsItem question="Is HeLx only for academic researchers?" index={0}>
+    Absolutely not. HeLx provides a powerful suite of data analysis tools and
+    apps. If you and your team have data that requires flexibility, portability,
+    and collaboration, then HeLx could be a powerful asset for your data analysis.
   </FaqsItem>
   
-  <FaqsItem question="My team doesn’t have familiarity with command line interfaces. Will we be able to use HeLx?">
-    HeLx was designed to have a very user-friendly interface. While some tools or apps may require use of the command line, the majority of your team’s work will be completed entirely through an easy-to-use web interface.
+  <FaqsItem
+    question="My team doesn’t have familiarity with command line interfaces. Will we be able to use HeLx?"
+    index={1}
+  >
+    HeLx was designed to have a very user-friendly interface. While some tools or
+    apps may require use of the command line, the majority of your team’s work
+    will be completed entirely through an easy-to-use web interface.
   </FaqsItem>
   
-  <FaqsItem question="I have a homegrown app - can it be a deployment on HeLx?">
+  <FaqsItem
+    question="I have a homegrown app - can it be a deployment on HeLx?"
+    index={2}
+  >
     If your app can be containerized, it can be a part of your HeLx instance.
   </FaqsItem>
   
-  <FaqsItem question="Can data be uploaded to share with a user group?">
-    Data used on HeLx can be shared internally or externally. The limit for sharing is customizable to each HeLx instance.
+  <FaqsItem 
+    question="Can data be uploaded to share with a user group?"
+    index={3}
+  >
+    Data used on HeLx can be shared internally or externally. The limit for
+    sharing is customizable to each HeLx instance.
   </FaqsItem>
   
-  <FaqsItem question="Can HeLx handle very large data sets and large computation jobs?">
-    We can. For working with large data sets, iRODS is our preferred way of handling data. For data or research that will require large amounts of computation resources, the number of GPUs allocated comes down to funding of your project and how you want to integrate HeLx into your project.
+  <FaqsItem
+    question="Can HeLx handle very large data sets and large computation jobs?"
+    index={4}
+  >
+    We can. For working with large data sets, iRODS is our preferred way of
+    handling data. For data or research that will require large amounts of
+    computation resources, the number of GPUs allocated comes down to funding of
+    your project and how you want to integrate HeLx into your project.
   </FaqsItem>
 
 </FaqsWrapper>

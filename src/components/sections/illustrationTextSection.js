@@ -16,6 +16,11 @@ const TextCard = styled(Box)(({ theme }) => ({
   "& h2": {
     whiteSpace: "nowrap",
   },
+  "& p": {
+    fontSize: "1.2rem",
+    lineHeight: 1.5,
+    fontWeight: 400,
+  },
 }));
 
 export const IllustrationTextSection = ({

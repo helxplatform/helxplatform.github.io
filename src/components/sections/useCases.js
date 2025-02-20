@@ -4,7 +4,7 @@ import { Link } from "../link";
 
 export const UseCasesGridItem = ({
   image,
-  heading,
+  altText,
   children,
   linkText,
   linkURL,
@@ -32,12 +32,9 @@ export const UseCasesGridItem = ({
           src={image}
           style={{ display: "block", maxHeight: 100, maxWidth: "250px" }}
           loading="lazy"
-          alt={`${heading}-logo`}
+          alt={`${altText}`}
         />
       </Box>
-      <Typography variant="h3" sx={{ textAlign: "center", marginBottom: "0" }}>
-        {heading}
-      </Typography>
       <Typography>{children}</Typography>
       <Box sx={{ display: "flex", justifyContent: "center", width: "100%" }}>
         <Link to={linkURL}>

@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Grid, Box } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import { styled } from "@mui/system";
 
 export const FeatureCard = styled(Box)(({ theme }) => ({
@@ -15,13 +15,7 @@ export const FeatureCard = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
-export const GridItem = ({
-  image,
-  title,
-  subheading,
-  altText,
-  columnWidth = 3,
-}) => (
+export const GridItem = ({ children, image, altText, columnWidth = 3 }) => (
   <Grid item md={columnWidth === 2 ? 6 : 4} sm={6} xs={12}>
     <FeatureCard>
       <Box sx={{ minHeight: 100 }}>
@@ -32,11 +26,10 @@ export const GridItem = ({
           alt={altText}
         />
       </Box>
-      <Box>
-        <Typography mb="1rem" sx={{ fontWeight: "bold" }}>
-          {title}
-        </Typography>
-        <Typography variant="subtitle2">{subheading}</Typography>
+      <Box
+        sx={{ "& h3": { fontSize: "1.1rem" }, "& p": { fontSize: "0.9rem" } }}
+      >
+        {children}
       </Box>
     </FeatureCard>
   </Grid>

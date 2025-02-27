@@ -1,0 +1,46 @@
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
+import { HeadingSection } from "../../components/sections/heading";
+import {
+  InstitutionList,
+  InstitutionItem,
+} from "../../components/sections/institutionList";
+import NSF from "../../images/about/nsf-logo.svg";
+import StateOfNC from "../../images/about/state-nc-seal-logo.svg";
+import NCPolicyCollaboratory from "../../images/about/policy-collab-logo.png";
+import NHLBI from "../../images/about/nhlbi-logo.svg";
+import NIH from "../../images/about/nih-logo.png";
+
+<MaxWidthWrapper backgroundColor="#F5F6F5" gutterBottom>
+
+<HeadingSection maxWidth="lg">
+## HeLx is made possible through projects supported by the following funders
+
+</HeadingSection>
+
+<InstitutionList>
+
+  <InstitutionItem image={NSF} name="NSF" link="https://www.nsf.gov/" />
+  
+  <InstitutionItem
+    image={StateOfNC}
+    name="State of North Carolina"
+    link="http://www.nc.gov/"
+  />
+  
+  <InstitutionItem
+    image={NCPolicyCollaboratory}
+    name="NC Policy Collaboratory"
+    link="https://collaboratory.unc.edu/"
+  />
+  
+  <InstitutionItem
+    image={NHLBI}
+    name="NIH: NHLBI"
+    link="https://www.nhlbi.nih.gov/"
+  />
+
+  <InstitutionItem image={NIH} name="NIH" link="https://www.nih.gov/" />
+
+</InstitutionList>
+
+</MaxWidthWrapper>

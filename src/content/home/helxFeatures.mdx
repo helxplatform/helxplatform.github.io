@@ -1,0 +1,70 @@
+import GridItem from "../../components/sections/features";
+import { GridContainer } from "../../components/grid.js";
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper"
+import applications from "../../images/home/applications-workflow-home.svg";
+import search from "../../images/home/complex-search-func-icon-home.svg";
+import openSource from "../../images/home/open-source-icon-home.svg";
+import scalable from "../../images/home/scalable-icon-home.svg";
+import flexible from "../../images/home/flexibility-icon-home.svg";
+import metadata from "../../images/home/metadata-driven-icon-home.svg";
+
+<MaxWidthWrapper backgroundColor="#F5F6F5" maxWidth="xl" gutterBottom>
+
+<GridContainer spacing={6} >
+  <GridItem
+    image={applications}
+    altText="Applications and Workflow Icon"
+  >
+    ### Applications and Workflow
+
+    Choose from pre-loaded industry standard tools and apps or customize above and beyond to support your work
+  </GridItem>
+  
+  <GridItem
+    image={search}
+    altText="Complex Search Functionality Icon"
+  >
+    ### Complex Search Functionality
+
+    Includes full text-driven knowledge-graph-augmented semantic search
+  </GridItem>
+
+  <GridItem
+    image={openSource}
+    altText="Open Source Icon"
+  >
+    ### Open Source
+    
+    Supports multiple authentication providers and authorization models
+  </GridItem>
+
+  <GridItem
+    image={scalable}
+    altText="Scalable Icon"
+  >
+    ### Scalable
+    
+    Scalable native architecture with Kubernetes, Apache Airflow, and Nextflow
+  </GridItem>
+
+  <GridItem
+    image={flexible}
+    altText="Flexible and Customizable Icon"
+  >
+    ### Flexible and Customizable
+
+    Provides a unified data science workbench tailored to each science community, applicable to and actively used across science domains
+  </GridItem>
+
+  <GridItem
+    image={metadata}
+    altText="Metadata Driven Icon"
+    title="Metadata Driven"
+  >
+    ### Metadata Driven
+
+    Extensible metadata driven architecture simplifies adding data science workspaces
+  </GridItem>
+</GridContainer>
+
+</MaxWidthWrapper>

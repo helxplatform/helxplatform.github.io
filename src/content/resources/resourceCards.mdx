@@ -1,0 +1,25 @@
+import { MaxWidthWrapper } from "../../components/layout/maxWidthWrapper";
+import { GridContainer } from "../../components/grid.js";
+import { ResourceCard } from "../../components/sections/resourceCards.js";
+import technical from "../../images/resources/tech-doc-icon-resources.svg";
+import userFacing from "../../images/resources/user-facing-doc-icon-resources.svg";
+import futureVideos from "../../images/resources/future-vid-icon-resources.svg"; // keeping import if used in the future
+
+<MaxWidthWrapper>
+
+# Resources
+
+<GridContainer padding="1rem 0 2rem 0">
+  <ResourceCard
+    image={technical}
+    title="Technical Documentation"
+    link="https://helx-10.readthedocs.io/en/latest/index.html"
+  />
+  <ResourceCard
+    image={userFacing}
+    title="User-facing Documentation"
+    link="https://helx.gitbook.io/helx-documentation/"
+  />
+</GridContainer>
+
+</MaxWidthWrapper>

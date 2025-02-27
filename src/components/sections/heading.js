@@ -1,17 +1,23 @@
-import React from 'react'
-import { Typography } from '@mui/material'
-import { MaxWidthWrapper } from "../layout/maxWidthWrapper";
+import React from "react";
+import { Container } from "@mui/material";
 
-export const HeadingSection = ({content, backgroundColor, maxWidth, sx}) => { 
-
+export const HeadingSection = ({ children, maxWidth, wrap = true }) => {
   return (
-    <MaxWidthWrapper backgroundColor={backgroundColor} maxWidth={maxWidth || "sm"} sx={{
-      textAlign: 'center', 
-      mb: 0, 
-      ...sx
-    }}>
-      <Typography variant='h2'>{content.title}</Typography>
-      <Typography variant='subtitle1'>{content.subtitle}</Typography>
-    </MaxWidthWrapper>
-  )
-}
+    <Container
+      maxWidth={maxWidth || "sm"}
+      sx={{
+        textAlign: "center",
+        mb: 2,
+        pb: 2,
+        whiteSpace: !wrap ? "nowrap" : "normal",
+        "& p": {
+          fontSize: "1.2rem",
+          lineHeight: 1.5,
+          fontWeight: 400,
+        },
+      }}
+    >
+      {children}
+    </Container>
+  );
+};

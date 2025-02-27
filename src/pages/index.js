@@ -1,32 +1,27 @@
-import React, { Fragment } from 'react'
-import { HomeHero } from '../components/hero/homeHero'
-import { homeSection, rotatingVerbs, helxFeatures, homeHero }  from '../content'
-import { HeadingSection, IllustrationTextSection, RotatingVerbs, FeaturesSection } from '../components/sections'
-import { Subfooter } from '../components/layout/subfooter'
-
-const headingContent1 = {
-  title: 'Launch, Analyze, and Discover Your Data With HeLx',
-  subtitle: 'HeLx empowers researchers in domains from plant genomics to neuroscience to work with their preferred tools and apps in the cloud at scale.'
-}
+import React, { Fragment } from "react";
+import { HomeHero } from "../components/hero/homeHero";
+import { rotatingVerbs, homeHero } from "../content";
+import { RotatingVerbs } from "../components/sections";
+import { Subfooter } from "../components/layout/subfooter";
+import FeaturesSection from "../content/home/helxFeatures.mdx";
+import HomeIllustrationSection from "../content/home/homeIllustrations.mdx";
 
 const IndexPage = () => {
   return (
     <Fragment>
-      <HomeHero content={homeHero}/>
+      <HomeHero content={homeHero} />
 
-      <HeadingSection content={headingContent1}/>
+      <HomeIllustrationSection />
 
-      <IllustrationTextSection content={homeSection} imageSize="small"/>
+      <RotatingVerbs content={rotatingVerbs} />
 
-      <RotatingVerbs content={rotatingVerbs}/>
+      <FeaturesSection />
 
-      <FeaturesSection content={helxFeatures} columns={3}/>
-
-      <Subfooter/>
+      <Subfooter />
     </Fragment>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home Page</title>;

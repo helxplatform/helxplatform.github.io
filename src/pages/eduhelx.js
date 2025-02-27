@@ -1,54 +1,30 @@
-import React, { Fragment } from 'react'
-import { EduHelxHero } from '../components/hero/eduhelxHero'
-import { 
-  eduhelxHero, 
-  aboutEduhelx, 
-  eduhelxFeaturesHeading, 
-  eduhelxFeatures, 
-  eduHelxTestimonials,
-  readMoreEduhelxHeading, 
-  readMoreEduhelx }  from '../content'
-import { EduHelxIllustrationTextSection, FeaturesSection, HeadingSection, TestimonialSection, IllustrationTextSection } from '../components/sections'
-import { Subfooter } from '../components/layout/subfooter'
-import { useTheme } from "@emotion/react";
+import React, { Fragment } from "react";
+import { EduHelxHero } from "../components/hero/eduhelxHero";
+import {
+  eduhelxHero,
+  // eduHelxTestimonials,
+} from "../content";
+import { Subfooter } from "../components/layout/subfooter";
+import EduHelxFeaturesSection from "../content/eduhelx/eduHelxFeatures.mdx";
+import EduHelxAbout from "../content/eduhelx/eduHelxAbout.mdx";
+import EduHelxReadMore from "../content/eduhelx/eduHelxReadMore.mdx";
 
 const EduHeLxPage = () => {
-  const theme = useTheme();
-
   return (
     <Fragment>
-      <EduHelxHero
-        content={eduhelxHero}
-      />
-      <EduHelxIllustrationTextSection 
-        content={aboutEduhelx} 
-        left={true}
-      />
-      <HeadingSection 
-        content={eduhelxFeaturesHeading}
-        backgroundColor={theme.palette.branding.offWhite}
-      />
-      <FeaturesSection 
-        content={eduhelxFeatures}
-        columns={2}
-      />
+      <EduHelxHero content={eduhelxHero} />
+      <EduHelxAbout />
+      <EduHelxFeaturesSection />
+      <EduHelxReadMore />
       {/* Hide Testimonials until content is finalized and approved */}
       {/* <TestimonialSection 
         items={eduHelxTestimonials}  
       /> */}
-      <HeadingSection 
-        content={readMoreEduhelxHeading}
-        maxWidth="lg"
-      />
-      <IllustrationTextSection 
-        content={readMoreEduhelx}
-      />
-
-      <Subfooter/>
+      <Subfooter />
     </Fragment>
-  )
-}
+  );
+};
 
-export default EduHeLxPage
+export default EduHeLxPage;
 
-export const Head = () => <title>EduHeLx Page</title>
+export const Head = () => <title>EduHeLx Page</title>;

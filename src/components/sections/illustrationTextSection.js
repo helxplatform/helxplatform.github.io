@@ -35,13 +35,16 @@ export const IllustrationTextSection = ({
     <Stack
       direction={contentOrder}
       alignItems="center"
-      spacing={6}
+      spacing={{ xs: 0, sm: 0, md: 6 }}
       sx={{ py: 2 }}
     >
       <Box
         sx={{
-          display: "flex",
-          flex: 1,
+          display: { xs: "none", sm: "none", md: "flex" },
+          flex: {
+            sm: "0 0",
+            md: 1,
+          },
           justifyContent: "center",
           alignItems: "center",
         }}

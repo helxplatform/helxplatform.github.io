@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@mui/material";
 
-export const HeadingSection = ({ children, maxWidth, wrap = true }) => {
+export const HeadingSection = ({ children, maxWidth }) => {
   return (
     <Container
       maxWidth={maxWidth || "sm"}

@@ -8,17 +8,36 @@ This is a Gatsby-powered marketing site that stores content in MDX files. The co
 
 - To run this website locally, clone the repo and install the dependencies (`npm i --legacy-peer-deps`)
 
-## Development
+## 🚧 Development
 
-- Spin up the development server on [http://localhost:8000](http://localhost:8000) by running `npm run develop`. 
+- Spin up the development server on [http://localhost:8000](http://localhost:8000) by running `npm run develop`.
 - When proposing changes, always verify the build process runs without error locally with `npm run build`. Serve the built application on port `localhost:9000` with `npm run serve`.
 
-## Content Management
+## 📁 Content Management
 
-You will be able to access the content via an interactive GraphQL playground at [http://localhost:8000/__graphql](http://localhost:8000/__graphql) in your browser.
+> [!NOTE]  
+> All content lives in the `src/content` directory in MDX files.
 
-<!-- Insert info about MDX content here -->
+```plaintext
+.
+└── src
+    ├── content
+        ├── about
+            ├── example.mdx
+        ├── home
+            ├── example.mdx
+        ├── ...
+        └── ...
+```
+
+Since content is managed using MDX, we can combine markdown syntax with React components.
+
+For descriptions of how each component is used in the MDX files, see comments found coupled with the code in `src/components`
+
+You are able to access the content via an interactive GraphQL playground at [http://localhost:8000/\_\_graphql](http://localhost:8000/__graphql) in your browser.
 
 ## 🎁 Deployment
 
-<!-- Insert deployent info here -->
+Staging branch deployments are automatic via AWS Amplify and can be accessed at [this link](https://staging.d3ai4fqdwaarvq.amplifyapp.com/) upon code changes.
+
+After verifying on staging, up-to-date changes can be found on production at [helx.renci.org](https://helxplatform.github.io/).

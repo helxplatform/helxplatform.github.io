@@ -23,6 +23,34 @@ const TextCard = styled(Box)(({ theme }) => ({
   },
 }));
 
+/**
+ * `IllustrationTextSection` displays text with an optional illustration, aligned based on the `left` prop.
+ * It is used within MDX files found in `/src/content` by content managers to create content sections with responsive layouts and styles.
+ *
+ * Props:
+ * - `children`: Text content (ReactNode).
+ * - `left` (default: false): If true, illustration appears on the left, otherwise right.
+ * - `illustration`: Image URL (required).
+ * - `link` (optional): URL for the "Read More ..." link.
+ *
+ * Example:
+ * ```mdx
+ * import image from "../../images/[IMAGE_PATH]";  // Replace [IMAGE_PATH] with your image's path relative to images directory
+ *
+ * <IllustrationTextSection
+ *   left={true}
+ *   illustration={image}
+ *   link="https://example.com/read-more"
+ * >
+ *   ## Section Title
+ *
+ *   [Link Text](https://example.com)
+ *
+ *   Section description
+ * </IllustrationTextSection>
+ * ```
+ */
+
 export const IllustrationTextSection = ({
   children,
   left,

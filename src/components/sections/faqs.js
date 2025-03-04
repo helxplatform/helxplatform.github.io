@@ -9,7 +9,33 @@ import {
 import { ExpandMore } from "@mui/icons-material";
 import { styled } from "@mui/system";
 
-// an faq item returns a styled accordion item, with its q & a inside
+/**
+ * `FaqsItem` renders an individual FAQ item with a question and an answer inside an accordion-style component.
+ * It is typically used inside a `FaqsWrapper` component to display a list of FAQ items.
+ *
+ * Props:
+ * - `children`: The answer to the FAQ (ReactNode).
+ * - `question`: The FAQ question (string).
+ * - `index`: The index of the FAQ item (number) to manage unique `aria-controls`.
+ *
+ * Example:
+ * ```mdx
+ * import { FaqsItem, FaqsWrapper } from "../../components/sections/faqs";
+ *
+ * <FaqsWrapper>
+ *   <FaqsItem question="What is the purpose of this tool?" index={0}>
+ *     This tool is designed to help users manage and analyze large datasets efficiently.
+ *   </FaqsItem>
+ *   <FaqsItem question="Can I use this on my mobile device?" index={1}>
+ *     Yes, this tool is optimized for both desktop and mobile use.
+ *   </FaqsItem>
+ *   <FaqsItem question="Is there a support team I can contact?" index={2}>
+ *     Yes, we have a dedicated support team available 24/7 to assist you.
+ *   </FaqsItem>
+ * </FaqsWrapper>
+ * ```
+ */
+
 export const FaqsItem = ({ children, question, index }) => {
   return (
     <StyledAccordion>

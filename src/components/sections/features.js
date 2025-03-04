@@ -15,6 +15,35 @@ export const FeatureCard = styled(Box)(({ theme }) => ({
   alignItems: "center",
 }));
 
+/**
+ * `GridItem` represents an individual item within a grid layout, wrapped inside a `FeatureCard` for styling.
+ * It displays an image and text content in a card-style layout.
+ *
+ * Note: This component **must** be wrapped inside a `GridContainer` to align properly and function as part of a grid.
+ *
+ * Props:
+ * - `children`: Content to display inside the grid item (required).
+ * - `image`: Image URL (required).
+ * - `altText`: Alt text for the image (required).
+ * - `columnWidth` (optional): Defines the column width in the grid, default is `3`, optional is `2`.
+ *
+ * Example:
+ * ```mdx
+ * import { GridContainer } from "../../components/grid";
+ * import { GridItem } from "../../components/sections/features";
+ *
+ * <GridContainer>
+ *   <GridItem
+ *     image="https://example.com/image.jpg"
+ *     altText="Example Image"
+ *   >
+ *     ### Feature Title
+ *     Description for the feature.
+ *   </GridItem>
+ * </GridContainer>
+ * ```
+ */
+
 export const GridItem = ({ children, image, altText, columnWidth = 3 }) => (
   <Grid item md={columnWidth === 2 ? 6 : 4} sm={6} xs={12}>
     <FeatureCard>

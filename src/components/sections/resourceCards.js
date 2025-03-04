@@ -4,6 +4,28 @@ import { Link } from "../link";
 import { ExternalLinkIcon } from "../../../icons";
 import { useTheme } from "@emotion/react";
 
+/**
+ * `ResourceCard` displays an image and title as a clickable card, with an external link.
+ * The card is responsive, adjusting its layout between row and column based on screen size.
+ *
+ * Props:
+ * - `image`: The URL of the image to display in the card (required).
+ * - `title`: The title text displayed alongside the image (required).
+ * - `link`: The URL the card links to when clicked (required).
+ *
+ * Example:
+ * ```mdx
+ * import { ResourceCard } from "../../components/sections/resourceCards";
+ * import exampleImage from "../../images/resources/example-image.svg";
+ *
+ * <ResourceCard
+ *   image={exampleImage}
+ *   title="Example Resource"
+ *   link="https://www.example.com/resource"
+ * />
+ * ```
+ */
+
 export const ResourceCard = ({ image, title, link }) => {
   const theme = useTheme();
 

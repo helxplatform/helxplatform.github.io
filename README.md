@@ -30,14 +30,13 @@ This is a Gatsby-powered marketing site that stores content in MDX files. The co
         └── ...
 ```
 
-Since content is managed using MDX, we can combine markdown syntax with React components.
-
-For descriptions of how each component is used in the MDX files, see comments found coupled with the code in `src/components`
+- Since content is managed using MDX, we can combine markdown syntax with React components.
+- For descriptions of how each component is used in the MDX files, see comments found coupled with the code (component declarations) in `src/components`
 
 You are able to access the content via an interactive GraphQL playground at [http://localhost:8000/\_\_graphql](http://localhost:8000/__graphql) in your browser.
 
 ## 🎁 Deployment
 
-Staging branch deployments are automatic via AWS Amplify and can be accessed at [this link](https://staging.d3ai4fqdwaarvq.amplifyapp.com/) upon code changes.
+- Staging branch deployments are automatic via AWS Amplify and can be accessed at [this link](https://staging.d3ai4fqdwaarvq.amplifyapp.com/) upon code changes.
 
-After verifying on staging, up-to-date changes can be found on production at [helx.renci.org](https://helxplatform.github.io/).
+- After verifying on staging, up-to-date changes can be found on production at [helx.renci.org](https://helxplatform.github.io/).

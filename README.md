@@ -38,5 +38,4 @@ You are able to access the content via an interactive GraphQL playground at [htt
 ## 🎁 Deployment
 
 - Staging branch deployments are automatic via AWS Amplify and can be accessed at [this link](https://staging.d3ai4fqdwaarvq.amplifyapp.com/) upon code changes.
-
 - After verifying on staging, up-to-date changes can be found on production at [helx.renci.org](https://helxplatform.github.io/).
